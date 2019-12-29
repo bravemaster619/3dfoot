@@ -1,6 +1,8 @@
 import { Component, OnInit, HostListener, Input } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import {enableProdMode} from '@angular/core';
 
+enableProdMode();
 @Component({
   selector: 'app-top-nav',
   templateUrl: './top-nav.component.html',
@@ -25,16 +27,14 @@ export class TopNavComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
 
-    setTimeout(() => {
-      const scrollPosition = window.pageYOffset;
+    return this.onScroll = window.pageYOffset > 0;
 
-      if (scrollPosition > 0) {
-        this.onScroll = true;
-      } else {
-        this.onScroll = false;
-      }
-      return this.onScroll;
-    })
+    // if (scrollPosition > 0) {
+    //   this.onScroll = true;
+    // } else {
+    //   this.onScroll = false;
+    // }
+    // return this.onScroll;
   }
 
 }
