@@ -22,6 +22,6 @@ Route.post('register', 'UserController.register');
 // for admin routes
 Route.group(() => {
   // Binds '/users' to 'App/Controllers/Http/Admin/UserController'
-  Route.post('/users/export', 'UserController.export2Excel')
+  Route.get('/users/export', 'UserController.export2Excel')
 }).prefix('admin')
   .namespace('Admin')

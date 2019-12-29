@@ -20,7 +20,8 @@ export class ApiService {
   // for admin export users
   exportUsers(payload) {
     // return this.http.post(environment.siteurl + '/email', payload)
-    return this.http.post(environment.siteurl + '/admin/users/export', payload)
+    // return this.http.post(environment.siteurl + '/admin/users/export', payload)
+    return window.location.href = environment.siteurl + '/admin/users/export';
   }
 
   updateWindowScroll(event){

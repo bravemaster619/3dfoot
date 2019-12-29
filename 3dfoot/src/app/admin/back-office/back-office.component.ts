@@ -17,7 +17,13 @@ export class BackOfficeComponent implements OnInit {
 
   getUsers(){
     // @author bravemaster
-    return this.apiService.exportUsers({format: 'excel'}).subscribe(res => console.log(res))
+    this.apiService.exportUsers({})
+  }
+
+  downloadFile(data) {
+    const blob = new Blob([data], {type: 'excel'})
+    const url = window.URL.createObjectURL(blob)
+    window.open(url)
   }
 
 }
