@@ -6,7 +6,7 @@ const excel = require('node-excel-export');
 class UserController {
 
   async export2Excel({request, response}) {
-    const users = await User.all()
+    const users = await User.query().where('role', '!=', 'admin').fetch()
     let userData = [];
     users.rows.forEach((user) => {
       userData.push(user.$attributes)
