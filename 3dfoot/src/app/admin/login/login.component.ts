@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
       // the login api will be called here
       console.log(this.loginForm.value);
       this.apiService.login(this.loginForm.value).subscribe(res => {
-        if (res.role === 'admin') {
+        if (res['role'] === 'admin') {
           this.router.navigate(['admin/backOffice'])
         }
       })
