@@ -9,7 +9,7 @@ import {AboutComponent} from "./about/about.component";
 import {CustomerComponent} from "./customer/customer.component";
 import {AccountComponent} from "./account/account.component";
 import {FaqsComponent} from "./faqs/faqs.component";
-
+import {AuthGuard} from "./_helpers/auth.guard";
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},

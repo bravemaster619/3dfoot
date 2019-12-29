@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import {ApiService} from "../../services/api.service";
+import { AuthenticationService } from "../../_services/authentication.service";
 import {BsModalRef, BsModalService} from "ngx-bootstrap";
 @Component({
   selector: 'app-login',
@@ -19,6 +20,7 @@ export class LoginComponent implements OnInit {
       private router:Router,
       private apiService:ApiService,
       private modalService: BsModalService,
+      private authenticationService:AuthenticationService
   ) {
 
   }
@@ -38,8 +40,7 @@ export class LoginComponent implements OnInit {
     if(this.loginForm.valid){
       this.show = false;
       // the login api will be called here
-      console.log(this.loginForm.value);
-      this.apiService.login(this.loginForm.value).subscribe(res => {
+      this.authenticationService.login(this.loginForm.value.email, this.loginForm.value.password).subscribe(res => {
         if (res['role'] === 'admin') {
           this.router.navigate(['admin/backOffice'])
         } else {

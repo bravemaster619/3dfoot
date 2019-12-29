@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
-import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {HttpClient, HttpClientModule, HTTP_INTERCEPTORS} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 
 import { QuestionComponent } from './question/question/question.component';
@@ -21,6 +21,8 @@ import { AboutComponent } from './about/about.component';
 import { CustomerComponent } from './customer/customer.component';
 import { FaqsComponent } from './faqs/faqs.component';
 import { SharedModule } from './shared/shared.module';
+import {JwtInterceptor} from "./_helpers/jwt.interceptor";
+import {ErrorInterceptor} from "./_helpers/error.interceptor";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -54,7 +56,10 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
       }
     })
   ],
-  providers: [ApiService],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+      ApiService],
 
   bootstrap: [AppComponent]
 })
