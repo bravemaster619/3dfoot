@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import {ApiService} from "../../services/api.service";
+import {BsModalRef, BsModalService} from "ngx-bootstrap";
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -10,8 +11,14 @@ import {ApiService} from "../../services/api.service";
 export class LoginComponent implements OnInit {
   loginForm:FormGroup;
   submitted:boolean = false;
+  data: any;
+  show = true;
+  modalRef: BsModalRef;
   constructor(
-      private formBuilder:FormBuilder, private router:Router, private apiService:ApiService
+      private formBuilder:FormBuilder,
+      private router:Router,
+      private apiService:ApiService,
+      private modalService: BsModalService,
   ) {
 
   }
@@ -25,15 +32,20 @@ export class LoginComponent implements OnInit {
 
   get f() { return this.loginForm.controls; }
 
-  onSubmit(){
+  onSubmit(template){
     this.submitted = true;
-    console.log(this.loginForm.valid)
+
     if(this.loginForm.valid){
+      this.show = false;
       // the login api will be called here
       console.log(this.loginForm.value);
       this.apiService.login(this.loginForm.value).subscribe(res => {
         if (res['role'] === 'admin') {
           this.router.navigate(['admin/backOffice'])
+        } else {
+          this.show = true;
+          this.data = "Login Failed.";
+          this.modalRef = this.modalService.show(template, {class: 'animated fadeIn slow'})
         }
       })
     }
