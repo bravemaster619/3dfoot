@@ -15,5 +15,13 @@
 
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
-Route.post('email', 'EmailController.store')
-
+// legacy subscription flow
+Route.post('email', 'EmailController.store');
+// for future register flow using UserController
+Route.post('register', 'UserController.register');
+// for admin routes
+Route.group(() => {
+  // Binds '/users' to 'App/Controllers/Http/Admin/UserController'
+  Route.post('/users/export', 'UserController.export2Excel')
+}).prefix('admin')
+  .namespace('Admin')

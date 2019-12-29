@@ -16,8 +16,14 @@ export class ApiService {
     return this.http.post(environment.siteurl + '/email', payload)
   }
 
+  // @author bravemaster
+  // for admin export users
+  exportUsers(payload) {
+    // return this.http.post(environment.siteurl + '/email', payload)
+    return this.http.post(environment.siteurl + '/admin/users/export', payload)
+  }
+
   updateWindowScroll(event){
     this.windowScroll.next(event);
   }
-
 }

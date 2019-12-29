@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {ApiService} from "../../services/api.service";
 @Component({
   selector: 'app-back-office',
   templateUrl: './back-office.component.html',
@@ -7,13 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BackOfficeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private apiService: ApiService
+  ) {
+
+  }
 
   ngOnInit() {
   }
 
   getUsers(){
-    console.log('get all the users');
+    // @author bravemaster
+    return this.apiService.exportUsers({format: 'excel'}).subscribe(res => console.log(res))
   }
 
 }
