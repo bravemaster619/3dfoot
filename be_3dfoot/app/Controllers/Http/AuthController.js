@@ -36,8 +36,11 @@ class AuthController {
     if (validation.fails()) {
       return JSON.stringify(validation.message())
     }
-    let user = await User.create(data)
+    let user = await User.create(Object.assign({
+      role: 'subscriber'
+    }, data))
     let token = await auth.generate(user)
+
     user.password = undefined
     Object.assign(user, token)
     return response.json(user)

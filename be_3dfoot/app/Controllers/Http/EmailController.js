@@ -15,7 +15,9 @@ class EmailController {
         return JSON.stringify('E-mail already registered')
       }
 
-      const user = await User.create(data)
+      const user = await User.create(Object.assign({
+        role: 'subscriber'
+      }, data))
         await Mail.send('emails.welcome', user.toJSON(), (message) => {
           message
             .to(user.email)
