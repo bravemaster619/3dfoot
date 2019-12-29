@@ -38,7 +38,7 @@ class AuthController {
     }
     let user = await User.create(data)
     let token = await auth.generate(user)
-    console.log(token)
+    user.password = undefined
     Object.assign(user, token)
     return response.json(user)
   }
@@ -51,7 +51,7 @@ class AuthController {
       if (await auth.attempt(email, password)) {
         let user = await User.findBy('email', email)
         let token = await auth.generate(user)
-
+        user.password = undefined
         Object.assign(user, token)
         return response.json(user)
       }

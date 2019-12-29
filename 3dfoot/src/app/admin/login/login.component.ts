@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
-
+import {ApiService} from "../../services/api.service";
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -10,7 +10,11 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   loginForm:FormGroup;
   submitted:boolean = false;
-  constructor(private formBuilder:FormBuilder, private router:Router) { }
+  constructor(
+      private formBuilder:FormBuilder, private router:Router, private apiService:ApiService
+  ) {
+
+  }
 
   ngOnInit() {
     this.loginForm = this.formBuilder.group({
@@ -23,10 +27,15 @@ export class LoginComponent implements OnInit {
 
   onSubmit(){
     this.submitted = true;
+    console.log(this.loginForm.valid)
     if(this.loginForm.valid){
       // the login api will be called here
       console.log(this.loginForm.value);
-      this.router.navigate(['admin/backOffice']);
+      this.apiService.login(this.loginForm.value).subscribe(res => {
+        if (res.role === 'admin') {
+          this.router.navigate(['admin/backOffice'])
+        }
+      })
     }
   }
 

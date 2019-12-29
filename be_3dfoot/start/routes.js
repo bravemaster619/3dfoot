@@ -18,7 +18,7 @@ const Route = use('Route')
 // legacy subscription flow
 Route.post('email', 'EmailController.store');
 // Answer
-Route.post('answer', 'AnswerController.newAnswer')
+Route.post('answer', 'AnswerController.newAnswer');
 // for future auth flow using AuthController
 Route.post('signin', 'AuthController.login');
 Route.post('signup', 'AuthController.signup');

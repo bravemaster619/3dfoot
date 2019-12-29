@@ -12,6 +12,10 @@ export class ApiService {
   constructor(private http: HttpClient) {
   }
 
+  login(payload) {
+    return this.http.post(environment.siteurl + '/signin', payload)
+  }
+
   postEmail(payload) {
     return this.http.post(environment.siteurl + '/email', payload)
   }
