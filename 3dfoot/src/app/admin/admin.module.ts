@@ -8,6 +8,8 @@ import { SharedModule } from '../shared/shared.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import {BsModalRef, ModalModule} from "ngx-bootstrap";
+
 @NgModule({
   declarations: [BackOfficeComponent, LoginComponent],
   imports: [
@@ -16,7 +18,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SharedModule,
     TranslateModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ModalModule.forRoot()
+  ],
+  providers: [
+    BsModalRef
   ]
 })
 export class AdminModule { }
