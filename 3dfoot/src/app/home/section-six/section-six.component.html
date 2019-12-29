@@ -1,0 +1,57 @@
+<div #section6>
+  <div *ngIf="shouldDisplay">
+    <div class="row animated flipInX slow">
+      <div class="col">
+        <h1>{{'SECTION-SIX.accreditation' | translate}}</h1>
+      </div>
+    </div>
+    <div class="row pb-4 animated flipInX slow">
+      <div class="col"><img src="assets/1.png"></div>
+      <div class="col"><img src="assets/2.png"></div>
+      <div class="col"><img src="assets/3.png"></div>
+    </div>
+    <div class="row animated flipInX slow">
+      <div class="col-12 pb-4">
+        <h2>{{'SECTION-SIX.newsletter' | translate}}</h2>
+      </div>
+    </div>
+    <div class="animated flipInX slow">
+      <div>
+        <form [formGroup]="form">
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Your Email" formControlName="email">
+          </div>
+        </form>
+      </div>
+      <div *ngIf="show; else default" >
+        <button class="btn btn-default" [disabled]="!form.valid" (click)="registerNewsletter(template)">{{'SECTION-SIX.submit' | translate}}</button>
+      </div>
+      <ng-template #default>
+        <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
+        </div>
+      </ng-template>
+    </div>
+    <div class="row animated flipInX slow">
+      <ul>
+        <li [routerLink]="['/account']">{{'SECTION-SIX.account' | translate}}</li>
+        <li [routerLink]="['/about']">{{'SECTION-SIX.about' | translate}}</li>
+        <li [routerLink]="['/customer']">{{'SECTION-SIX.customer' | translate}}</li>
+        <li [routerLink]="['/faqs']">{{'SECTION-SIX.faq' | translate}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left"></h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+
+    {{data}}
+  </div>
+</ng-template>

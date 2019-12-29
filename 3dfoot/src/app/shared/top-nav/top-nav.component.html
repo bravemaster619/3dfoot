@@ -1,0 +1,13 @@
+<div class="row" [class.fixed]="checkScroll()" [class.cus]="custom">
+    <div class="col">
+        <img class="logo" [routerLink]="['']" src="assets/logo.png">
+    </div>
+    <div class="col d-flex justify-content-end">
+        <div>
+            <span (click)="switchLanguage('ch')" [ngClass]="{'active': lang == 'ch'}">CH</span>
+            <span>|</span>
+            <span (click)="switchLanguage('en')" [ngClass]="{'active': lang == 'en'}">EN</span>
+        </div>
+    </div>
+
+</div>

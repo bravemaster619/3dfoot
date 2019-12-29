@@ -1,0 +1,59 @@
+:host {
+  padding: 28px 25px;
+  width: 414px;
+  height: 666px;
+  background-color: #2b6fa4;
+  & div:not(.row) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  & h1 {
+    height: 38px;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -1.36px;
+    text-align: left;
+  }
+  & h2 {
+    height: 36px;
+    color: #2cd6e5;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -1.26px;
+  }
+  & input {
+    width: 230px;
+    height: 53px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    margin-right: 10px;
+  }
+  & button {
+    height: 53px;
+    border-radius: 8px;
+    background-color: #2cd6e5;
+    /* Style for "Submit" */
+    color: #2b6fa4;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -1.26px;
+    opacity: 1;
+  }
+  & ul {
+    padding-inline-start: 10px;
+    padding-top: 40px;
+  }
+  & ul > li {
+    margin-bottom: 18px;
+    list-style: none;
+    height: 36px;
+    color: #2cd6e5;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -1.26px;
+  }
+
+}

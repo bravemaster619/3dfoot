@@ -1,0 +1,32 @@
+<div class="customNav">
+    <app-top-nav></app-top-nav>
+</div>
+<app-back></app-back>
+<div class="loginContent">
+    <div class="row pt-46 text-center animated bounceInDown delay-.5s head">
+        <div class="col-12">
+            <h1>{{'ADMIN.head' | translate}}</h1>
+        </div>
+    </div>
+    <div class="row loginFormHere">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                    <div *ngIf="f.email.errors.required">Email is required</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                    <div *ngIf="f.password.errors.required">Password is required</div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-default loginBtn">Login</button>
+            </div>
+        </form>
+    </div>
+</div>

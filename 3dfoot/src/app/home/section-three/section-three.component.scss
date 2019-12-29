@@ -1,0 +1,75 @@
+:host {
+  background-image: url("~/assets/section-3-bg.png");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 414px;
+  min-height: 521px;
+
+
+  & .djg {
+    flex: 1;
+    flex-wrap: nowrap;
+    min-height: 521px;
+    flex-direction: row;
+  }
+  & .shadow {
+    position: relative;
+
+    width: 239px;
+    background-color: #000;
+    opacity: 0.39;
+    display: flex;
+    flex: 1 1 100%;
+    flex-grow: 1;
+    z-index: 0;
+  }
+  & .section-title{
+    text-shadow: 0 3px 4px rgba(0, 0, 0, 0.73);
+    color: #fff;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -1.3px;
+    z-index: 99;
+    margin-top: 15px;
+    line-height: 1.4;
+  }
+  & ul {
+    z-index: 99;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  & ul > li {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 800;
+    letter-spacing: -0.054rem;
+    line-height: 2.438rem;
+  }
+  & button {
+    width: 173px;
+    background-color: #2cd6e5;
+    color: #2b6fa4;
+    font-size: 21px;
+    font-weight: 800;
+    letter-spacing: -1.024px;
+    z-index: 99;
+    margin-top: 40px;
+    border-radius: 2px;
+  }
+  ::ng-deep app-benefit .benefit {
+    padding-left:  23px;
+    padding-right: 23px;
+
+  }
+  & .contentLeft{
+    float: left;
+    width: 60%;
+    height: 521px;
+    background: rgba(51, 51, 51, .6);
+    padding: 25px;
+  }
+}

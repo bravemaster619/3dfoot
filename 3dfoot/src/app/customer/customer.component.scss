@@ -1,0 +1,65 @@
+:host {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 28px 25px;
+
+  flex-wrap: wrap;
+  height: 100%;
+  width: 414px;
+  min-height: 100vh;
+  background-color: #0b5892;
+  .customNav{
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-top: -30px;
+  }
+  & h1 {
+
+    height: 49px;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -1.75px;
+  }
+  & .pt-46{
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 46px;
+
+    & p {
+      height: 129px;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 300;
+      letter-spacing: -1.17px;
+    }
+  }
+  & form {
+    padding-top: 43px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  & input {
+
+    width: 304px;
+    height: 41px;
+    background-color: #ffffff;
+    border-radius: 0;
+  }
+  & button {
+    width: 194px;
+    height: 50px;
+    margin: 0 auto;
+
+    background-color: #2cd6e5;
+    color: #0b5892;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -1.17px;
+    border-radius: 0;
+  }
+}

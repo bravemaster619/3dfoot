@@ -1,0 +1,60 @@
+:host {
+  width: 414px;
+  min-height: 550px;
+  background-color: #fff;
+
+  & .row {
+    margin: 2.65rem 0;
+    display: flex;
+    padding-left: 23px;
+    padding-right: 23px;
+    & .header-title {
+      height: 65px;
+      color: #2b6fa4;
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -1.36px;
+      line-height: 33px;
+      text-align: center;
+    }
+    & p {
+       &.second{
+         font-weight: 300;
+         padding-left: 16px;
+       }
+      & span {
+        font-weight: 800;
+      }
+      &.fixed-width {
+        width: 202px;
+      }
+
+      min-height: 56px;
+      color: #2b6fa4;
+
+      font-size: 21px;
+
+      letter-spacing: -1.024px;
+      z-index: 1;
+    }
+    & img {
+      &.position-absolute {
+
+        position: absolute;
+        right: 16px;
+        padding-top: 32px;
+      }
+      &.second {
+        height: max-content;
+        left: 0;
+        width: 136px;
+
+      }
+    }
+  }
+  ::ng-deep app-benefit .benefit {
+    padding-left:  23px;
+    padding-right: 23px;
+
+  }
+}

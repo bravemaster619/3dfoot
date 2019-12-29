@@ -1,0 +1,92 @@
+{
+  "button-started": "Let’s get started",
+  "HEADER" : {
+    "create-account": "Create Account",
+    "title": "A happy body starts with happy feet ",
+    "subtitle": "High quality, custom made insoles delivered directly to your door ",
+    "footer": "Custom crafted in Switzerland",
+    "sign-up": "Sign up"
+  },
+  "SECTION-ONE": {
+    "header-title": "Effective relief from pain and pressure on the foot",
+    "description-1": "Durable, long lasting  orthopedic insoles direct to your door.",
+    "description-2": "Uses cutting edge technology to digitally map your feet via your mobile device.",
+    "quality": "Quality tested and with a <strong>free replacement guarantee.</strong> ",
+    "delivery": "From<strong> RMB 1,000</strong>  with free delivery "
+  },
+  "BENEFIT": {
+    "text": "Would you benefit?",
+    "button": "Take the test"
+  },
+  "SECTION-TWO": {
+    "section-title": "Relieves physical problems helping you to lead a more active life",
+    "li-1": "Back pain",
+    "li-2": "Varicose veins",
+    "li-3": "Knees and joint pain",
+    "li-4": "Cervical pain"
+  },
+  "SECTION-THREE": {
+    "section-title": "Relieves pain associated with standing for long periods",
+    "li-1": "Back pain",
+    "li-2": "Uncomfortable footwear",
+    "li-3": "Aching feet",
+    "li-4": "Varicose veins"
+  },
+  "SECTION-FOUR": {
+    "section-title": "How it works",
+    "title-1": "create or sign in to your account",
+    "title-2": "Scan your feet using your mobile device",
+    "title-3": "Order your insoles for delivery to your door within 2 weeks"
+  },
+  "SECTION-FIVE": {
+    "section-title": "Relieves sports related pain and discomfort",
+    "li-1": "Calf muscle pain",
+    "li-2": "Splay leg correction",
+    "li-3": "Protects knees and joints",
+    "li-4": "Prevents injuries"
+  },
+  "SECTION-SIX": {
+    "accreditation": "Accreditation",
+    "newsletter": "Join our newsletter",
+    "submit": "Submit",
+    "account": "Create account",
+    "about": "About",
+    "customer": "Customer Support",
+    "faq": "FAQ's"
+  },
+  "REGISTER": {
+    "back": "Back",
+    "interest": "Register your interest",
+    "description": "We’re currently building this innovative new product, please enter your email to have first access when we are ready to launch",
+    "thanks": "Thank you",
+    "thanks.description": "We’ll be in touch once we are ready to launch our exciting new product.",
+    "homepage": "Homepage"
+  },
+  "ADMIN": {
+    "head": "Login",
+    "backOffice": "Back Office"
+  },
+  "QUESTION1": {
+    "ques": "What do you need?",
+    "option.1": "More support",
+    "option.2": "Pain relief"
+  },
+  "QUESTION2": {
+    "ques": "What of the following best describes you?",
+    "option.1": "Sporty",
+    "option.2": "Stand for long periods",
+    "option.3": "Physical problem"
+  },
+  "RESULT1": {
+    "result": "Physical problems text goes here.",
+    "option.1": "Custom made - to the profile of you feet.",
+    "option.2": "Durable - Strong and made to last",
+    "option.3": "Good value - Exercise with peace of mind."
+  },
+  "RESULT2":{
+    "result": "Physical activities like running can over time, place additional pressure on your feet, legs and spine which over time can lead to pain. Wearing insoles ensures you maintain correct posture even when engaging in exercise.",
+    "option.1": "Custom made - to the profile of you feet.",
+    "option.2": "Durable - Strong and made to last",
+    "option.3": "Good value - Exercise with peace of mind."
+  }
+}

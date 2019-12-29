@@ -1,0 +1,46 @@
+:host{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 28px 25px;
+
+    flex-wrap: wrap;
+    height: 100%;
+    width: 414px;
+    min-height: 100vh;
+    background-color: #0b5892;
+    .customNav{
+        margin-left: -25px;
+        margin-right: -25px;
+        margin-top: -30px;
+    }
+    & h1 {
+        height: 49px;
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 800;
+        letter-spacing: -1.75px;
+      }
+      & .head{
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        padding-top: 46px;
+      }
+    & form{
+        padding: 20px;
+        margin-top: 50px;
+        color: #fff;
+        width: 100%;
+    }
+    & .loginBtn{
+        margin-top: 20px;
+        width: 150px;
+        padding: 10px;
+        border-radius: 1px;
+        background-color: #2cd6e5;
+        color: #2b6fa4;
+    }
+}

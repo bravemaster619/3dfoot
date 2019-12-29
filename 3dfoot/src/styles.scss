@@ -1,0 +1,128 @@
+@import '~animate.css/animate.min';
+@import "aos/dist/aos.css";
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'Avenir 85';
+  src: url('~assets/fonts/Avenir-Heavy.woff2') format('woff2'),
+  url('~assets/fonts/Avenir-Heavy.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+html{
+  & body{
+    font-family: "Avenir 85", Arial;
+    height: 100%;
+    background-color: #2b6fa4;
+    *{
+      outline: none;
+    }
+   & .btn:focus, .btn:hover {
+     outline: 0;
+     box-shadow: 0 0 0 0;
+   }
+    width: 414px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+  .spinner {
+    width: 40px;
+    height: 40px;
+
+    position: relative;
+    margin: 7px 30px;
+  }
+
+  .double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #FFF;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+
+  @keyframes sk-bounce {
+    0%, 100% {
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+      }
+  }
+  .modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-self: center;
+    width: 414px;
+    pointer-events: auto;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    outline: 0;
+    margin: 0 auto;
+    border-radius: 0;
+    color: white;
+    width: 80%;
+    border-radius: 3px;
+  }
+  .modal-header{
+    border: none;
+    background-color: #2bc2d0;
+    border: none;
+    height: 220px;
+    border-radius: 0;
+    button.close{
+      margin: auto;
+      font-size: 50px;
+      background: #fff;
+      opacity: 1;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      color: #333;
+    }
+  }
+  .modal-body{
+    color: #333;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+  }
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #000;
+  }
+  app-top-nav{
+    width: 100%;
+  }
+}

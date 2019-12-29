@@ -1,0 +1,17 @@
+<div class="customNav">
+    <app-top-nav></app-top-nav>
+</div>
+<app-back></app-back>
+
+<div class="backOfficeContent">
+    <div class="row pt-46 text-center animated bounceInDown delay-.5s head">
+        <div class="col-12">
+            <h1>{{'ADMIN.backOffice' | translate}}</h1>
+        </div>
+    </div>
+    <div class="row fetchUsers">
+        <div class="col-12">
+            <button class="btn btn-default" (click)="getUsers()">Get Subscribe Users</button>
+        </div>
+    </div>
+</div>

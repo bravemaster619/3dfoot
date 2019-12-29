@@ -1,0 +1,35 @@
+:host {
+  min-height: 521px;
+  background-color: #2cd6e5;
+  width: 414px;
+  padding: 28px 23px;
+
+  & .title {
+    color: #2b6fa4;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -1.36px;
+  }
+  & .bg-flow {
+    margin-left: 10px;
+    background-image: url('/assets/bg-4.png');
+    background-size: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    min-height: 515px;
+    width: 380px;
+    & h3 {
+      height: 58px;
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 300;
+      letter-spacing: -1.07px;
+    }
+    & .pt-6 {
+      padding-top: 100px;
+    }
+    & .pt-7 {
+      padding-top: 150px;
+    }
+  }
+}
