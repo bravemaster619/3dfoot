@@ -17,8 +17,9 @@
 const Route = use('Route')
 // legacy subscription flow
 Route.post('email', 'EmailController.store');
-// for future register flow using UserController
-Route.post('register', 'UserController.register');
+// for future auth flow using AuthController
+Route.post('signin', 'AuthController.login');
+Route.post('signup', 'AuthController.signup');
 // for admin routes
 Route.group(() => {
   // Binds '/users' to 'App/Controllers/Http/Admin/UserController'
