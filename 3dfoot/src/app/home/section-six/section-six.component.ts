@@ -36,12 +36,20 @@ export class SectionSixComponent implements OnInit {
     this.show = false
     this.apiService.postEmail(this.form.value).subscribe(res => {
       this.data = res;
-      this.show = true
       this.openModal(template)
+      this.show = true
+    }, error => {
+      this.data = "Oops, something went wrong!"
+      this.openModal(template)
+      this.show = true
+    }, () => {
+      this.show = true
     })
   }
   openModal(template: TemplateRef<any>) {
-    if(this.data)
+    if(this.data) {
       this.modalRef = this.modalService.show(template, Object.assign({}, {class: 'animated fadeIn slow'}));
+    }
+
   }
 }
