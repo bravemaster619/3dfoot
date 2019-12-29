@@ -7,6 +7,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {TranslateModule} from '@ngx-translate/core';
 import { ThanksComponent } from './thanks/thanks.component';
 import { SharedModule } from '../shared/shared.module';
+import {BsModalRef, ModalModule} from "ngx-bootstrap";
 
 
 @NgModule({
@@ -16,7 +17,11 @@ import { SharedModule } from '../shared/shared.module';
     RegisterRoutingModule,
     ReactiveFormsModule,
     TranslateModule,
-    SharedModule
+    SharedModule,
+    ModalModule.forRoot()
+  ],
+  providers: [
+      BsModalRef
   ]
 })
 export class RegisterModule { }
