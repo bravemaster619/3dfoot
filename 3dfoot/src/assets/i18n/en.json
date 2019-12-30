@@ -1,5 +1,6 @@
 {
   "button-started": "Let’s get started",
+  "FOOTER": "Footer text!",
   "HEADER" : {
     "create-account": "Create Account",
     "title": "A happy body starts with happy feet ",
@@ -60,11 +61,21 @@
     "description": "We’re currently building this innovative new product, please enter your email to have first access when we are ready to launch",
     "thanks": "Thank you",
     "thanks.description": "We’ll be in touch once we are ready to launch our exciting new product.",
-    "homepage": "Homepage"
+    "homepage": "Homepage",
+    "email": "Your email"
   },
   "ADMIN": {
     "head": "Login",
-    "backOffice": "Back Office"
+    "backOffice": "Back Office",
+    "email": "Email",
+    "password": "Password",
+    "email-msg": "Email is required",
+    "password-msg": "Password is required",
+    "btn-login": "Login",
+    "btn-export": "Get Subscribe Users"
+  },
+  "RESULT": {
+    "head": "Result"
   },
   "QUESTION1": {
     "ques": "What do you need?",

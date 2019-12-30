@@ -1,40 +1,40 @@
 <div #sectionOne>
-  <div class="row animated zoomIn" *ngIf="shouldDisplay"> 
-    <div class="col d-flex text-right">
-      <h3 class="header-title"> {{'SECTION-ONE.header-title' | translate}}</h3>
+    <div class="row animated zoomIn" *ngIf="shouldDisplay">
+        <div class="col d-flex text-right">
+            <h3 class="header-title"> {{'SECTION-ONE.header-title' | translate}}</h3>
+        </div>
     </div>
-  </div>
-  <div class="row animated zoomIn" *ngIf="shouldDisplay">
-    <div class="d-flex align-items-start">
-      <div class="col-6">
-      <p class="">{{'SECTION-ONE.description-1' | translate}} </p>
-      </div>
-      <div class="col p-0">
-        <img src="assets/section-one-1.png">
-      </div>
-    </div>
-
-  </div>
-  <div class="row animated zoomIn" *ngIf="shouldDisplay">
-    <div class="d-flex flex-nowrap">
-
-      <img class="second" src="assets/section-one-2.png">
-      <p class="second">{{'SECTION-ONE.description-2' | translate}} </p>
+    <div class="row animated zoomIn" *ngIf="shouldDisplay">
+        <div class="d-flex align-items-start">
+            <div class="col-6">
+                <p class="">{{'SECTION-ONE.description-1' | translate}} </p>
+            </div>
+            <div class="col p-0">
+                <img src="assets/images/section-one-1.png">
+            </div>
+        </div>
 
     </div>
-  </div>
-  <div class="row d-flex flex-nowrap animated zoomIn" *ngIf="shouldDisplay">
+    <div class="row animated zoomIn" *ngIf="shouldDisplay">
+        <div class="d-flex flex-nowrap">
 
-      <p [innerHTML]="'SECTION-ONE.quality' | translate"></p>
+            <img class="second" src="assets/images/section-one-2.png">
+            <p class="second">{{'SECTION-ONE.description-2' | translate}} </p>
 
-
-      <img class="second" src="assets/quality.png">
-
-  </div>
-  <div class="row pt-0 pb-0 mb-0 mt-0 animated zoomIn" *ngIf="shouldDisplay">
-    <div class="col text-center">
-      <p [innerHTML]="'SECTION-ONE.delivery' | translate"></p>
+        </div>
     </div>
-  </div>
-  <app-benefit [number]="1" class="animated zoomIn" *ngIf="shouldDisplay"></app-benefit>
+    <div class="row d-flex flex-nowrap animated zoomIn" *ngIf="shouldDisplay">
+
+        <p [innerHTML]="'SECTION-ONE.quality' | translate"></p>
+
+
+        <img class="second" src="assets/images/quality.png">
+
+    </div>
+    <div class="row pt-0 pb-0 mb-0 mt-0 animated zoomIn" *ngIf="shouldDisplay">
+        <div class="col text-center">
+            <p [innerHTML]="'SECTION-ONE.delivery' | translate"></p>
+        </div>
+    </div>
+    <app-benefit [number]="1" class="animated zoomIn" *ngIf="shouldDisplay"></app-benefit>
 </div>

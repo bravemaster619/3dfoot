@@ -20,7 +20,7 @@ class AuthController {
       message
       .to(user.email)
       .from('<from-email>')
-      .subject('Welcome to yardstick')
+      .subject('Welcome to 3dfoot')
     })
 
     return JSON.stringify('Registered successfully')
