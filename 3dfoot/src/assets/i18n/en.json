@@ -77,6 +77,18 @@
   "RESULT": {
     "head": "Result"
   },
+  "FAQS": {
+    "head": "FAQs",
+    "description": "Description"
+  },
+  "ABOUT": {
+    "head": "About",
+    "description": "Description"
+  },
+  "CUSTOMER_SUPPORT": {
+    "head": "Customer Support",
+    "description": "Description"
+  },
   "QUESTION1": {
     "ques": "What do you need?",
     "option.1": "More support",
