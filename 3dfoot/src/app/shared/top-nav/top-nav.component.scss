@@ -10,7 +10,7 @@
         position: fixed;
         width: inherit;
         background: #2b6fa4;
-        transition: all 700ms ease-in;
+        transition: all 300ms ease-in;
         margin-top: 0px;
         padding-top: 35px;
         z-index: 999;
@@ -18,13 +18,14 @@
         max-width: 414px;
       }
       &:not(.fixed) {
-        transition: all 700ms ease-out;
+        transition: all 300ms ease-out;
       }
 }
 & .logo {
 
     width: 145px;
     height: 35px;
+    cursor: pointer;
 }
 & span {
     width: 67px;

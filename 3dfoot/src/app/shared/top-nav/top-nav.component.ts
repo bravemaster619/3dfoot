@@ -12,6 +12,7 @@ export class TopNavComponent implements OnInit {
   lang:string;
   onScroll = false;
   @Input() custom:boolean = false;
+
   constructor(private translateService: TranslateService) { }
 
   ngOnInit() {

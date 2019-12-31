@@ -8,16 +8,10 @@ import { ApiService } from '../../services/api.service';
   
 })
 export class SectionOneComponent implements OnInit {
-  @ViewChild('sectionOne', {static:true}) sectionOne: ElementRef;
-  shouldDisplay:boolean = false;
   constructor(private apiService:ApiService) { }
 
   ngOnInit() {
-    this.apiService.windowScroll.subscribe(event => {
-      if(event >= this.sectionOne.nativeElement.offsetTop){
-        this.shouldDisplay = true;
-      }
-    });
+    
   }
 
 }

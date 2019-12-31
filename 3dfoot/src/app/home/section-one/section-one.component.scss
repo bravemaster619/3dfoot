@@ -8,6 +8,10 @@
     display: flex;
     padding-left: 23px;
     padding-right: 23px;
+    margin-bottom: 15px;
+    & .padding0{
+      padding: 0;
+    }
     & .header-title {
       height: 65px;
       color: #2b6fa4;
@@ -51,10 +55,27 @@
 
       }
     }
+    & .firstContent{
+      padding-right: 0;
+    }
+    & .firstImg{
+      img{
+        margin-top: 15px;
+      }
+    }
   }
   ::ng-deep app-benefit .benefit {
     padding-left:  23px;
     padding-right: 23px;
 
+  }
+  .thirdContent{
+    p{
+      margin-top: 10px;
+    }
+    img.second{
+      width: 20%;
+      margin-left: 15px;
+    }
   }
 }

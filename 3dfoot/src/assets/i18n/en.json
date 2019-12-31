@@ -12,7 +12,7 @@
     "header-title": "Effective relief from pain and pressure on the foot",
     "description-1": "Durable, long lasting  orthopedic insoles direct to your door.",
     "description-2": "Uses cutting edge technology to digitally map your feet via your mobile device.",
-    "quality": "Quality tested and with a <strong>free replacement guarantee.</strong> ",
+    "quality": "Quality tested and with a free",
     "delivery": "From<strong> RMB 1,000</strong>  with free delivery "
   },
   "BENEFIT": {
@@ -108,6 +108,12 @@
   },
   "RESULT2":{
     "result": "Physical activities like running can over time, place additional pressure on your feet, legs and spine which over time can lead to pain. Wearing insoles ensures you maintain correct posture even when engaging in exercise.",
+    "option.1": "Custom made - to the profile of you feet.",
+    "option.2": "Durable - Strong and made to last",
+    "option.3": "Good value - Exercise with peace of mind."
+  },
+  "RESULT3": {
+    "result": "Standing long periods text goes here.",
     "option.1": "Custom made - to the profile of you feet.",
     "option.2": "Durable - Strong and made to last",
     "option.3": "Good value - Exercise with peace of mind."

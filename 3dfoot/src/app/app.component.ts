@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
   }
 
   onScroll(event){
-    this.appService.updateWindowScroll(window.pageYOffset + 200);
+    this.appService.updateWindowScroll(window.pageYOffset + 500);
   }
 
 }

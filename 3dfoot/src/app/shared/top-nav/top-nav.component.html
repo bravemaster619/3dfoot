@@ -3,10 +3,14 @@
         <img class="logo" [routerLink]="['']" src="assets/images/logo.png">
     </div>
     <div class="col d-flex justify-content-end">
-        <div>
+        <div *ngIf="!onScroll">
             <span (click)="switchLanguage('ch')" [ngClass]="{'active': lang == 'ch'}">CH</span>
             <span>|</span>
             <span (click)="switchLanguage('en')" [ngClass]="{'active': lang == 'en'}">EN</span>
         </div>
+        <div *ngIf="onScroll">
+            <span [routerLink]="['/register']">Sign up</span>
+        </div>
     </div>
+
 </div>

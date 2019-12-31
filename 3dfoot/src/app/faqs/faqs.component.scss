@@ -40,11 +40,10 @@
     padding-top: 46px;
 
     & p {
-      height: 129px;
-      color: #ffffff;
-      font-size: 24px;
+      color: #333;
+      font-size: 18px;
       font-weight: 300;
-      letter-spacing: -1.17px;
+      text-align: left;
     }
   }
   & form {
@@ -59,16 +58,14 @@
     background-color: #ffffff;
     border-radius: 0;
   }
-  & button {
-    width: 194px;
-    height: 50px;
-    margin: 0 auto;
-
-    background-color: #2cd6e5;
-    color: #0b5892;
-    font-size: 24px;
-    font-weight: 800;
-    letter-spacing: -1.17px;
-    border-radius: 0;
+  & .singleFaq{
+    margin-bottom: 15px;
+    h4{
+      text-align: left;
+      font-size: 1.2rem;
+    }
+    .ques{
+      max-width: 90%;
+    }
   }
 }

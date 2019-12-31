@@ -9,40 +9,18 @@
 </div>
 <div class="row pt-46 text-center animated fadeIn delay-1s">
     <div class="col-12">
-        <div>
-            <h4>How does it work?</h4>
-            <p>
-                You simply need to take three photographs of each foot using our easy to use, guided app and using AI techniques and that’s enough to build a highly accurate 3d model of each foot. Once this is done you just have to place your order and we do the rest.
-            </p>
+        <div class="singleFaq" *ngFor="let faq of faqs; let i = index;">
+            <accordion [isAnimated]="true">
+                <accordion-group (isOpenChange)="statChange($event, i)">
+                    <div class="clearfix" accordion-heading>
+                        <div class="pull-left float-left ques"><h4>{{faq.question}}</h4></div>
+                        <div class="pull-right float-right" *ngIf="!faq.expand"><i class="fas fa-angle-down"></i></div>
+                        <div class="pull-right float-right" *ngIf="faq.expand"><i class="fas fa-angle-up"></i></div>
+                    </div>
+                    <p>{{faq.answer}}</p>
+                </accordion-group>
+            </accordion>
         </div>
-
-        <div>
-            <h4>How accurate is it?</h4>
-            <p>
-                We compare your scans with our database of over 500,000 feet, this combined with complex mathematical algorithms means we can very accurately produce custom profiles of your feet from 3 images of each foot.
-            </p>
-        </div>
-
-        <div>
-            <h4>How long does it take?</h4>
-            <p>
-                From the time you place the order we aim to have your insoles delivered to your door within 2 weeks.
-            </p>
-        </div>
-
-        <div>
-            <h4>Why are they made in Switzerland?</h4>
-            <p>
-                Switzerland is renowned for producing high quality products and we are no different. How production facility offers the very best in premium insole quality, capable of withstanding the demands required through heavy usage.
-            </p>
-        </div>
-
-        <div>
-            <h4>Why are they made in Switzerland?</h4>
-            <p>
-                Do I have to scan my feet every time I want to place an order?
-                No, you do this only once and then your 3d feet profile is saved against your account meaning you can re order at any time simply by placing an order.
-            </p>
-        </div>
+         
     </div>
 </div>

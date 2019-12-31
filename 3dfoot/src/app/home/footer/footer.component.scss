@@ -1,13 +1,12 @@
 :host {
   /* Style for "Rectangle" */
   width: 414px;
-  height: 38px;
   background-color: #2cd6e5;
   & p {
-    height: 29px;
     color: #2b6fa4;
     font-size: 21px;
     font-weight: 800;
     letter-spacing: -1.02px;
+    margin: 10px 0;
   }
 }
