@@ -16,8 +16,8 @@ export class QuestionComponent implements OnInit{
   ngAfterViewInit(): void {
   }
   
-  result(result) {
-    this.router.navigate(['results', result])
+  result() {
+    this.router.navigate(['questions', 2])
   }
   
 }

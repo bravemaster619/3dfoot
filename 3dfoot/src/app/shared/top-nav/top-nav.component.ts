@@ -28,7 +28,7 @@ export class TopNavComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
 
-    return this.onScroll = window.pageYOffset > 0;
+    return this.onScroll = window.pageYOffset > 60;
 
     // if (scrollPosition > 0) {
     //   this.onScroll = true;

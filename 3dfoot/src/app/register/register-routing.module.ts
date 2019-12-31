@@ -6,7 +6,7 @@ import {ThanksComponent} from './thanks/thanks.component';
 
 const routes: Routes = [
   {path: '', component: RegisterComponent, pathMatch: 'full'},
-  {path: 'register/thanks', component: ThanksComponent}
+  {path: 'thanks', component: ThanksComponent}
 ];
 
 @NgModule({

@@ -2,6 +2,7 @@ import {Component, EventEmitter, OnInit, Output, TemplateRef, ViewChild, Element
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {ApiService} from "../../services/api.service";
 import {BsModalRef, BsModalService} from "ngx-bootstrap";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-section-six',
@@ -23,7 +24,7 @@ export class SectionSixComponent implements OnInit {
     animated: true
   }
 
-  constructor(private apiService: ApiService, private modalService: BsModalService) { }
+  constructor(private apiService: ApiService, private modalService: BsModalService, private router:Router) { }
 
   ngOnInit() {
     this.apiService.windowScroll.subscribe(event => {
@@ -34,10 +35,11 @@ export class SectionSixComponent implements OnInit {
   }
   registerNewsletter(template) {
     this.show = false
+    
     this.apiService.postEmail(this.form.value).subscribe(res => {
       this.data = res;
       this.show = true
-      this.openModal(template)
+      this.router.navigate(['register/thanks']);
     }, error => {
       this.data = "Oops, something went wrong!"
       this.show = true
