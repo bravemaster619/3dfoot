@@ -37,9 +37,15 @@ export class SectionSixComponent implements OnInit {
     this.show = false
     
     this.apiService.postEmail(this.form.value).subscribe(res => {
-      this.data = res;
-      this.show = true
-      this.router.navigate(['register/thanks']);
+      if (res == "Registered successfully") {
+        this.data = res;
+        this.show = true
+        this.router.navigate(['register/thanks']);
+      } else {
+        this.data = res
+        this.show = true
+        this.openModal(template)
+      }
     }, error => {
       this.data = "Oops, something went wrong!"
       this.show = true

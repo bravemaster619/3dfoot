@@ -7,12 +7,15 @@ class EmailController {
       const rules = {
         email: 'required|email|unique:users,email',
       }
-        const data = request.only(['email'])
+
+      const data = request.only(['email'])
+
+      console.log(data)
 
       const validation = await validate(data, rules)
 
       if (validation.fails()) {
-        return JSON.stringify('E-mail already registered')
+        return JSON.stringify('E-mail already registered or invalid')
       }
 
       const user = await User.create(Object.assign({

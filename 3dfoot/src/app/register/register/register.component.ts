@@ -57,12 +57,13 @@ export class RegisterComponent implements OnInit {
   }
   
   showThanks() {
-    this.router.navigate(['register', 'thanks'], {relativeTo: this.activatedRoute});
+    this.router.navigate(['thanks'], {relativeTo: this.activatedRoute});
   }
   registerNewsletter(template: TemplateRef<any>) {
     this.show = false
+    console.log(this.form.value)
     this.apiService.postEmail(this.form.value).subscribe(res => {
-      if (res === "Registered successfully") {
+      if (res === 'Registered successfully') {
         this.showThanks()
         this.show = true
       } else {
