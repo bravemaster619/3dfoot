@@ -17,6 +17,7 @@ module.exports = {
   |
   */
   // origin: ['http://3dfoot.tk/', 'http://localhost:4200/'],
+  // @author bravemaster
   origin: (currentOrigin) => {
     return ['http://3dfoot.tk/', 'http://localhost:4200'].includes(currentOrigin)
   },
