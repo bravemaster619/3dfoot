@@ -16,7 +16,6 @@ export class BackOfficeComponent implements OnInit {
   }
 
   getUsers(){
-    // @author bravemaster
     this.apiService.exportUsers({})
   }
 
