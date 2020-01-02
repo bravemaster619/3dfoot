@@ -2,13 +2,16 @@
 const Mail = use('Mail')
 const User = use('App/Models/User')
 const { validate } = use('Validator')
+const punycode = require('punycode')
 class EmailController {
     async store ({ request, response }) {
       const rules = {
         email: 'required|email|unique:users,email',
       }
 
-      const data = request.only(['email'])
+      let data =request.only(['email'])
+
+      data['email'] = punycode.toUnicode(data['email'])
 
       console.log(data)
 
