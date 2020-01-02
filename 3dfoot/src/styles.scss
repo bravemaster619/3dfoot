@@ -10,6 +10,31 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('~assets/fonts/AvenirLTStd-Roman.woff2') format('woff2'),
+  url('~assets/fonts/AvenirLTStd-Roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('~assets/fonts/AvenirLTStd-Medium.woff2') format('woff2'),
+  url('~assets/fonts/AvenirLTStd-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('~assets/fonts/AvenirLTStd-Book.woff2') format('woff2'),
+  url('~assets/fonts/AvenirLTStd-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 html{
   & body{
     font-family: "Avenir 85", Arial;
@@ -93,7 +118,6 @@ html{
   .modal-header{
     border: none;
     background-color: #2bc2d0;
-    border: none;
     height: 220px;
     border-radius: 0;
     button.close{
@@ -124,5 +148,21 @@ html{
   }
   app-top-nav{
     width: 100%;
+  }
+
+  .singleFaq {
+    .card {
+      background-color: transparent;
+      color: #fff;
+      border: none;
+    }
+    .card-body {
+      border-bottom: 1px solid rgba(255,255,255,.4);
+      background-color: #1565a0;
+    }
+    .card-header {
+      background-color: rgba(0,0,0, 0);
+      border-bottom: 1px solid rgba(255,255,255,.4);
+    }
   }
 }

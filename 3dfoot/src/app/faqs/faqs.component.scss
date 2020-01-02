@@ -26,7 +26,6 @@
     letter-spacing: -1.0px;
   }
   & h1 {
-
     height: 49px;
     color: #ffffff;
     font-size: 36px;
@@ -40,9 +39,11 @@
     padding-top: 46px;
 
     & p {
-      color: #333;
+      font-family: 'Avenir LT Std';
+      font-weight: normal;
+      font-style: normal;
+      color: #fff;
       font-size: 18px;
-      font-weight: 300;
       text-align: left;
     }
   }
@@ -59,7 +60,11 @@
     border-radius: 0;
   }
   & .singleFaq{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    &:first-child {
+      border-top: 1px solid rgba(255,255,255,.4);
+      padding-top: 8px;
+    }
     h4{
       text-align: left;
       font-size: 1.2rem;
