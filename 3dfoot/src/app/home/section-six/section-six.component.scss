@@ -1,8 +1,9 @@
 :host {
   padding: 28px 25px;
-  width: 414px;
-  height: 500px;
-  background-color: #2b6fa4;
+  width: 100%;
+  max-width: 100%;
+  min-height: 500px;
+  background-color: #fff;
   & div:not(.row) {
     display: flex;
     flex-direction: row;
@@ -19,7 +20,7 @@
   }
   & h2 {
     height: 36px;
-    color: #2cd6e5;
+    color: #005B74;
     font-size: 26px;
     font-weight: 800;
     letter-spacing: -1.26px;
@@ -34,9 +35,9 @@
   & button {
     height: 53px;
     border-radius: 8px;
-    background-color: #2cd6e5;
+    background-color: #005B74;
     /* Style for "Submit" */
-    color: #2b6fa4;
+    color: #fff;
     font-size: 26px;
     font-weight: 800;
     letter-spacing: -1.26px;
@@ -50,7 +51,7 @@
     margin-bottom: 18px;
     list-style: none;
     height: 36px;
-    color: #2cd6e5;
+    color: #005B74;
     font-size: 26px;
     font-weight: 800;
     letter-spacing: -1.26px;

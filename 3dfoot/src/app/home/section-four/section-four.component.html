@@ -1,28 +1,44 @@
 <div #sectionFour>
     <div class="row">
-        <div class="col text-center">
+        <div class="col text-left">
             <h1 class="title">{{'SECTION-FOUR.section-title' | translate}}</h1>
         </div>
     </div>
-
-    <div class="row">
-        <div class="bg-flow">
-            <div class="row d-flex flex-nowrap animated fadeIn delay-.5s" *ngIf="shouldDisplay">
-                <div class="col offset-5 pt-5">
-                    <h3>{{'SECTION-FOUR.title-1' | translate}}</h3>
-                </div>
+    <div class="workContent">
+        <div class="singleWork animated fadeIn row" *ngIf="shouldDisplay">
+            <div class="col-3 singleImage">
+                <img class="img-fluid" src="assets/images/section-four-one.png">
             </div>
-            <div class="row d-flex flex-nowrap animated fadeIn delay-.9s" *ngIf="shouldDisplay">
-                <div class="col pt-6">
-                    <h3>{{'SECTION-FOUR.title-2' | translate}}</h3>
-                </div>
-                <div class="col-4"></div>
+            <div class="col-9 singleContent">
+                <h3>{{'SECTION-FOUR.title-1' | translate}}</h3>
             </div>
-            <div class="row d-flex flex-nowrap animated fadeIn delay-1.5s" *ngIf="shouldDisplay">
-                <div class="col offset-5 pt-7">
-                    <h3>{{'SECTION-FOUR.title-3' | translate}}</h3>
-                </div>
+        </div>
+        <div class="singleWork animated fadeIn row" *ngIf="shouldDisplay">
+            <div class="col-3 singleImage">
+                <img class="img-fluid" src="assets/images/section-four-two.png">
             </div>
+            <div class="col-9 singleContent">
+                <h3>{{'SECTION-FOUR.title-2' | translate}}</h3>
+            </div>
+        </div>
+        <div class="singleWork animated fadeIn row" *ngIf="shouldDisplay">
+            <div class="col-3 singleImage">
+                <img class="img-fluid" src="assets/images/section-four-three.png">
+            </div>
+            <div class="col-9 singleContent">
+                <h3>{{'SECTION-FOUR.title-3' | translate}}</h3>
+            </div>
+        </div>
+        <div class="singleWork animated fadeIn row" *ngIf="shouldDisplay">
+            <div class="col-3 singleImage">
+                <img class="img-fluid" src="assets/images/section-four-four.png">
+            </div>
+            <div class="col-9 singleContent">
+                <h3>{{'SECTION-FOUR.title-4' | translate}}</h3>
+            </div>
+        </div>
+        <div class="backLine">
+            <img src="assets/images/Line2.png" alt="">
         </div>
     </div>
 </div>

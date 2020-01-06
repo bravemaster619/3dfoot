@@ -1,5 +1,5 @@
 <div class="customNav">
-    <app-top-nav></app-top-nav>
+    <app-top-nav [custom]="true" [showLang]="false"></app-top-nav>
 </div>
 <app-back></app-back>
 <div class="row pt-46 text-center animated bounceInDown delay-.5s">
@@ -13,11 +13,11 @@
             <accordion [isAnimated]="true">
                 <accordion-group (isOpenChange)="statChange($event, i)">
                     <div class="clearfix" accordion-heading>
-                        <div class="pull-left float-left ques"><h4>{{faq.question}}</h4></div>
+                        <div class="pull-left float-left ques"><h4>{{faq.question | translate}}</h4></div>
                         <div class="pull-right float-right" *ngIf="!faq.expand"><i class="fas fa-angle-down"></i></div>
                         <div class="pull-right float-right" *ngIf="faq.expand"><i class="fas fa-angle-up"></i></div>
                     </div>
-                    <p>{{faq.answer}}</p>
+                    <p>{{faq.answer | translate}}</p>
                 </accordion-group>
             </accordion>
         </div>

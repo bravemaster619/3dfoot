@@ -1,23 +1,26 @@
 :host {
-
-
-  max-width: 414px;
+  max-width: 100%;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  display: block;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 28px 25px;
 
   flex-wrap: wrap;
   min-height: 100vh;
-  background-color: #2cd6e5;
-  width: 414px;
+  background-color: #fff;
+  background-image: url("~/assets/images/background-new.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
   .customNav{
     margin-left: -25px;
     margin-right: -25px;
     margin-top: -30px;
+    min-height: 145px;
   }
   & .col-7 {
     display: flex;
@@ -51,21 +54,22 @@
 
       width: 190px;
       background-color: #2cd6e5;
-      color: #2b6fa4;
+      color: #005B74;
       font-size: 21px;
       font-weight: 800;
       letter-spacing: -1.0px;
     }
     & .title {
-      margin-top: 37px;
+      margin-top: 0px;
       /* Style for "What do yo" */
       width: 100%;
       height: 36px;
-      color: #ffffff;
+      color: #005B74;
       font-size: 26px;
       font-weight: 300;
       letter-spacing: -1.26px;
       text-align: center;
+      margin-bottom: 35px;
     }
     & .subtitle {
       margin-top: 6px;
@@ -78,7 +82,7 @@
     }
     & .card{
       height: 109px;
-      background-color: #0b5892;
+      background-color: #005B74;
     }
     &.footer{
       margin-top: 34px;

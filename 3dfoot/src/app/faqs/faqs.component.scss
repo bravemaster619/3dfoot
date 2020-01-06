@@ -1,21 +1,26 @@
 :host {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  display: block;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 28px 25px;
 
   flex-wrap: wrap;
-  height: 100%;
-  width: 414px;
   min-height: 100vh;
-  background-color: #0b5892;
-
+  background-color: #fff;
+  background-image: url("~/assets/images/background-new.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
   .customNav{
     margin-left: -25px;
     margin-right: -25px;
     margin-top: -30px;
+    min-height: 145px;
   }
   & .back {
     width: 66px;
@@ -26,8 +31,7 @@
     letter-spacing: -1.0px;
   }
   & h1 {
-    height: 49px;
-    color: #ffffff;
+    color: #005B74;
     font-size: 36px;
     font-weight: 800;
     letter-spacing: -1.75px;
@@ -42,7 +46,7 @@
       font-family: 'Avenir LT Std';
       font-weight: normal;
       font-style: normal;
-      color: #fff;
+      color: #005B74;
       font-size: 18px;
       text-align: left;
     }
@@ -56,13 +60,13 @@
 
     width: 304px;
     height: 41px;
-    background-color: #ffffff;
+    background-color: #005B74;
     border-radius: 0;
   }
   & .singleFaq{
     margin-bottom: 10px;
     &:first-child {
-      border-top: 1px solid rgba(255,255,255,.4);
+      border-top: 1px solid rgba(0, 91, 116,.4);
       padding-top: 8px;
     }
     h4{

@@ -3,10 +3,9 @@
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
-  width: 414px;
+  width: 100%;
   min-height: 521px;
-
-
+  max-width: 100%;
  & .djg {
    flex: 1;
    flex-wrap: nowrap;
@@ -53,7 +52,7 @@
   & button {
     width: 173px;
     background-color: #2cd6e5;
-    color: #2b6fa4;
+    color: #005B74;
     font-size: 21px;
     font-weight: 800;
     letter-spacing: -1.024px;
@@ -69,7 +68,8 @@
   & .contentRight{
     float: right;
     width: 60%;
-    height: 521px;
+    min-height: 521px;
+    min-height: 521px;
     background: rgba(51, 51, 51, .6);
     padding: 25px 15px;
   }

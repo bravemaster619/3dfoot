@@ -12,6 +12,10 @@ export class TopNavComponent implements OnInit {
   lang:string;
   onScroll = false;
   @Input() custom:boolean = false;
+  @Input() newLogo:boolean = true;
+  @Input() background: boolean = false;
+  @Input() footer:boolean = true;
+  @Input() showLang:boolean = true;
 
   constructor(private translateService: TranslateService) { }
 
@@ -28,7 +32,7 @@ export class TopNavComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
 
-    return this.onScroll = window.pageYOffset > 60;
+    return this.onScroll = window.pageYOffset > 70;
 
     // if (scrollPosition > 0) {
     //   this.onScroll = true;

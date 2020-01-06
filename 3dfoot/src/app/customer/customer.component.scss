@@ -8,17 +8,16 @@
 
   flex-wrap: wrap;
   height: 100%;
-  width: 414px;
+  width: 100%;
   min-height: 100vh;
-  background-color: #0b5892;
+  background-color: #005B74;
   .customNav{
     margin-left: -25px;
     margin-right: -25px;
     margin-top: -30px;
+    min-height: 145px;
   }
   & h1 {
-
-    height: 49px;
     color: #ffffff;
     font-size: 36px;
     font-weight: 800;

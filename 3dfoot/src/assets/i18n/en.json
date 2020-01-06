@@ -1,11 +1,23 @@
 {
   "button-started": "Let’s get started",
   "FOOTER": "Footer text!",
+  "button-shop": "Shop now",
+  "button-buy": "Shop now",
   "HEADER" : {
     "create-account": "Create Account",
-    "title": "A happy body starts with happy feet ",
-    "subtitle": "High quality, custom made insoles delivered directly to your door ",
-    "footer": "Custom crafted in Switzerland",
+    "title": "Step away from sore feet with Bähler custom made insoles",
+    "subtitle": "Effective relief from:",
+    "li-1": "Aching feet",
+    "li-2": "Varicose veins",
+    "li-3": "Knee and Joint pain",
+    "li-4": "Muscle pain",
+    "li-5": "Cervical pain",
+    "description1": "Whether it is for <strong> sports, diabetes or everyday use,</strong> this extremely individual design allows us to achieve not only the correct fitting but also the desired wearing comfort.",
+    "description2": "From <strong> RMB 1,000 </strong>with free delivery - direct from Zurich, Switzerland",
+    "description3": "<strong> And now available for the first time in China!</strong>",
+    "footer": "Swiss made orthopedics",
+    "shop-now": "Shop now",
+    "learn": "Learn more",
     "sign-up": "Sign up"
   },
   "SECTION-ONE": {
@@ -35,9 +47,10 @@
   },
   "SECTION-FOUR": {
     "section-title": "How it works",
-    "title-1": "create or sign in to your account",
-    "title-2": "Scan your feet using your mobile device",
-    "title-3": "Order your insoles for delivery to your door within 2 weeks"
+    "title-1": "Simply create your free user account",
+    "title-2": "Scan your feet using our app and your mobile device and place your order",
+    "title-3": "Using the very latest AI techniques, we build an exact 3D model of your feet",
+    "title-4": "Your insoles are then produced in Switzerland and delivered to you within 2 weeks"
   },
   "SECTION-FIVE": {
     "section-title": "Relieves sports related pain and discomfort",
@@ -48,7 +61,7 @@
   },
   "SECTION-SIX": {
     "accreditation": "Accreditation",
-    "newsletter": "Register your interest",
+    "newsletter": "Join our newsletter",
     "submit": "Submit",
     "account": "Create account",
     "about": "About",
@@ -79,7 +92,17 @@
   },
   "FAQS": {
     "head": "FAQs",
-    "description": "Description"
+    "description": "Description",
+    "faq1-question": "How does it work?",
+    "faq1-answer": "You simply need to take three photographs of each foot using our easy to use, guided app and using AI techniques and that’s enough to build a highly accurate 3d model of each foot. Once this is done you just have to place your order and we do the rest.",
+    "faq2-question": "How accurate is it?",
+    "faq2-answer": "We compare your scans with our database of over 500,000 feet, this combined with complex mathematical algorithms means we can very accurately produce custom profiles of your feet from 3 images of each foot.",
+    "faq3-question": "How long does it take?",
+    "faq3-answer": "From the time you place the order we aim to have your insoles delivered to your door within 2 weeks.",
+    "faq4-question": "Why are they made in Switzerland?",
+    "faq4-answer": "Switzerland is renowned for producing high quality products and we are no different. How production facility offers the very best in premium insole quality, capable of withstanding the demands required through heavy usage.",
+    "faq5-question": "Do I have to scan my feet every time I want to place an order?",
+    "faq5-answer": "No, you do this only once and then your 3d feet profile is saved against your account meaning you can re order at any time simply by placing an order."
   },
   "ABOUT": {
     "head": "About",

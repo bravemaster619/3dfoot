@@ -1,13 +1,7 @@
 :host {
-  background-image: url("~/assets/images/header_bg.png");
-  background-size: 200%;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  min-height: 521px;
+  background-color: #fff;
   & .row:first-child {
-    margin-top: 35px;
+    margin-top: 0px;
     padding-right: 9px;
     padding-left: 9px;
 
@@ -66,9 +60,9 @@
     }
     & button {
 
-      width: 55%;
+      width: 75%;
       background-color: #2cd6e5;
-      color: #2b6fa4;
+      color: #fff;
       font-size: 21px;
       font-weight: 800;
       letter-spacing: -1.0px;
@@ -77,21 +71,24 @@
     }
     & .title {
       margin-top: 37px;
-      height: 94px;
-      text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
-      color: #fff;
-      font-size: 36px;
+      color: #005B74;
       font-weight: 800;
-      text-align: center;
+      text-align: left;
+      font-size: 29px;
+      line-height: 1.4;
+      letter-spacing: -1.6px
     }
     & .subtitle {
       margin-top: 6px;
-      text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.9);
-      color: #fff;
-      font-size: 25px;
-      font-weight: 800;
+      font-size: 19px;
       letter-spacing: -1px;
-      text-align: center;
+      text-align: left;
+      color: #005B74;
+      font-family: "Avenir LT Std";
+      strong {
+        font-family: "Avenir 85", Arial;
+        font-weight: 800;
+      }
     }
     &.footer{
       margin-top: 34px;
@@ -116,9 +113,62 @@
     height: 56px;
   }
   & .headerBack{
+    background-image: url("~/assets/images/header-back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    min-height: 621px;
+    float: left;
+  }
+  & .headerList{
+    margin-top: 10px;
+    color: #005B74;
+    h5{
+      font-size: 21px;
+    }
+    ul{
+      font-size: 21px;
+      font-family: 'Avenir LT Std';
+    }
+  }
+  & .description3{
+    .subtitle{
+      text-align: center;
+      font-family: "Avenir 85", Arial;
+      width: 80%;
+      margin: auto;
+    }
+  }
+  & .shopButton{
+    margin-top: 10px;
+  }
+  & .header-footer{
+    margin-top: 0;
+    .learnMore{
+      width: 100%;
+      margin: 10px auto;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .subtitle{
+        float: left;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      img{
+        width: 16px;
+        height: 12px;
+        margin-left: 5px;
+      }
+    }
+  }
+  & app-top-nav{
+    min-height: 145px;
+    height: 145px;
     float: left;
     width: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    min-height: 521px;
   }
 }

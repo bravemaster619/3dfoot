@@ -1,33 +1,34 @@
 :host {
-  max-width: 414px;
+  max-width: 100%;
   height: 100%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  display: block;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 28px 25px;
 
   flex-wrap: wrap;
   min-height: 100vh;
-  background-image: url("~/assets/images/r-bg.png");
+  background-image: url("~/assets/images/background-new.png");
   background-position: right;
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: cover;
-  width: 414px;
+  background-color: #fff;
+  width: 100%;
   .customNav{
     margin-left: -25px;
     margin-right: -25px;
     margin-top: -30px;
+    min-height: 145px;
   }
   & .row {
-    margin-top: 42.4px;
+    margin-top: 10px;
     margin-left: 0;
     margin-right: 0;
     & .header-title {
       height: 27px;
-      color: #2cd6e5;
+      color: #005B74;
       font-size: 20px;
       font-weight: 800;
       letter-spacing: -1px;
@@ -38,19 +39,18 @@
     }
     & button {
       border-radius: 0;
-      width: 190px;
+      width: 100%;
       background-color: #2cd6e5;
-      color: #2b6fa4;
+      color: #fff;
       font-size: 21px;
       font-weight: 800;
       letter-spacing: -1.0px;
     }
     & .title {
-      margin-top: 37px;
-      /* Style for "What do yo" */
-      width: 304px;
+      margin-top: 0;
+      width: 100%;
       height: 36px;
-
+      color: #005B74;
       font-size: 26px;
       font-weight: 300;
       letter-spacing: -1.26px;
@@ -67,7 +67,10 @@
     }
     & .card{
       min-height: 109px;
-      background-color: rgba(0, 0, 0, 0.35);
+      background-color: #005B74;
+      p{
+        color: #fff;
+      }
     }
     &.footer{
       margin-top: 34px;
@@ -105,8 +108,7 @@
     letter-spacing: -1.3px;
   }
   & p {
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    color: #ffffff;
+    color: #005B74;
     font-size: 18px;
     font-weight: 300;
     letter-spacing: -1px;
@@ -114,5 +116,9 @@
   img {
     width: 119px;
     object-fit: scale-down;
+  }
+  & .result-options{
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 }

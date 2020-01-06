@@ -1,36 +1,42 @@
 :host {
-    & .row:first-child {
-      margin-top: 35px;
+    & .topNav {
+      padding-top: 35px;
       padding-right: 9px;
       padding-left: 9px;
-        margin-left: 0;
-        margin-right: 0;
-  
+      margin-left: 0;
+      margin-right: 0;
+      height: auto;
+      padding-bottom: 25px;
+      background: transparent;
       &.fixed {
+        background: #2cd6e4;
         position: fixed;
         width: inherit;
-        background: #2b6fa4;
         transition: all 300ms ease-in;
         margin-top: 0px;
         padding-top: 35px;
         z-index: 999;
-        padding-bottom: 30px;
+        padding-bottom: 25px;
         max-width: 414px;
       }
       &:not(.fixed) {
         transition: all 300ms ease-out;
       }
+    
+}
+& .topNav.back{
+  background: #2cd6e4;
 }
 & .logo {
-
-    width: 145px;
-    height: 35px;
     cursor: pointer;
+}
+& .langContent{
+  margin-top: 10px;
 }
 & span {
     width: 67px;
     height: 27px;
-    color: #2cd6e5;
+    color: #005B74;
     text-align: right;
     font-size: 20px;
     font-weight: 800;
@@ -48,10 +54,22 @@
   }
   .cus{
     span{
-        color: #2b6fa4;
+        color: #005B74;
         &.active{
             color: white;
         }
     }
+  }
+  .swizContent{
+    margin-top: 5px;
+    img{
+      width: 30px;
+      height: 25px;
+      margin-right: 10px;
     }
+    p{
+      color: #005B74;
+    }
+  }
+
 }

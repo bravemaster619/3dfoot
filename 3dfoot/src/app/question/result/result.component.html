@@ -1,5 +1,5 @@
 <div class="customNav">
-    <app-top-nav></app-top-nav>
+    <app-top-nav [showLang]="false"></app-top-nav>
 </div>
 <div class="row animated bounceInDown delay-.5s">
     <div class="col">
@@ -11,7 +11,7 @@
         <p>{{'RESULT1.result' | translate}}</p>
     </div>
 </div>
-<div class="row d-flex justify-content-center animated fadeIn delay-1s">
+<div class="row d-flex justify-content-center animated fadeIn delay-1s result-options">
     <div class="col">
         <div class="card d-flex flex-nowrap flex-row justify-content-center align-items-center">
 
@@ -19,11 +19,11 @@
                 <p>{{'RESULT1.option.1' | translate}}</p>
             </div>
             <div class="col-5 pl-1">
-                <img src="assets/images/r-1.png">
+                <img class="img-fluid" src="assets/images/r-1.png">
             </div>
         </div>
     </div>
-    <div class="col pt-4">
+    <div class="col pt-2">
         <div class="card d-flex flex-nowrap flex-row justify-content-center align-items-center">
             <div class="col-7">
                 <p>{{'RESULT1.option.2' | translate}}</p>
@@ -33,20 +33,20 @@
             </div>
         </div>
     </div>
-    <div class="col pt-4">
+    <div class="col pt-2">
         <div class="card d-flex flex-nowrap flex-row justify-content-center align-items-center">
             <div class="col-7">
                 <p>{{'RESULT1.option.3' | translate}}</p>
             </div>
             <div class="col-5 pl-1">
-                <img src="assets/images/r-3.png">
+                <img class="img-fluid" src="assets/images/r-3.png">
             </div>
         </div>
     </div>
 </div>
 
-<div class="row">
+<div class="row animated fadeIn delay-1s">
     <div class="col d-flex justify-content-center">
-        <button class="btn btn-default" [routerLink]="['/register']">{{'button-started' | translate}}</button>
+        <button class="btn btn-default" [routerLink]="['/register']">{{'button-shop' | translate}}</button>
     </div>
 </div>
