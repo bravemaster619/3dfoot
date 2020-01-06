@@ -20,7 +20,9 @@ export class TopNavComponent implements OnInit {
   constructor(private translateService: TranslateService) { }
 
   ngOnInit() {
+    window.scrollTo(0, 0);
     this.lang = this.translateService.getDefaultLang();
+    this.onScroll = false;
   }
 
   switchLanguage(event){
