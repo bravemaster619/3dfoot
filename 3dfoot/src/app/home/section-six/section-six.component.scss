@@ -4,7 +4,7 @@
   max-width: 100%;
   min-height: 500px;
   background-color: #fff;
-  & div:not(.row) {
+  & .newsletter {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -26,9 +26,10 @@
     letter-spacing: -1.26px;
   }
   & input {
-    width: 230px;
+    width: 245px;
     height: 53px;
     border-radius: 3px;
+    border: 1px solid #005b79;
     background-color: #ffffff;
     margin-right: 10px;
   }
