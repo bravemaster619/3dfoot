@@ -1,18 +1,21 @@
 :host {
-  top: 10%;
+  max-width: 100%;
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  display: block;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 28px 25px;
 
   flex-wrap: wrap;
   min-height: 100vh;
-  background-color: #005B74;
-
+  background-color: #fff;
+  background-image: url("~/assets/images/background-new.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
   .customNav{
     margin-left: -25px;
     margin-right: -25px;
@@ -28,7 +31,7 @@
     letter-spacing: -1.07px;
   }
   & h1 {
-    color: #ffffff;
+    color: #005B74;
     font-size: 36px;
     font-weight: 800;
     letter-spacing: -1.75px;
@@ -41,7 +44,7 @@
 
     & p {
       height: 129px;
-      color: #ffffff;
+      color: #005B74;
       font-size: 24px;
       font-weight: 300;
       letter-spacing: -1.17px;
@@ -56,7 +59,7 @@
 
     width: 304px;
     height: 41px;
-    background-color: #ffffff;
+    background-color: #005B74;
     border-radius: 0;
   }
   & button {
@@ -65,7 +68,7 @@
     margin: 0 auto;
 
     background-color: #2cd6e5;
-    color: #0b5892;
+    color: #fff;
     font-size: 24px;
     font-weight: 800;
     letter-spacing: -1.17px;

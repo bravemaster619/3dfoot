@@ -73,3 +73,11 @@
     padding: 25px;
   }
 }
+
+@media(max-width: 395px) {
+  :host {
+    & .section-title{
+      font-size: 24px;
+    }
+  }
+}

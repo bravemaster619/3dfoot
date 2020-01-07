@@ -1,5 +1,6 @@
 :host {
   background-color: #fff;
+
   & .row:first-child {
     margin-top: 0px;
     padding-right: 9px;
@@ -16,15 +17,18 @@
       padding-bottom: 30px;
 
     }
+
     &:not(.fixed) {
       transition: all 700ms ease-out;
     }
   }
+
   & .logo {
 
     width: 145px;
     height: 35px;
   }
+
   & span {
     width: 67px;
     height: 27px;
@@ -33,20 +37,25 @@
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
-    &.active{
+
+    &.active {
       color: white;
     }
   }
+
   & span:first-child {
     margin-right: 6px;
   }
+
   & span:nth-last-child(1) {
     margin-left: 6px;
   }
+
   & .row {
     margin-top: 42.4px;
     margin-left: 0;
     margin-right: 0;
+
     & .header-title {
       height: 27px;
       color: #2cd6e5;
@@ -58,6 +67,7 @@
       margin-right: 40px;
 
     }
+
     & button {
 
       width: 75%;
@@ -69,6 +79,7 @@
       padding: 10px;
       border-radius: 1px;
     }
+
     & .title {
       margin-top: 37px;
       color: #005B74;
@@ -78,6 +89,7 @@
       line-height: 1.4;
       letter-spacing: -1.6px
     }
+
     & .subtitle {
       margin-top: 6px;
       font-size: 19px;
@@ -85,20 +97,24 @@
       text-align: left;
       color: #005B74;
       font-family: "Avenir LT Std";
+
       strong {
         font-family: "Avenir 85", Arial;
         font-weight: 800;
       }
     }
-    &.footer{
+
+    &.footer {
       margin-top: 34px;
 
     }
+
     & .flag {
       width: 42px;
       height: 30px;
     }
-    & .footer-text{
+
+    & .footer-text {
       height: 23px;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
       color: #fff;
@@ -107,12 +123,14 @@
       word-break: break-word;
     }
   }
+
   & img {
     top: 37px;
     width: 129px;
     height: 56px;
   }
-  & .headerBack{
+
+  & .headerBack {
     background-image: url("~/assets/images/header-back.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -122,53 +140,74 @@
     min-height: 621px;
     float: left;
   }
-  & .headerList{
+
+  & .headerList {
     margin-top: 10px;
     color: #005B74;
-    h5{
+
+    h5 {
       font-size: 21px;
     }
-    ul{
+
+    ul {
       font-size: 21px;
       font-family: 'Avenir LT Std';
     }
   }
-  & .description3{
-    .subtitle{
+
+  & .description3 {
+    .subtitle {
       text-align: center;
       font-family: "Avenir 85", Arial;
       width: 80%;
       margin: auto;
     }
   }
-  & .shopButton{
+
+  & .shopButton {
     margin-top: 10px;
   }
-  & .header-footer{
+
+  & .header-footer {
     margin-top: 0;
-    .learnMore{
+
+    .learnMore {
       width: 100%;
       margin: 10px auto;
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
-      .subtitle{
+
+      .subtitle {
         float: left;
         margin-top: 0;
         margin-bottom: 0;
       }
-      img{
+
+      img {
         width: 16px;
         height: 12px;
         margin-left: 5px;
       }
     }
   }
-  & app-top-nav{
+
+  & app-top-nav {
     min-height: 145px;
     height: 145px;
     float: left;
     width: 100%;
+  }
+}
+
+
+@media(max-width: 395px) {
+  :host {
+    & .row {
+      & .title {
+        font-size: 26px;
+      }
+    }
   }
 }

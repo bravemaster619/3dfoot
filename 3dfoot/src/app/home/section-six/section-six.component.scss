@@ -58,3 +58,20 @@
   }
 
 }
+
+
+@media (max-width: 395px){
+  :host {
+    & div:not(.row) {
+      display: block;
+    }
+    & input {
+      width: 100%
+
+    }
+   & button {
+      width: 100%;
+    }
+  }
+
+}
