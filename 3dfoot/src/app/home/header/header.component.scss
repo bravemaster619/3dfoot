@@ -1,3 +1,4 @@
+@import '~src/assets/scss/_vars';
 :host {
   background-color: #fff;
 
@@ -58,7 +59,7 @@
 
     & .header-title {
       height: 27px;
-      color: #2cd6e5;
+      color: $base-blue-light;
       font-size: 20px;
       font-weight: 800;
       letter-spacing: -1px;
@@ -71,7 +72,7 @@
     & button {
 
       width: 75%;
-      background-color: #2cd6e5;
+      background-color: $base-blue-light;
       color: #fff;
       font-size: 21px;
       font-weight: 800;
@@ -95,11 +96,11 @@
       font-size: 19px;
       letter-spacing: -1px;
       text-align: left;
-      color: #005B74;
-      font-family: "Avenir LT Std";
+      color: $base-blue-dark;
+      font-family: $font-family-base;
 
       strong {
-        font-family: "Avenir 85", Arial;
+        font-family: $font-family-base;
         font-weight: 800;
       }
     }
@@ -143,7 +144,7 @@
 
   & .headerList {
     margin-top: 10px;
-    color: #005B74;
+    color: $base-blue-dark;
 
     h5 {
       font-size: 21px;
@@ -151,7 +152,7 @@
 
     ul {
       font-size: 21px;
-      font-family: 'Avenir LT Std';
+      font-family: $font-family-base;
       li {
         padding-left: 5px;
       }
@@ -161,7 +162,7 @@
   & .description3 {
     .subtitle {
       text-align: center;
-      font-family: "Avenir 85", Arial;
+      font-family: $font-family-base;
       width: 80%;
       margin: auto;
     }
