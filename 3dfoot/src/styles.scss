@@ -3,6 +3,7 @@
 @import '~src/assets/scss/_vars';
 
 @font-face {
+  font-family: "Avenir Heavy";
   src: url("~assets/fonts/Avenir Heavy.eot"); /* IE9*/
   src: url("~assets/fonts/Avenir Heavy.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
   url("~assets/fonts/Avenir Heavy.woff2") format("woff2"), /* chrome、firefox */
@@ -13,9 +14,9 @@
 
 html{
   & body{
-    font-family:"Avenir Heavy", Arial!important;
+    font-family: $font-family-base;
     height: 100%;
-    background-color: #005B74;
+    background-color: $base-blue-dark;
     *{
       outline: none;
     }
