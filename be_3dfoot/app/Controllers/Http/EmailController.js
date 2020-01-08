@@ -13,18 +13,16 @@ class EmailController {
 
       data['email'] = punycode.toUnicode(data['email'])
 
-      console.log(data)
-
       const validation = await validate(data, rules)
 
       if (validation.fails()) {
         return JSON.stringify('E-mail already registered or invalid')
       }
-
+      const locale = request.input('locale') === 'ch' ? 'ch' : 'en';
       const user = await User.create(Object.assign({
         role: 'subscriber'
       }, data))
-        await Mail.send('emails.welcome', user.toJSON(), (message) => {
+        await Mail.send(`emails.welcome_${locale}`, user.toJSON(), (message) => {
           message
             .to(user.email)
             .from('<from-email>')
