@@ -1,3 +1,4 @@
+@import '~src/assets/scss/_vars';
 :host {
   & .row {
     margin-top: 10px;
@@ -5,7 +6,7 @@
     margin-right: 0;
     & .header-title {
       height: 27px;
-      color: #005B74;
+      color: $base-blue-dark;
       font-size: 20px;
       font-weight: 800;
       letter-spacing: -1px;
@@ -17,8 +18,8 @@
     & button {
       border-radius: 0;
       width: 100%;
-      background-color: #2cd6e5;
-      color: #fff;
+      background-color: $base-blue-light;
+      color: $base-white;
       font-size: 21px;
       font-weight: 800;
       letter-spacing: -1.0px;
@@ -27,7 +28,7 @@
       margin-top: 0;
       width: 100%;
       height: 36px;
-      color: #005B74;
+      color: $base-blue-dark;
       font-size: 26px;
       font-weight: 300;
       letter-spacing: -1.26px;
@@ -36,7 +37,7 @@
     & .subtitle {
       margin-top: 6px;
       text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.62);
-      color: #fff;
+      color: $base-white;
       font-size: 25px;
       font-weight: 800;
       letter-spacing: -1px;
@@ -44,9 +45,9 @@
     }
     & .card{
       min-height: 109px;
-      background-color: #005B74;
+      background-color: $base-blue-dark;
       p{
-        color: #fff;
+        color: $base-white;
       }
     }
     &.footer{
@@ -60,7 +61,7 @@
     & .footer-text{
       height: 23px;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-      color: #fff;
+      color: $base-white;
       font-size: 15px;
       font-weight: 800;
       letter-spacing: -0.832px;
@@ -69,7 +70,7 @@
   }
   & h1 {
 
-    color: #ffffff;
+    color: $base-white;
     font-size: 20px;
     font-weight: 300;
     letter-spacing: -1.3px;
@@ -79,13 +80,14 @@
   & h2.title {
     width: 76px;
     height: 29px;
-    color: #2cd6e5;
+    color: $base-blue-light;
     font-size: 26px;
     font-weight: 700;
     letter-spacing: -1.3px;
   }
   & p {
-    color: #005B74;
+    font-family: $font-family-medium;
+    color: $base-blue-dark;
     font-size: 18px;
     font-weight: 300;
     letter-spacing: -1px;
@@ -97,5 +99,12 @@
   & .result-options{
     margin-top: 80px;
     margin-bottom: 80px;
+  }
+}
+
+@media(max-width: 385px) {
+  .pad-mob {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

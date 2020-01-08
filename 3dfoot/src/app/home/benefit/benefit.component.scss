@@ -1,19 +1,21 @@
+@import '~src/assets/scss/_vars';
 :host {
   & .benefit {
     height: 4.938rem;
-    background-color: #fff;
+    background-color: $base-white;
     width: 100%;
     & p {
       margin-bottom: 0;
-      color: #005B74;
+      color: $base-blue-dark;
       font-size: 1.275rem;
       font-weight: 300;
       letter-spacing: -0.067rem;
+      font-family: $font-family-medium;
     }
     & button {
       margin-left: 5%;
       width: 11.688rem;
-      background-color: #005B74;
+      background-color: $base-blue-dark;
       color: #fff;
       font-size: 1.375rem;
       font-weight: 800;

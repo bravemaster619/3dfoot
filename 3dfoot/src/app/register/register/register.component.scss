@@ -1,12 +1,13 @@
+@import '~src/assets/scss/_vars';
 :host {
   & .pt-46 {
     padding-top: 25px;
 
     & p {
-      color: #ffffff;
+      color: $base-white;
       font-size: 24px;
-      font-weight: 300;
       letter-spacing: -1.17px;
+      font-family: $font-family-light;
     }
   }
 
@@ -20,27 +21,27 @@
   & input {
     width: 305px;
     height: 41px;
-    background-color: #ffffff;
+    background-color: $base-white;
     border-radius: 0;
   }
 
   .form-control {
     &:focus {
-      color: #b7b7b7;
+      color: $base-gray;
     }
 
     &::placeholder {
-      color: #b7b7b7;
+      color: $base-gray;
       opacity: 0.6;
     }
 
     &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-      color: #b7b7b7;
+      color: $base-gray;
       opacity: 0.6;
     }
 
     &::-ms-input-placeholder { /* Microsoft Edge */
-      color: #b7b7b7;
+      color: $base-gray;
       opacity: 0.6;
     }
   }

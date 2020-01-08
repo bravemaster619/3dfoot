@@ -12,18 +12,33 @@
   url("~assets/fonts/Avenir Heavy.svg#Avenir Heavy") format("svg"); /* iOS 4.1- */
 }
 
-html{
-  & body{
+@font-face {
+  font-family: "Avenir-Medium";
+  src: url("~assets/fonts/Avenir-Medium.ttf?#iefix") format("embedded-opentype"),
+  url("~assets/fonts/Avenir-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir-Light";
+  src: url("~assets/fonts/Avenir-Light.ttf?#iefix") format("embedded-opentype"),
+  url("~assets/fonts/Avenir-Light.ttf") format("truetype");
+}
+
+html {
+  & body {
     font-family: $font-family-base;
     height: 100%;
     background-color: $base-blue-dark;
-    *{
+
+    * {
       outline: none;
     }
-   & .btn:focus, .btn:hover {
-     outline: 0;
-     box-shadow: 0 0 0 0;
-   }
+
+    & .btn:focus, .btn:hover {
+      outline: 0;
+      box-shadow: 0 0 0 0;
+    }
+
     width: 100%;
     min-height: 100vh;
     margin: 0 auto;
@@ -34,6 +49,9 @@ html{
     max-width: 412px;
   }
 
+  .font-light {
+    font-family: $font-family-light!important;
+  }
 
   .general-content {
     width: 100%;
@@ -51,7 +69,8 @@ html{
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
-    .customNav{
+
+    .customNav {
       margin-left: -25px;
       margin-right: -25px;
       margin-top: -30px;
@@ -72,12 +91,14 @@ html{
     flex-wrap: wrap;
     min-height: 100vh;
     background-color: $base-blue-dark;
+
     .customNav {
       margin-left: -25px;
       margin-right: -25px;
       margin-top: -30px;
       min-height: 110px;
     }
+
     //& .back {
     //  width: 66px;
     //  height: 30px;
@@ -93,6 +114,7 @@ html{
       font-weight: 800;
       letter-spacing: -1.75px;
     }
+
     & button {
       width: 194px;
       height: 50px;
@@ -135,19 +157,25 @@ html{
   }
 
   @-webkit-keyframes sk-bounce {
-    0%, 100% { -webkit-transform: scale(0.0) }
-    50% { -webkit-transform: scale(1.0) }
+    0%, 100% {
+      -webkit-transform: scale(0.0)
+    }
+    50% {
+      -webkit-transform: scale(1.0)
+    }
   }
 
   @keyframes sk-bounce {
     0%, 100% {
       transform: scale(0.0);
       -webkit-transform: scale(0.0);
-    } 50% {
-        transform: scale(1.0);
-        -webkit-transform: scale(1.0);
-      }
+    }
+    50% {
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
   }
+
   .modal-content {
     position: relative;
     display: -ms-flexbox;
@@ -157,19 +185,21 @@ html{
     align-self: center;
     pointer-events: auto;
     background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
+    border: 1px solid rgba(0, 0, 0, .2);
     outline: 0;
     margin: 0 auto;
     color: white;
     width: 80%;
     border-radius: 3px;
   }
-  .modal-header{
+
+  .modal-header {
     border: none;
     background-color: $base-blue-light-2;
     height: 220px;
     border-radius: 0;
-    button.close{
+
+    button.close {
       margin: auto;
       font-size: 50px;
       background: $base-white;
@@ -180,21 +210,25 @@ html{
       color: $base-black-light;
     }
   }
-  .modal-body{
+
+  .modal-body {
     color: $base-black-light;
     text-align: center;
     font-size: 18px;
     padding: 20px;
   }
+
   .modal-backdrop {
     width: 100%;
     max-width: 415px;
     margin: auto;
+
     &.show {
       opacity: 0.5;
     }
   }
-  app-top-nav{
+
+  app-top-nav {
     width: 100%;
   }
 
@@ -204,10 +238,12 @@ html{
       color: $base-white;
       border: none;
     }
+
     .card-body {
       border-bottom: 1px solid $base-white-opacity;
       background-color: rgba(44, 214, 229, 0.2);
     }
+
     .card-header {
       //background-color: rgba(0, 91, 116, 0);
       border-bottom: 1px solid $base-white-opacity;
@@ -218,7 +254,8 @@ html{
     cursor: pointer;
   }
 }
-app-top-nav{
+
+app-top-nav {
   min-height: 35px;
 }
 

@@ -7,10 +7,10 @@
     padding-top: 25px;
 
     & p {
-      font-family: 'Avenir LT Std';
+      font-family: $font-family-light;
       font-weight: normal;
       font-style: normal;
-      color: #ffffff;
+      color: $base-white;
       font-size: 18px;
       text-align: left;
     }

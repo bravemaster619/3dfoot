@@ -1,18 +1,18 @@
 @import '~src/assets/scss/_vars';
 :host {
-  background-color: #fff;
+  background-color: $base-white;
 
   & .row:first-child {
-    margin-top: 0px;
+    margin-top: 0;
     padding-right: 9px;
     padding-left: 9px;
 
     &.fixed {
       position: fixed;
       width: inherit;
-      background: #2b6fa4;
+      background: $base-blue-light;
       transition: all 700ms ease-in;
-      margin-top: 0px;
+      margin-top: 0;
       padding-top: 35px;
       z-index: 999;
       padding-bottom: 30px;
@@ -33,7 +33,7 @@
   & span {
     width: 67px;
     height: 27px;
-    color: #2cd6e5;
+    color: $base-blue-light;
     text-align: right;
     font-size: 20px;
     font-weight: 800;
@@ -82,8 +82,8 @@
     }
 
     & .title {
-      margin-top: 10px;
-      color: #005B74;
+      margin-top: 20px;
+      color: $base-blue-dark;
       font-weight: 800;
       text-align: left;
       font-size: 29px;
@@ -97,7 +97,7 @@
       letter-spacing: -1px;
       text-align: left;
       color: $base-blue-dark;
-      font-family: $font-family-base;
+      font-family: $font-family-medium;
 
       strong {
         font-family: $font-family-base;
@@ -152,7 +152,7 @@
 
     ul {
       font-size: 21px;
-      font-family: $font-family-base;
+      font-family: $font-family-medium;
       li {
         padding-left: 5px;
       }
