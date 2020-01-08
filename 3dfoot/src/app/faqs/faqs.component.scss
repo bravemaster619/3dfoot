@@ -1,3 +1,4 @@
+@import '~src/assets/scss/_vars';
 :host {
   & .pt-46{
     align-content: center;
@@ -23,13 +24,13 @@
 
     width: 304px;
     height: 41px;
-    background-color: #ffffff;
+    background-color: $base-white;
     border-radius: 0;
   }
   & .singleFaq{
     margin-bottom: 10px;
     &:first-child {
-      border-top: 1px solid rgba(255, 255, 255,.4);
+      border-top: 1px solid $base-white-opacity;
       padding-top: 8px;
     }
     h4{
