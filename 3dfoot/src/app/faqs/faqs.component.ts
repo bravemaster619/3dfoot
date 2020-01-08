@@ -1,4 +1,13 @@
-import {AfterViewInit, Component, ElementRef, HostListener, OnInit, Renderer2, ViewChild} from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  HostBinding,
+  HostListener,
+  OnInit,
+  Renderer2,
+  ViewChild
+} from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
 import {ActivatedRoute, Router} from "@angular/router";
 import {ApiService} from "../services/api.service";
@@ -9,7 +18,6 @@ import {ApiService} from "../services/api.service";
   styleUrls: ['./faqs.component.scss']
 })
 export class FaqsComponent implements OnInit {
-  
   faqs = [
     {
       question: 'FAQS.faq1-question',
@@ -53,6 +61,7 @@ export class FaqsComponent implements OnInit {
 
 
   }
+  @HostBinding('class.base-content') newClass: boolean = true;
 
   ngOnInit() {
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostBinding, OnInit} from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import {ApiService} from "../../services/api.service";
@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
   ) {
 
   }
-
+  @HostBinding('class.general-content') newClass: boolean = true;
   ngOnInit() {
     this.loginForm = this.formBuilder.group({
       email: ['', [Validators.required, Validators.email]],
@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
 
   get f() { return this.loginForm.controls; }
 
-  onSubmit(template){
+  onSubmit(template) {
     this.submitted = true;
 
     if(this.loginForm.valid){
@@ -42,13 +42,13 @@ export class LoginComponent implements OnInit {
       // the login api will be called here
       this.authenticationService.login(this.loginForm.value.email, this.loginForm.value.password).subscribe(res => {
         if (res['role'] === 'admin') {
-          this.router.navigate(['admin/backOffice'])
+          this.router.navigate(['admin/backOffice']);
         } else {
           this.show = true;
           this.data = "Login Failed.";
-          this.modalRef = this.modalService.show(template, {class: 'animated fadeIn slow'})
+          this.modalRef = this.modalService.show(template, {class: 'animated fadeIn slow'});
         }
-      })
+      });
     }
   }
 

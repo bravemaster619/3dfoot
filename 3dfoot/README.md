@@ -26,13 +26,3 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 ## TO CHECK
-
-
-3 - ppup de mensagem de envio de email
-4 - proteger e mostrar quando email já existe na BD
-
-
-
-
-
-10 - guardar respostas associadas ao email do user ( se ele foi inserido por newsletter, pode fazer o flow... ter atenção nisso )

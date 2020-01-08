@@ -20,11 +20,12 @@ class EmailController {
       if (validation.fails()) {
         return JSON.stringify('E-mail already registered or invalid')
       }
-
+      console.log(request)
+      const locale = request.input('locale') === 'ch' ? 'ch' : 'en';
       const user = await User.create(Object.assign({
         role: 'subscriber'
       }, data))
-        await Mail.send('emails.welcome', user.toJSON(), (message) => {
+        await Mail.send(`emails.welcome_${locale}`, user.toJSON(), (message) => {
           message
             .to(user.email)
             .from('<from-email>')

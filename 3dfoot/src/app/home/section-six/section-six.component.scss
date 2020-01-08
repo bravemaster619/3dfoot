@@ -1,10 +1,11 @@
+@import '~src/assets/scss/_vars';
 :host {
   padding: 28px 25px;
   width: 100%;
   max-width: 100%;
   min-height: 500px;
-  background-color: #fff;
-  & div:not(.row) {
+  background-color: $base-white;
+  & .newsletter {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,7 +13,7 @@
   }
   & h1 {
     height: 38px;
-    color: #ffffff;
+    color: $base-white;
     font-size: 28px;
     font-weight: 800;
     letter-spacing: -1.36px;
@@ -20,24 +21,24 @@
   }
   & h2 {
     height: 36px;
-    color: #005B74;
+    color: $base-blue-dark;
     font-size: 26px;
     font-weight: 800;
     letter-spacing: -1.26px;
   }
   & input {
-    width: 230px;
+    width: 245px;
     height: 53px;
     border-radius: 3px;
-    background-color: #ffffff;
+    border: 1px solid $base-blue-dark;
+    background-color: $base-white;
     margin-right: 10px;
   }
   & button {
     height: 53px;
     border-radius: 8px;
-    background-color: #005B74;
-    /* Style for "Submit" */
-    color: #fff;
+    background-color: $base-blue-dark;
+    color: $base-white;
     font-size: 26px;
     font-weight: 800;
     letter-spacing: -1.26px;
@@ -51,10 +52,27 @@
     margin-bottom: 18px;
     list-style: none;
     height: 36px;
-    color: #005B74;
+    color: $base-blue-dark;
     font-size: 26px;
     font-weight: 800;
     letter-spacing: -1.26px;
+  }
+
+}
+
+
+@media (max-width: 395px){
+  :host {
+    & div:not(.row) {
+      display: block;
+    }
+    & input {
+      width: 100%
+
+    }
+   & button {
+      width: 100%;
+    }
   }
 
 }

@@ -7,7 +7,7 @@ import {
   OnInit,
   Renderer2,
   ViewChild,
-  Output, EventEmitter
+  Output, EventEmitter, HostBinding
 } from '@angular/core';
 
 import {FormControl, FormGroup, Validators} from "@angular/forms";
@@ -44,33 +44,26 @@ export class RegisterComponent implements OnInit {
               private apiService: ApiService,
               private modalService: BsModalService,
               private el: ElementRef
-  ) {
-
-
-  }
-
+  ) { }
+  @HostBinding('class.base-content') newClass: boolean = true;
   ngOnInit() {
     this.form = new FormGroup({
       email: new FormControl('', [Validators.required, Validators.email])
     });
-    
   }
-  
   showThanks() {
     this.router.navigate(['thanks'], {relativeTo: this.activatedRoute});
   }
   registerNewsletter(template: TemplateRef<any>) {
-    this.show = false
     this.apiService.postEmail(this.form.value).subscribe(res => {
       if (res === 'Registered successfully') {
-        this.showThanks()
-        this.show = true
+        this.showThanks();
+        this.show = true;
       } else {
-        this.data = res
-        this.modalRef = this.modalService.show(template, {class: 'animated fadeIn slow'})
-        this.show = true
+        this.data = res;
+        this.modalRef = this.modalService.show(template, {class: 'animated fadeIn slow'});
+        this.show = true;
       }
-    })
+    });
   }
-
 }

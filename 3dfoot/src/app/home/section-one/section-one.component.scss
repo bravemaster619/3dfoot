@@ -1,46 +1,52 @@
+@import '~src/assets/scss/_vars';
 :host {
   width: 100%;
-  min-height: 550px;
-  background-color: #fff;
+  background-color: $base-white;
   max-width: 100%;
+
   & .row {
     margin: 2.65rem 0;
     display: flex;
     padding-left: 23px;
     padding-right: 23px;
     margin-bottom: 15px;
-    & .padding0{
+
+    & .padding0 {
       padding: 0;
     }
+
     & .header-title {
-      height: 65px;
-      color: #005B74;
+      color: $base-blue-dark;
       font-size: 28px;
       font-weight: 800;
       letter-spacing: -1.36px;
       line-height: 33px;
       text-align: center;
     }
+
     & p {
-       &.second{
-         font-weight: 300;
-         padding-left: 16px;
-       }
+      &.second {
+        font-weight: 300;
+        padding-left: 16px;
+      }
+
       & span {
         font-weight: 800;
       }
+
       &.fixed-width {
         width: 202px;
       }
 
       min-height: 56px;
-      color: #005B74;
+      color: $base-blue-dark;
 
       font-size: 21px;
 
       letter-spacing: -1.024px;
       z-index: 1;
     }
+
     & img {
       &.position-absolute {
 
@@ -48,31 +54,52 @@
         right: 16px;
         padding-top: 32px;
       }
+
       &.second {
         height: max-content;
         left: 0;
       }
     }
-    & .firstContent{
+
+    & .firstContent {
       padding-right: 0;
     }
-    & .firstImg{
-      img{
+
+    & .firstImg {
+      img {
         margin-top: 15px;
       }
     }
   }
+
   ::ng-deep app-benefit .benefit {
-    padding-left:  23px;
+    padding-left: 23px;
     padding-right: 23px;
 
   }
-  .thirdContent{
-    p{
+
+  .thirdContent {
+    p {
       margin-top: 10px;
     }
-    img.second{
+
+    img.second {
       margin-left: 15px;
+    }
+  }
+}
+
+
+@media(max-width: 395px) {
+  :host {
+    & .row {
+      & .header-title {
+        font-size: 26px;
+      }
+
+      & p {
+        font-size: 19px;
+      }
     }
   }
 }

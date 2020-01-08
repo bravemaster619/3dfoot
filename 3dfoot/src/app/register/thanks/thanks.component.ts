@@ -1,4 +1,13 @@
-import {AfterViewInit, Component, ElementRef, HostListener, OnInit, Renderer2, ViewChild} from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  HostBinding,
+  HostListener,
+  OnInit,
+  Renderer2,
+  ViewChild
+} from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
 import {ActivatedRoute, Router} from "@angular/router";
 
@@ -9,11 +18,9 @@ import {ActivatedRoute, Router} from "@angular/router";
 })
 export class ThanksComponent implements OnInit {
   constructor(public translate: TranslateService, private router: Router, private activatedRoute: ActivatedRoute, private renderer: Renderer2, private el: ElementRef) {}
-
+  @HostBinding('class.base-content') newClass: boolean = true;
   ngOnInit() {
-    
   }
-  
   homePage() {
     this.router.navigate([''], {relativeTo: this.activatedRoute});
   }

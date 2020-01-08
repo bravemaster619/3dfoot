@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostBinding, OnInit} from '@angular/core';
 import {ApiService} from "../../services/api.service";
 @Component({
   selector: 'app-back-office',
@@ -11,18 +11,18 @@ export class BackOfficeComponent implements OnInit {
   ) {
 
   }
-
+  @HostBinding('class.general-content') newClass: boolean = true;
   ngOnInit() {
   }
 
   getUsers(){
-    this.apiService.exportUsers({})
+    this.apiService.exportUsers({});
   }
 
   downloadFile(data) {
-    const blob = new Blob([data], {type: 'excel'})
-    const url = window.URL.createObjectURL(blob)
-    window.open(url)
+    const blob = new Blob([data], {type: 'excel'});
+    const url = window.URL.createObjectURL(blob);
+    window.open(url);
   }
 
 }
