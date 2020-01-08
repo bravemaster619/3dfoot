@@ -59,3 +59,10 @@
     margin-top: 13px;
   }
 }
+@media(max-width: 360px) {
+  :host {
+    & h3 {
+      font-size: 21px;
+    }
+  }
+}
