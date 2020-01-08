@@ -17,6 +17,7 @@ export class ApiService {
   }
 
   postEmail(payload) {
+    payload.locale = window.localStorage.getItem('lang')
     return this.http.post(environment.siteurl + '/email', payload)
   }
 

@@ -61,7 +61,6 @@ export class RegisterComponent implements OnInit {
   }
   registerNewsletter(template: TemplateRef<any>) {
     this.show = false
-    console.log(this.form.value)
     this.apiService.postEmail(this.form.value).subscribe(res => {
       if (res === 'Registered successfully') {
         this.showThanks()
