@@ -3,41 +3,17 @@
 @import '~src/assets/scss/_vars';
 
 @font-face {
-  font-family: 'Avenir 85';
-  src: url('~assets/fonts/Avenir-Heavy.woff2') format('woff2'),
-  url('~assets/fonts/Avenir-Heavy.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
+  src: url("~assets/fonts/Avenir Heavy.eot"); /* IE9*/
+  src: url("~assets/fonts/Avenir Heavy.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("~assets/fonts/Avenir Heavy.woff2") format("woff2"), /* chrome、firefox */
+  url("~assets/fonts/Avenir Heavy.woff") format("woff"), /* chrome、firefox */
+  url("~assets/fonts/Avenir Heavy.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("~assets/fonts/Avenir Heavy.svg#Avenir Heavy") format("svg"); /* iOS 4.1- */
 }
-
-@font-face {
-  font-family: 'Avenir LT Std';
-  src: url('~assets/fonts/AvenirLTStd-Roman.woff2') format('woff2'),
-  url('~assets/fonts/AvenirLTStd-Roman.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Avenir LT Std';
-  src: url('~assets/fonts/AvenirLTStd-Medium.woff2') format('woff2'),
-  url('~assets/fonts/AvenirLTStd-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Avenir LT Std';
-  src: url('~assets/fonts/AvenirLTStd-Book.woff2') format('woff2'),
-  url('~assets/fonts/AvenirLTStd-Book.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 
 html{
   & body{
-    font-family: "Avenir 85", Arial;
+    font-family:"Avenir Heavy", Arial!important;
     height: 100%;
     background-color: #005B74;
     *{
