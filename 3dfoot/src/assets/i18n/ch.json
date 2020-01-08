@@ -27,117 +27,117 @@
     "delivery": "<strong>1000元起，</strong> 免费送货"
   },
   "BENEFIT": {
-    "text": "Would you benefit?",
-    "button": "Take the test"
+    "text": "您会受益吗？",
+    "button": "参加测试"
   },
   "SECTION-TWO": {
-    "section-title": "Relieves physical problems helping you to lead a more active life",
-    "li-1": "Back pain",
-    "li-2": "Varicose veins",
-    "li-3": "Knees and joint pain",
-    "li-4": "Cervical pain"
+    "section-title": "缓解身体问题，帮助您过上更加积极的生活",
+    "li-1": "背痛",
+    "li-2": "静脉曲张",
+    "li-3": "膝盖和关节痛",
+    "li-4": "颈椎痛"
   },
   "SECTION-THREE": {
-    "section-title": "Relieves pain associated with standing for long periods",
-    "li-1": "Back pain",
-    "li-2": "Uncomfortable footwear",
-    "li-3": "Aching feet",
-    "li-4": "Varicose veins"
+    "section-title": "缓解长时间站立带来的疼痛",
+    "li-1": "背痛",
+    "li-2": "鞋类不舒服",
+    "li-3": "脚痛",
+    "li-4": "静脉曲张"
   },
   "SECTION-FOUR": {
-    "section-title": "How it works",
-    "title-1": "Simply create your free user account",
-    "title-2": "Scan your feet using our app and your mobile device and place your order",
-    "title-3": "Using the very latest AI techniques, we build an exact 3D model of your feet",
-    "title-4": "Your insoles are then produced in Switzerland and delivered to you within 2 weeks"
+    "section-title": "怎么运行的",
+    "title-1": "只需创建您的免费用户帐户",
+    "title-2": "使用我们的应用程序和移动设备扫描脚部并下订单",
+    "title-3": "使用最新的AI技术，我们可以为您的脚建立精确的3D模型",
+    "title-4": "然后，您的鞋垫将在瑞士生产，并在2周内交付给您"
   },
   "SECTION-FIVE": {
-    "section-title": "Relieves sports related pain and discomfort",
-    "li-1": "Calf muscle pain",
-    "li-2": "Splay leg correction",
-    "li-3": "Protects knees and joints",
-    "li-4": "Prevents injuries"
+    "section-title": "减轻与运动有关的疼痛和不适",
+    "li-1": "小腿肌肉疼痛",
+    "li-2": "八字腿矫正",
+    "li-3": "保护膝盖和关节",
+    "li-4": "防止受伤"
   },
   "SECTION-SIX": {
-    "accreditation": "Accreditation",
-    "newsletter": "Join our newsletter",
-    "submit": "Submit",
-    "account": "Create account",
-    "about": "About",
-    "customer": "Customer Support",
-    "faq": "FAQ's"
+    "accreditation": "资质认证",
+    "newsletter": "加入我们的新闻通讯",
+    "submit": "提交",
+    "account": "创建帐号",
+    "about": "关于",
+    "customer": "客户支持",
+    "faq": "常见问题"
   },
   "REGISTER": {
-    "back": "Back",
-    "interest": "Register your interest",
-    "description": "We’re currently building this innovative new product, please enter your email to have first access when we are ready to launch",
-    "thanks": "Thank you",
-    "thanks.description": "We’ll be in touch once we are ready to launch our exciting new product.",
-    "homepage": "Homepage",
-    "email": "Your email"
+    "back": "背部",
+    "interest": "登记您的兴趣",
+    "description": "我们目前正在开发这种创新的新产品，请在准备好发布时输入您的电子邮件以具有首次访问权限",
+    "thanks": "谢谢",
+    "thanks.description": "一旦准备好发布令人兴奋的新产品，我们将与您取得联系。",
+    "homepage": "主页",
+    "email": "你的邮件"
   },
   "ADMIN": {
-    "head": "Login",
-    "backOffice": "Back Office",
-    "email": "Email",
-    "password": "Password",
-    "email-msg": "Email is required",
-    "password-msg": "Password is required",
-    "btn-login": "Login",
-    "btn-export": "Get Subscribe Users"
+    "head": "登录",
+    "backOffice": "后台办公室",
+    "email": "电子邮件",
+    "password": "密码",
+    "email-msg": "电子邮件为必填项",
+    "password-msg": "密码是必需的",
+    "btn-login": "登录",
+    "btn-export": "获取订阅用户"
   },
   "RESULT": {
-    "head": "Result"
+    "head": "结果"
   },
   "FAQS": {
-    "head": "FAQs",
-    "description": "Description",
-    "faq1-question": "How does it work?",
-    "faq1-answer": "You simply need to take three photographs of each foot using our easy to use, guided app and using AI techniques and that’s enough to build a highly accurate 3d model of each foot. Once this is done you just have to place your order and we do the rest.",
-    "faq2-question": "How accurate is it?",
-    "faq2-answer": "We compare your scans with our database of over 500,000 feet, this combined with complex mathematical algorithms means we can very accurately produce custom profiles of your feet from 3 images of each foot.",
-    "faq3-question": "How long does it take?",
-    "faq3-answer": "From the time you place the order we aim to have your insoles delivered to your door within 2 weeks.",
-    "faq4-question": "Why are they made in Switzerland?",
-    "faq4-answer": "Switzerland is renowned for producing high quality products and we are no different. How production facility offers the very best in premium insole quality, capable of withstanding the demands required through heavy usage.",
-    "faq5-question": "Do I have to scan my feet every time I want to place an order?",
-    "faq5-answer": "No, you do this only once and then your 3d feet profile is saved against your account meaning you can re order at any time simply by placing an order."
+    "head": "常见问题",
+    "description": "描述",
+    "faq1-question": "它是如何工作的？",
+    "faq1-answer": "您只需使用我们易于使用的引导式应用程序并使用AI技术为每只脚拍摄三张照片，这足以为每只脚建立一个高度精确的3d模型。完成此操作后，您只需要下订单，其余的由我们完成。",
+    "faq2-question": "它有多精确？",
+    "faq2-answer": "我们将您的扫描结果与超过500,000英尺的数据库进行比较，再加上复杂的数学算法，这意味着我们可以从每只脚的3张图像中非常准确地生成您的脚的自定义轮廓。",
+    "faq3-question": "多久时间？",
+    "faq3-answer": "从您下订单开始，我们的目标是在2周内将您的鞋垫送到您家门口。",
+    "faq4-question": "他们为什么在瑞士制造？",
+    "faq4-answer": "瑞士以生产高质量产品而闻名，我们也一样。生产设施如何提供最佳的优质鞋垫质量，能够承受因大量使用而产生的需求。",
+    "faq5-question": "每次下订单时都需要扫脚吗？",
+    "faq5-answer": "不，您只需执行一次，然后3d脚的配置文件就会保存到您的帐户中，这意味着您可以随时通过下订单来重新订购。"
   },
   "ABOUT": {
-    "head": "About",
-    "description": "Description"
+    "head": "关于",
+    "description": "描述"
   },
   "CUSTOMER_SUPPORT": {
-    "head": "Customer Support",
-    "description": "Description"
+    "head": "客户支持",
+    "description": "描述"
   },
   "QUESTION1": {
-    "ques": "What do you need?",
-    "option.1": "More support",
-    "option.2": "Pain relief"
+    "ques": "你需要什么？",
+    "option.1": "更多支持",
+    "option.2": "缓解疼痛"
   },
   "QUESTION2": {
-    "ques": "What of the following best describes you?",
-    "option.1": "Sporty",
-    "option.2": "Stand for long periods",
-    "option.3": "Physical problem"
+    "ques": "以下哪项最能描述您？",
+    "option.1": "运动型",
+    "option.2": "长期站立",
+    "option.3": "身体问题"
   },
   "RESULT1": {
-    "result": "Physical problems text goes here.",
-    "option.1": "Custom made - to the profile of you feet.",
-    "option.2": "Durable - Strong and made to last",
-    "option.3": "Good value - Exercise with peace of mind."
+    "result": "身体问题的文字在这里。",
+    "option.1": "<strong>定制</strong>-根据您的脚轮廓。",
+    "option.2": "<strong>耐用</strong>-坚固耐用",
+    "option.3": "<strong>物有所值</strong>-放心锻炼。"
   },
   "RESULT2":{
-    "result": "Physical activities like running can over time, place additional pressure on your feet, legs and spine which over time can lead to pain. Wearing insoles ensures you maintain correct posture even when engaging in exercise.",
-    "option.1": "Custom made - to the profile of you feet.",
-    "option.2": "Durable - Strong and made to last",
-    "option.3": "Good value - Exercise with peace of mind."
+    "result": "跑步等体育活动会随着时间的流逝而对脚，腿和脊柱施加额外的压力，随着时间的流逝会导致疼痛。穿着鞋垫可确保即使在运动时也能保持正确的姿势。",
+    "option.1": "<strong>定制</strong>-根据您的脚轮廓。",
+    "option.2": "<strong>耐用</strong>-坚固耐用",
+    "option.3": "<strong>物有所值</strong>-放心锻炼。"
   },
   "RESULT3": {
-    "result": "Standing long periods text goes here.",
-    "option.1": "Custom made - to the profile of you feet.",
-    "option.2": "Durable - Strong and made to last",
-    "option.3": "Good value - Exercise with peace of mind."
+    "result": "长期站立的文字在这里。",
+    "option.1": "<strong>定制</strong>-根据您的脚轮廓。",
+    "option.2": "<strong>耐用</strong>-坚固耐用",
+    "option.3": "<strong>物有所值</strong>-放心锻炼。"
   }
 }

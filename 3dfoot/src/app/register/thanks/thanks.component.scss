@@ -1,3 +1,4 @@
+@import '~src/assets/scss/_vars';
 :host {
   & .pt-46{
     align-content: center;
@@ -6,10 +7,11 @@
     padding-top: 46px;
 
     & p {
-      color: #ffffff;
+      color: $base-white;
       font-size: 24px;
       font-weight: 300;
       letter-spacing: -1.17px;
+      font-family: $font-family-light;
     }
   }
   & form {
@@ -20,7 +22,7 @@
   & input {
     width: 304px;
     height: 41px;
-    background-color: #005B74;
+    background-color: $base-blue-dark;
     border-radius: 0;
   }
 }

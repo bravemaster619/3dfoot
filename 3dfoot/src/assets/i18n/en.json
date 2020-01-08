@@ -125,20 +125,20 @@
   },
   "RESULT1": {
     "result": "Physical problems text goes here.",
-    "option.1": "Custom made - to the profile of you feet.",
-    "option.2": "Durable - Strong and made to last",
-    "option.3": "Good value - Exercise with peace of mind."
+    "option.1": "<strong>Custom made</strong> - to the profile of you feet.",
+    "option.2": "<strong>Durable</strong> - Strong and made to last",
+    "option.3": "<strong>Good value</strong> - Exercise with peace of mind."
   },
   "RESULT2":{
     "result": "Physical activities like running can over time, place additional pressure on your feet, legs and spine which over time can lead to pain. Wearing insoles ensures you maintain correct posture even when engaging in exercise.",
-    "option.1": "Custom made - to the profile of you feet.",
-    "option.2": "Durable - Strong and made to last",
-    "option.3": "Good value - Exercise with peace of mind."
+    "option.1": "<strong>Custom mad</strong>e - to the profile of you feet.",
+    "option.2": "<strong>Durable</strong> - Strong and made to last",
+    "option.3": "<strong>Good value</strong> - Exercise with peace of mind."
   },
   "RESULT3": {
     "result": "Standing long periods text goes here.",
-    "option.1": "Custom made - to the profile of you feet.",
-    "option.2": "Durable - Strong and made to last",
-    "option.3": "Good value - Exercise with peace of mind."
+    "option.1": "<strong>Custom made</strong> - to the profile of you feet.",
+    "option.2": "<strong>Durable</strong> - Strong and made to last",
+    "option.3": "<strong>Good value</strong> - Exercise with peace of mind."
   }
 }
