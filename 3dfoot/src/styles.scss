@@ -76,6 +76,30 @@ html {
       margin-top: -30px;
       min-height: 145px;
     }
+
+    & .col-img {
+      width: 122px;
+      float: left;
+    }
+    & .col-img-r {
+      //width: 127px;
+      padding-right: 8px;
+      float: left;
+    }
+    & .col-txt {
+      width: 100%;
+      float: left;
+      text-align: left;
+      padding-left: 20px;
+      padding-right: 10px;
+    }
+    & .col-txt-l {
+      width: 100%;
+      float: left;
+      text-align: left;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   .base-content {
@@ -98,15 +122,6 @@ html {
       margin-top: -30px;
       min-height: 110px;
     }
-
-    //& .back {
-    //  width: 66px;
-    //  height: 30px;
-    //  color: #2cd6e5;
-    //  font-size: 22px;
-    //  font-weight: 300;
-    //  letter-spacing: -1.0px;
-    //}
 
     & h1 {
       color: $base-white;
@@ -259,6 +274,16 @@ app-top-nav {
   min-height: 35px;
 }
 
+@media (max-width: 340px) {
+  html {
+    .general-content, .base-content {
+      padding: 28px 15px;
+      .card {
+        padding-top: 5px;
+      }
+    }
+  }
+}
 @media (max-width: 359px) {
   ::ng-deep {
     & h1 {

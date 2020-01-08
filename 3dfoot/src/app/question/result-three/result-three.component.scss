@@ -44,7 +44,7 @@
       text-align: center;
     }
     & .card{
-      min-height: 109px;
+      min-height: 95px;
       background-color: $base-blue-dark;
       p{
         color: $base-white;
@@ -89,15 +89,14 @@
     font-family: $font-family-medium;
     color: $base-blue-dark;
     font-size: 18px;
-    font-weight: 300;
     letter-spacing: -1px;
   }
   img {
-    width: 119px;
-    object-fit: scale-down;
+    width: 130px;
+    //object-fit: scale-down;
   }
   & .result-options{
-    margin-top: 80px;
+    margin-top: 50px;
     margin-bottom: 80px;
   }
 }
