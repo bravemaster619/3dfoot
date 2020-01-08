@@ -1,7 +1,7 @@
+@import '~src/assets/scss/_vars';
 :host {
   width: 100%;
-  //min-height: 550px;
-  background-color: #fff;
+  background-color: $base-white;
   max-width: 100%;
 
   & .row {
@@ -16,7 +16,7 @@
     }
 
     & .header-title {
-      color: #005B74;
+      color: $base-blue-dark;
       font-size: 28px;
       font-weight: 800;
       letter-spacing: -1.36px;
@@ -39,7 +39,7 @@
       }
 
       min-height: 56px;
-      color: #005B74;
+      color: $base-blue-dark;
 
       font-size: 21px;
 

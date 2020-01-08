@@ -1,3 +1,4 @@
+@import '~src/assets/scss/_vars';
 :host {
   background-image: url("~/assets/images/section-3-bg.png");
   background-size: cover;
@@ -16,7 +17,7 @@
     position: relative;
 
     width: 239px;
-    background-color: #000;
+    background-color: $base-black;
     opacity: 0.39;
     display: flex;
     flex: 1 1 100%;
@@ -24,8 +25,7 @@
     z-index: 0;
   }
   & .section-title{
-    //text-shadow: 0 3px 4px rgba(0, 0, 0, 0.73);
-    color: #fff;
+    color: $base-white;
     font-size: 26px;
     font-weight: 800;
     letter-spacing: -1.3px;
@@ -41,8 +41,7 @@
     margin-top: 30px;
   }
   & ul > li {
-    //text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    color: #fff;
+    color: $base-white;
     font-size: 1.125rem;
     font-weight: 800;
     letter-spacing: -0.054rem;
@@ -51,8 +50,8 @@
   }
   & button {
     width: 173px;
-    background-color: #2cd6e5;
-    color: #005B74;
+    background-color: $base-blue-light;
+    color: $base-blue-dark;
     font-size: 21px;
     font-weight: 800;
     letter-spacing: -1.024px;
