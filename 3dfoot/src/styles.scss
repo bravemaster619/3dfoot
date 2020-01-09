@@ -82,8 +82,6 @@ html {
       float: left;
     }
     & .col-img-r {
-      //width: 127px;
-      padding-right: 8px;
       float: left;
     }
     & .col-txt {
@@ -97,8 +95,10 @@ html {
       width: 100%;
       float: left;
       text-align: left;
-      padding-left: 10px;
       padding-right: 10px;
+    }
+    & .results {
+
     }
   }
 

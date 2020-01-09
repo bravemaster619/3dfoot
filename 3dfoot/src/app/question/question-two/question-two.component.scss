@@ -16,27 +16,6 @@
   }
   & .row {
     margin-top: 42.4px;
-    
-    & .header-title {
-      height: 27px;
-      color: $base-blue-light;
-      font-size: 20px;
-      font-weight: 800;
-      letter-spacing: -1px;
-      flex: 1;
-      align-self: flex-end;
-      margin-right: 40px;
-
-    }
-    & button {
-
-      width: 190px;
-      background-color: $base-blue-light;
-      color: $base-blue-dark;
-      font-size: 21px;
-      font-weight: 800;
-      letter-spacing: -1.0px;
-    }
     & .title {
       font-family: $font-family-medium;
       margin-top: 0;
@@ -59,25 +38,8 @@
       text-align: center;
     }
     & .card{
-      height: 109px;
+      padding: 6px 10px 6px 6px;
       background-color: $base-blue-dark;
-    }
-    &.footer{
-      margin-top: 34px;
-
-    }
-    & .flag {
-      width: 42px;
-      height: 30px;
-    }
-    & .footer-text{
-      height: 23px;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-      color: #fff;
-      font-size: 15px;
-      font-weight: 800;
-      letter-spacing: -0.832px;
-      word-break: break-word;
     }
   }
   & h1 {

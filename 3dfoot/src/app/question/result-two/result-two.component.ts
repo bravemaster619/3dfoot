@@ -19,6 +19,7 @@ import {Router} from "@angular/router";
 export class ResultTwoComponent implements OnInit {
   constructor(private translateService: TranslateService, private renderer: Renderer2, private el: ElementRef) { }
   @HostBinding('class.general-content') newClass: boolean = true;
+  @HostBinding('class.results') newClassResult: boolean = true;
   ngOnInit() {
   }
 }
