@@ -18,6 +18,7 @@ import {ApiService} from "./services/api.service";
 import {NgxBootstrapAlertNotificationModule} from "@benevideschissanga/ngx-bootstrap-alert-notification";
 import { AccountComponent } from './account/account.component';
 import { AboutComponent } from './about/about.component';
+import { ContactsComponent } from './contacts/contacts.component';
 import { CustomerComponent } from './customer/customer.component';
 import { FaqsComponent } from './faqs/faqs.component';
 import { SharedModule } from './shared/shared.module';
@@ -39,6 +40,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     ResultThreeComponent,
     AccountComponent,
     AboutComponent,
+    ContactsComponent,
     CustomerComponent,
     FaqsComponent
   ],

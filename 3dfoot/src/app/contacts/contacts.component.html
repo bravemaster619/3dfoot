@@ -1,0 +1,14 @@
+<div class="customNav">
+    <app-top-nav [newLogo]="false" [footer]="false" [showLang]="false"></app-top-nav>
+</div>
+<app-back></app-back>
+<div class="row pt-46 text-center animated bounceInDown delay-.5s">
+    <div class="col-12">
+        <h1>{{'CONTACTS.head' | translate}}</h1>
+    </div>
+</div>
+<div class="row pt-46 text-center animated fadeIn delay-1s">
+    <div class="col-12">
+        <p [innerHTML]="'CONTACTS.description' | translate"></p>
+    </div>
+</div>

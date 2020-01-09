@@ -66,7 +66,8 @@
     "account": "Create account",
     "about": "About",
     "customer": "Customer Support",
-    "faq": "FAQ's"
+    "faq": "FAQ's",
+    "contacts": "Contact us"
   },
   "REGISTER": {
     "back": "Back",
@@ -86,6 +87,13 @@
     "password-msg": "Password is required",
     "btn-login": "Login",
     "btn-export": "Get Subscribe Users"
+  },
+  "CONTACTS": {
+    "head": "Got a question?",
+    "description": "Contact us",
+    "email": "Your email",
+    "message": "Message",
+    "btn-submit": "Submit"
   },
   "RESULT": {
     "head": "Result"

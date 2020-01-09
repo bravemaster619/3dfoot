@@ -66,7 +66,8 @@
     "account": "创建帐号",
     "about": "关于",
     "customer": "客户支持",
-    "faq": "常见问题"
+    "faq": "常见问题",
+    "contacts": "联络人"
   },
   "REGISTER": {
     "back": "背部",
@@ -107,6 +108,13 @@
   "ABOUT": {
     "head": "关于",
     "description": "描述"
+  },
+  "CONTACTS": {
+    "head": "",
+    "description": "",
+    "email": "",
+    "message": "",
+    "btn-submit": ""
   },
   "CUSTOMER_SUPPORT": {
     "head": "客户支持",

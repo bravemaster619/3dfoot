@@ -1,0 +1,14 @@
+@import '~src/assets/scss/_vars';
+:host {
+  & .pt-46{
+    padding-top: 46px;
+
+    & p {
+      color: $base-white;
+      font-family: $font-family-light;
+      font-size: 20px;
+      letter-spacing: -1.17px;
+      text-align: left;
+    }
+  }
+}

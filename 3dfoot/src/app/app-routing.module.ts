@@ -6,6 +6,7 @@ import {ResultComponent} from "./question/result/result.component";
 import {ResultThreeComponent} from "./question/result-three/result-three.component";
 import {ResultTwoComponent} from "./question/result-two/result-two.component";
 import {AboutComponent} from "./about/about.component";
+import {ContactsComponent} from "./contacts/contacts.component";
 import {CustomerComponent} from "./customer/customer.component";
 import {AccountComponent} from "./account/account.component";
 import {FaqsComponent} from "./faqs/faqs.component";
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'results/2', component: ResultTwoComponent},
   {path: 'results/3', component: ResultThreeComponent},
   {path: 'about', component: AboutComponent},
+  {path: 'contacts', component: ContactsComponent},
   {path: 'customer', component: CustomerComponent},
   {path: 'account', component: AccountComponent},
   {path: 'faqs', component: FaqsComponent},
