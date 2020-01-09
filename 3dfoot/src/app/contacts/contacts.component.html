@@ -15,13 +15,13 @@
 <div class="row loginFormHere">
     <form>
         <div class="form-group">
-            <input type="email" formControlName="email" class="form-control" placeholder="Your email"/>
+            <input type="email" formControlName="email" class="form-control" placeholder="{{'CONTACTS.email' | translate}}"/>
         </div>
         <div class="form-group">
-            <textarea name="message" rows="9" class="form-control" placeholder="Message"></textarea>
+            <textarea name="message" rows="9" class="form-control" placeholder="{{'CONTACTS.message' | translate}}"></textarea>
         </div>
         <div class="text-center pt-3">
-            <button class="btn btn-default loginBtn">Submit</button>
+            <button class="btn btn-default loginBtn">{{'CONTACTS.btn-submit' | translate}}</button>
             <ng-template #default>
                 <div class="spinner mx-auto" style="margin-top: 2.5rem;">
                     <div class="double-bounce1"></div>
