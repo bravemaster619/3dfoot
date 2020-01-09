@@ -1,16 +1,14 @@
 @import '~src/assets/scss/_vars';
 :host {
   & .pt-46{
-    align-content: center;
-    display: flex;
-    justify-content: center;
     padding-top: 46px;
 
     & p {
-      color: $base-blue-dark;
-      font-size: 24px;
-      font-weight: 300;
+      color: $base-white;
+      font-family: $font-family-light;
+      font-size: 20px;
       letter-spacing: -1.17px;
+      text-align: left;
     }
   }
 }
