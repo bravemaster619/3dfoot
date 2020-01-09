@@ -45,8 +45,28 @@ html {
     display: flex;
     flex-direction: column;
     position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     max-width: 412px;
+
+    .form-control {
+      &:focus {
+        color: $base-gray;
+      }
+
+      &::placeholder {
+        color: $base-gray;
+        opacity: 0.6;
+      }
+
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $base-gray;
+        opacity: 0.6;
+      }
+
+      &::-ms-input-placeholder { /* Microsoft Edge */
+        color: $base-gray;
+        opacity: 0.6;
+      }
+    }
   }
 
   .font-light {
@@ -109,10 +129,7 @@ html {
     margin: 0 auto;
     display: block;
     position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 28px 25px;
-
-    flex-wrap: wrap;
     min-height: 100vh;
     background-color: $base-blue-dark;
 

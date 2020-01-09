@@ -24,27 +24,6 @@
     background-color: $base-white;
     border-radius: 0;
   }
-
-  .form-control {
-    &:focus {
-      color: $base-gray;
-    }
-
-    &::placeholder {
-      color: $base-gray;
-      opacity: 0.6;
-    }
-
-    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-      color: $base-gray;
-      opacity: 0.6;
-    }
-
-    &::-ms-input-placeholder { /* Microsoft Edge */
-      color: $base-gray;
-      opacity: 0.6;
-    }
-  }
 }
 
 @media(max-width: 395px) {

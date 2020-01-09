@@ -1,14 +1,35 @@
 @import '~src/assets/scss/_vars';
 :host {
-  & .pt-46{
-    padding-top: 46px;
-
+  & .p-subtitle{
+    margin-top: 15px;
     & p {
       color: $base-white;
       font-family: $font-family-light;
       font-size: 20px;
       letter-spacing: -1.17px;
-      text-align: left;
+      text-align: center;
     }
+  }
+
+  form {
+    padding: 20px;
+    margin-top: 15px;
+    color: $base-blue-dark;
+    width: 100%;
+    textarea {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  & .loginBtn {
+    width: 194px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -1.17px;
+    border-radius: 0;
+    background-color: $base-blue-light;
+    color: $base-blue-dark;
   }
 }
