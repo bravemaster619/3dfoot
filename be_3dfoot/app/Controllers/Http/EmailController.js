@@ -7,7 +7,7 @@ const Antl = use('Antl')
 class EmailController {
     async store ({ request, response }) {
       const locale = request.input('locale') === 'ch' ? 'ch' : 'en';
-      Antl.switchLo
+
       const rules = {
         email: 'required|email|unique:users,email',
       }
@@ -17,8 +17,6 @@ class EmailController {
       data['email'] = punycode.toUnicode(data['email'])
 
       const validation = await validate(data, rules)
-
-
 
       if (validation.fails()) {
         return JSON.stringify(Antl.forLocale(locale).formatMessage("register.email_invalid"))

@@ -28,6 +28,11 @@ export class ApiService {
     return window.location.href = environment.siteurl + '/admin/users/export';
   }
 
+  contacts(payload) {
+    payload.locale = window.localStorage.getItem('lang')
+    return this.http.post(environment.siteurl + '/contacts', payload)
+  }
+
   updateWindowScroll(event){
     this.windowScroll.next(event);
   }

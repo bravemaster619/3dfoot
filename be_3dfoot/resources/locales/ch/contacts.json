@@ -1,0 +1,6 @@
+{
+  "email_invalid": "CN: Invalid E-mail",
+  "content_empty": "CN: Content Empty",
+  "email_subject": "CN: Email Subject",
+  "email_sent": "CN: Email sent"
+}
