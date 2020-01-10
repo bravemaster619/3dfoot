@@ -88,13 +88,6 @@
     "btn-login": "Login",
     "btn-export": "Get Subscribe Users"
   },
-  "CONTACTS": {
-    "head": "Got a question?",
-    "description": "Contact us",
-    "email": "Your email",
-    "message": "Message",
-    "btn-submit": "Submit"
-  },
   "RESULT": {
     "head": "Result"
   },
@@ -115,6 +108,13 @@
   "ABOUT": {
     "head": "About",
     "description": "Based in Zurich, Switzerland for more than 60 years, Bähler AG has led the way in terms of innovative solutions for the orthopedic care and rehabilitation sector.<br><br> We work with highly regarded specialist clinics to drive innovation, seeking new materials or production techniques that deliver pain relief to patients of all ages. We have a  deep understanding of our patients needs and requirements and its this that drives us to continuously improve and develop our products and services. "
+  },
+  "CONTACTS": {
+    "head": "Got a question?",
+    "description": "Contact us",
+    "email": "Your email",
+    "message": "Message",
+    "btn-submit": "Submit"
   },
   "CUSTOMER_SUPPORT": {
     "head": "Customer Support",
