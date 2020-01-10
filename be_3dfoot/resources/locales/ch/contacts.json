@@ -1,6 +1,6 @@
 {
-  "email_invalid": "CN: Invalid E-mail",
-  "content_empty": "CN: Content Empty",
-  "email_subject": "CN: Email Subject",
-  "email_sent": "CN: Email sent"
+  "email_invalid": "邮箱无效",
+  "content_empty": "内容为空",
+  "email_subject": "感谢您的询问",
+  "email_sent": "发送成功"
 }
