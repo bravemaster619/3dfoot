@@ -13,12 +13,15 @@
 
   form {
     padding: 20px;
-    margin-top: 15px;
     color: $base-blue-dark;
     width: 100%;
     textarea {
       width: 100%;
       max-width: 100%;
+      border-radius: 0;
+    }
+    input {
+      border-radius: 0;
     }
   }
   & .loginBtn {
