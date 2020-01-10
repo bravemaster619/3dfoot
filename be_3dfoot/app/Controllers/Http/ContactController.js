@@ -41,13 +41,21 @@ class ContactController {
         .from('<from-email>')
         .subject(Antl.forLocale(locale).formatMessage("contacts.email_subject"))
     })
-    console.log(Env['MAIL_USERNAME'])
-    await Mail.send('emails.admin.contact', contact.toJSON(), (message) => {
-      message
-        .to(Env.get('MAIL_USERNAME'))
-        .from('<from-email>')
-        .subject('You just received a message')
-    })
+    const admin_email = Env.get('ADMIN_EMAIL')
+    if (admin_email) {
+      try {
+        await Mail.send('emails.admin.contact', contact.toJSON(), (message) => {
+          message
+            .to(Env.get('ADMIN_EMAIL'))
+            .from('<from-email>')
+            .subject('You just received a message')
+        })
+      } catch(e ) {
+        console.warn('Please set admin email')
+        console.log(e)
+      }
+    }
+
 
     return JSON.stringify(Antl.forLocale(locale).formatMessage("contacts.email_sent"))
 
