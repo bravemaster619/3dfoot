@@ -55,6 +55,7 @@ export class ContactsComponent implements OnInit {
       this.data = res;
       this.modalRef = this.modalService.show(template, {class: 'animated fadeIn slow'});
       this.show = true;
+      this.form.reset();
     });
   }
 }

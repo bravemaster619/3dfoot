@@ -2,5 +2,6 @@
   "email_invalid": "邮箱无效",
   "content_empty": "内容为空",
   "email_subject": "感谢您的询问",
-  "email_sent": "发送成功"
+  "email_sent": "发送成功",
+  "email_content": "感谢您的询问"
 }

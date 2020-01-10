@@ -22,7 +22,7 @@ Route.post('contacts', 'ContactController.store');
 // Answer
 Route.post('answer', 'AnswerController.newAnswer');
 // for future auth flow using AuthController
-Route.post('signin', 'AuthController.login');
+Route.post('signisn', 'AuthController.login');
 Route.post('signup', 'AuthController.signup');
 // for admin routes
 Route.group(() => {

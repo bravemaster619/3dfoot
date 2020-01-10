@@ -2,5 +2,6 @@
   "email_invalid": "Invalid E-mail",
   "content_empty": "Please leave a message",
   "email_subject": "Thank you for contact us",
-  "email_sent": "Email sent"
+  "email_sent": "Email sent",
+  "email_content": "Thank you for your message"
 }

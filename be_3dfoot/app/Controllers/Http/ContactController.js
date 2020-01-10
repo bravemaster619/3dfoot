@@ -4,6 +4,7 @@ const punycode = require('punycode')
 const Mail = use('Mail')
 const Contact = use('App/Models/Contact')
 const Antl = use('Antl')
+const Env = use('Env')
 class ContactController {
 
   async store({ request, response }) {
@@ -39,6 +40,13 @@ class ContactController {
         .to(data['email'])
         .from('<from-email>')
         .subject(Antl.forLocale(locale).formatMessage("contacts.email_subject"))
+    })
+    console.log(Env['MAIL_USERNAME'])
+    await Mail.send('emails.admin.contact', contact.toJSON(), (message) => {
+      message
+        .to(Env.get('MAIL_USERNAME'))
+        .from('<from-email>')
+        .subject('You just received a message')
     })
 
     return JSON.stringify(Antl.forLocale(locale).formatMessage("contacts.email_sent"))
