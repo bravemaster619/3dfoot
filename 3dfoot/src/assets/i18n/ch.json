@@ -1,90 +1,90 @@
 {
-  "button-started": "让我们开始吧",
-  "FOOTER": "注脚文字",
-  "button-shop": "现在去购物",
+  "button-started": "立即进入",
+  "FOOTER": "版权Bähler2020",
+  "button-shop": "马上抢购",
   "button-buy": "立即购买",
   "HEADER" : {
-    "create-account": "创建帐号",
-    "title": "使用Bähler（贝乐）定制鞋垫摆脱脚痛",
+    "create-account": "创建账户",
+    "title": "使用贝乐定制鞋垫，摆脱脚痛烦恼",
     "subtitle": "有效缓解",
-    "li-1": "脚痛",
+    "li-1": "足部疼痛",
     "li-2": "静脉曲张",
     "li-3": "膝关节疼痛",
     "li-4": "肌肉疼痛",
-    "li-5": "颈痛",
-    "description1": "无论是运动， 糖尿病人， 还是每天穿戴使用， 这个极具个性化的设计都使您不仅感到非常合脚， 而且感到理想的穿着舒适度。",
-    "description2": "人民币1000元， 瑞士苏黎世直邮",
-    "description3": "<strong>首次进入中国</strong>",
-    "footer": "瑞士骨科专家制造",
-    "shop-now": "立即购买",
-    "learn": "了解更多信息",
+    "li-5": "颈部疼痛",
+    "description1": "<strong>无论是运动人群、糖尿病人，或是日常穿着使用</strong>，特殊且科学的设计都能让您的双脚时刻保持健康舒适。",
+    "description2": "瑞士苏黎世制造，<strong>1000元起包邮</strong>",
+    "description3": "<strong>源自欧洲的先进护足理念和设计首次进入中国</strong>",
+    "footer": "瑞士骨科专家设计",
+    "shop-now": "马上抢购",
+    "learn": "了解详情",
     "sign-up": "注册"
   },
   "SECTION-ONE": {
-    "header-title": "有效缓解脚部疼痛和压力",
-    "description-1": "耐用持久的整形外科鞋垫可直达您的门",
-    "description-2": "用手机就能度量您的脚型",
-    "quality": "通过质量测试并免费",
-    "delivery": "<strong>1000元起，</strong> 免费送货"
+    "header-title": "有效舒缓脚部疼痛，减轻足底压力",
+    "description-1": "持久耐用的欧洲科技鞋垫直邮到家",
+    "description-2": "手机即可测量脚型",
+    "quality": "没理解是什么意思",
+    "delivery": "<strong>1000元起包邮</strong>"
   },
   "BENEFIT": {
-    "text": "您会受益吗？",
-    "button": "参加测试"
+    "text": "定制鞋垫是否对您有益？",
+    "button": "参与测试即刻了解"
   },
   "SECTION-TWO": {
-    "section-title": "缓解身体问题，帮助您过上更加积极的生活",
-    "li-1": "背痛",
+    "section-title": "放松始于舒适，贝乐鞋垫让您更有活力",
+    "li-1": "背部疼痛",
     "li-2": "静脉曲张",
-    "li-3": "膝盖和关节痛",
+    "li-3": "膝盖和关节疼痛",
     "li-4": "颈椎痛"
   },
   "SECTION-THREE": {
-    "section-title": "缓解长时间站立带来的疼痛",
-    "li-1": "背痛",
-    "li-2": "鞋类不舒服",
+    "section-title": "有效缓解长时间站立导致的各种疼痛",
+    "li-1": "背部疼痛",
+    "li-2": "不舒适的鞋类穿着",
     "li-3": "脚痛",
     "li-4": "静脉曲张"
   },
   "SECTION-FOUR": {
-    "section-title": "怎么运行的",
-    "title-1": "只需创建您的免费用户帐户",
-    "title-2": "使用我们的应用程序和移动设备扫描脚部并下订单",
-    "title-3": "使用最新的AI技术，我们可以为您的脚建立精确的3D模型",
-    "title-4": "然后，您的鞋垫将在瑞士生产，并在2周内交付给您"
+    "section-title": "如何获得您的定制贝乐鞋垫？",
+    "title-1": "免费创建您的贝乐账户",
+    "title-2": "用我们的APP扫描您的足部后下单",
+    "title-3": "利用最新的AI技术，我们将为您的足部建立精准的3D模型",
+    "title-4": "您的定制鞋垫将在瑞士生产，并在2周内邮寄到您家"
   },
   "SECTION-FIVE": {
-    "section-title": "减轻与运动有关的疼痛和不适",
+    "section-title": "舒缓因运动引起的各种疼痛和不适",
     "li-1": "小腿肌肉疼痛",
     "li-2": "八字腿矫正",
-    "li-3": "保护膝盖和关节",
-    "li-4": "防止受伤"
+    "li-3": "膝盖和关节保护",
+    "li-4": "预防运动伤害"
   },
   "SECTION-SIX": {
-    "accreditation": "资质认证",
-    "newsletter": "加入我们的新闻通讯",
+    "accreditation": "没理解是什么意思",
+    "newsletter": "订阅我们的最新资讯吧！",
     "submit": "提交",
-    "account": "创建帐号",
+    "account": "创建账户",
     "about": "关于",
     "customer": "客户支持",
     "faq": "常见问题",
-    "contacts": "联络人"
+    "contacts": "常见问题"
   },
   "REGISTER": {
-    "back": "背部",
+    "back": "返回",
     "interest": "登记您的兴趣",
-    "description": "我们目前正在开发这种创新的新产品，请在准备好发布时输入您的电子邮件以具有首次访问权限",
+    "description": "我们正在加快这款创新产品的开发，请留下您的电子邮箱，以便产品发布后您能够立刻获知相关信息！",
     "thanks": "谢谢",
-    "thanks.description": "一旦准备好发布令人兴奋的新产品，我们将与您取得联系。",
+    "thanks.description": "一旦这款激动人心的产品发布，我们将会在第一时间与您取得联系！",
     "homepage": "主页",
-    "email": "你的邮件"
+    "email": "您的电子邮箱"
   },
   "ADMIN": {
     "head": "登录",
-    "backOffice": "后台办公室",
-    "email": "电子邮件",
+    "backOffice": "后台",
+    "email": "电子邮箱",
     "password": "密码",
-    "email-msg": "电子邮件为必填项",
-    "password-msg": "密码是必需的",
+    "email-msg": "电子邮箱不能为空",
+    "password-msg": "密码不能为空",
     "btn-login": "登录",
     "btn-export": "获取订阅用户"
   },
@@ -94,59 +94,59 @@
   "FAQS": {
     "head": "常见问题",
     "description": "描述",
-    "faq1-question": "它是如何工作的？",
-    "faq1-answer": "您只需使用我们易于使用的引导式应用程序并使用AI技术为每只脚拍摄三张照片，这足以为每只脚建立一个高度精确的3d模型。完成此操作后，您只需要下订单，其余的由我们完成。",
-    "faq2-question": "它有多精确？",
-    "faq2-answer": "我们将您的扫描结果与超过500,000英尺的数据库进行比较，再加上复杂的数学算法，这意味着我们可以从每只脚的3张图像中非常准确地生成您的脚的自定义轮廓。",
-    "faq3-question": "多久时间？",
-    "faq3-answer": "从您下订单开始，我们的目标是在2周内将您的鞋垫送到您家门口。",
-    "faq4-question": "他们为什么在瑞士制造？",
-    "faq4-answer": "瑞士以生产高质量产品而闻名，我们也一样。生产设施如何提供最佳的优质鞋垫质量，能够承受因大量使用而产生的需求。",
-    "faq5-question": "每次下订单时都需要扫脚吗？",
-    "faq5-answer": "不，您只需执行一次，然后3d脚的配置文件就会保存到您的帐户中，这意味着您可以随时通过下订单来重新订购。"
+    "faq1-question": "如何获得您的定制贝乐鞋垫？",
+    "faq1-answer": "您只需要使用APP为您的每只脚拍摄三张照片，以便我们利用AI技术为您的脚部建立高精度的3D模型。完成此操作并下单后，其余的都将交由我们完成。",
+    "faq2-question": "贝乐鞋垫有多精准？",
+    "faq2-answer": "我们会将您的足部扫描结果与我们拥有50万双足部模型的数据库进行比对，再结合复杂的算法，我们能够极为精准地生成您的足部模型。",
+    "faq3-question": "多久才能收到产品？",
+    "faq3-answer": "一旦您提交订单，我们将会在2周内将鞋垫寄送到您家。",
+    "faq4-question": "为什么在瑞士制造？",
+    "faq4-answer": "瑞士以生产高质量产品而闻名。瑞士制造将使我们以最好的生产设备确保最优质的质量，以实现产品经久耐用。",
+    "faq5-question": "每次订购都需要重新进行足部的扫描吗？",
+    "faq5-answer": "不，仅需进行一次扫描，您足部的3D模型文件就将保存在您的账户中，您可以随时提交新的订单。"
   },
   "ABOUT": {
     "head": "关于",
     "description": "描述"
   },
   "CONTACTS": {
-    "head": "",
-    "description": "",
-    "email": "",
-    "message": "",
-    "btn-submit": ""
+    "head": "有问题吗？",
+    "description": "常见问题",
+    "email": "您的电子邮箱",
+    "message": "信息",
+    "btn-submit": "提交"
   },
   "CUSTOMER_SUPPORT": {
     "head": "客户支持",
     "description": "描述"
   },
   "QUESTION1": {
-    "ques": "你需要什么？",
-    "option.1": "更多支持",
-    "option.2": "缓解疼痛"
+    "ques": "您需要？",
+    "option.1": "更多的足部支撑",
+    "option.2": "舒缓疼痛"
   },
   "QUESTION2": {
-    "ques": "以下哪项最能描述您？",
-    "option.1": "运动型",
+    "ques": "您属于哪类状况？",
+    "option.1": "经常运动",
     "option.2": "长期站立",
-    "option.3": "身体问题"
+    "option.3": "有身体疼痛症状"
   },
   "RESULT1": {
-    "result": "身体问题的文字在这里。",
-    "option.1": "<strong>定制</strong>-根据您的脚轮廓。",
-    "option.2": "<strong>耐用</strong>-坚固耐用",
-    "option.3": "<strong>物有所值</strong>-放心锻炼。"
+    "result": "有身体疼痛感状况的相关文字描述",
+    "option.1": "<strong>定制</strong>—根据您的脚部模型进行定制",
+    "option.2": "<strong>耐用</strong>—瑞士制造，经久耐用",
+    "option.3": "<strong>物有所值</strong>—让您能够放心锻炼"
   },
   "RESULT2":{
-    "result": "跑步等体育活动会随着时间的流逝而对脚，腿和脊柱施加额外的压力，随着时间的流逝会导致疼痛。穿着鞋垫可确保即使在运动时也能保持正确的姿势。",
-    "option.1": "<strong>定制</strong>-根据您的脚轮廓。",
-    "option.2": "<strong>耐用</strong>-坚固耐用",
-    "option.3": "<strong>物有所值</strong>-放心锻炼。"
+    "result": "长期进行跑步等体育活动会对脚部、腿部和脊柱产生额外的压力，导致身体疼痛。穿着贝乐鞋垫能够让您在运动时也能保持正确的姿态",
+    "option.1": "<strong>定制</strong>—根据您的脚部模型进行定制",
+    "option.2": "<strong>耐用</strong>—瑞士制造，经久耐用",
+    "option.3": "<strong>物有所值</strong>—让您能够放心锻炼"
   },
   "RESULT3": {
-    "result": "长期站立的文字在这里。",
-    "option.1": "<strong>定制</strong>-根据您的脚轮廓。",
-    "option.2": "<strong>耐用</strong>-坚固耐用",
-    "option.3": "<strong>物有所值</strong>-放心锻炼。"
+    "result": "长期站立状况的相关文字描述",
+    "option.1": "<strong>定制</strong>—根据您的脚部模型进行定制",
+    "option.2": "<strong>耐用</strong>—瑞士制造，经久耐用",
+    "option.3": "<strong>物有所值</strong>—让您能够放心锻炼"
   }
 }
