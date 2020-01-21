@@ -1,6 +1,6 @@
 {
   "button-started": "Let’s get started",
-  "FOOTER": "copyright Bähler 2020",
+  "FOOTER": "© Bähler 2020",
   "button-shop": "Shop now",
   "button-buy": "Shop now",
   "HEADER" : {
@@ -8,23 +8,23 @@
     "title": "Step away from sore feet with Bähler custom made insoles",
     "subtitle": "Effective relief from:",
     "li-1": "Aching feet",
-    "li-2": "Varicose veins",
+    "li-2": "Heavy legs",
     "li-3": "Knee and Joint pain",
     "li-4": "Muscle pain",
-    "li-5": "Cervical pain",
-    "description1": "Whether it is for <strong> sports, diabetes or everyday use,</strong> this extremely individual design allows us to achieve not only the correct fitting but also the desired wearing comfort.",
+    "li-5": "Back pain",
+    "description1": "Whether it is for <strong> sports, any physical problems or everyday use,</strong> this extremely individual design allows us to achieve not only the correct fitting but also the desired wearing comfort.",
     "description2": "From <strong> RMB 1,000 </strong>with free delivery - direct from Zurich, Switzerland",
     "description3": "<strong> And now available for the first time in China!</strong>",
-    "footer": "Swiss made orthopedics",
+    "footer": "Swiss made orthopaedics",
     "shop-now": "Shop now",
     "learn": "Learn more",
     "sign-up": "Sign up"
   },
   "SECTION-ONE": {
     "header-title": "Effective relief from pain and pressure on the foot",
-    "description-1": "Durable, long lasting  orthopedic insoles direct to your door.",
+    "description-1": "Durable, long lasting orthopaedic insoles direct to your door.",
     "description-2": "Uses cutting edge technology to digitally map your feet via your mobile device.",
-    "quality": "Quality tested and with a free",
+    "quality": "Swiss quality, born from over 60 years of experience and orthopaedic craftsmanship. What discerning customers prefer in Zurich you can now also obtain in China.",
     "delivery": "From<strong> RMB 1,000</strong>  with free delivery "
   },
   "BENEFIT": {
@@ -33,17 +33,17 @@
   },
   "SECTION-TWO": {
     "section-title": "Relieves physical problems helping you to lead a more active life",
-    "li-1": "Back pain",
-    "li-2": "Varicose veins",
-    "li-3": "Knees and joint pain",
-    "li-4": "Cervical pain"
+    "li-1": "Foot pain",
+    "li-2": "Knee pain",
+    "li-3": "Heavy legs",
+    "li-4": "Back pain"
   },
   "SECTION-THREE": {
     "section-title": "Relieves pain associated with standing for long periods",
-    "li-1": "Back pain",
-    "li-2": "Uncomfortable footwear",
-    "li-3": "Aching feet",
-    "li-4": "Varicose veins"
+    "li-1": "Foot pain",
+    "li-2": "Knee pain",
+    "li-3": "Heavy legs",
+    "li-4": "Back pain"
   },
   "SECTION-FOUR": {
     "section-title": "How it works",
@@ -54,8 +54,8 @@
   },
   "SECTION-FIVE": {
     "section-title": "Relieves sports related pain and discomfort",
-    "li-1": "Calf muscle pain",
-    "li-2": "Splay leg correction",
+    "li-1": "Foot and knee pain",
+    "li-2": "Achilles tendon relief",
     "li-3": "Protects knees and joints",
     "li-4": "Prevents injuries"
   },
@@ -132,7 +132,7 @@
     "option.3": "Physical problem"
   },
   "RESULT1": {
-    "result": "Physical problems text goes here.",
+    "result": "Mass insoles correct the malpositioning of the foot and leg axis and can thus relieve or eliminate existing pain. They prevent existing malpositions from worsening and relieve overburdened body structures. Wear insoles and benefit from their positive properties.",
     "option.1": "<strong>Custom made</strong> - to the profile of you feet.",
     "option.2": "<strong>Durable</strong> - Strong and made to last",
     "option.3": "<strong>Good value</strong> - Exercise with peace of mind."
@@ -144,7 +144,7 @@
     "option.3": "<strong>Good value</strong> - Exercise with peace of mind."
   },
   "RESULT3": {
-    "result": "Standing long periods text goes here.",
+    "result": "Standing and walking for long periods of time causes one-sided strain on the musculoskeletal system and can thus cause physical problems. Pain reduces performance at work and also in leisure time. By wearing insoles, problems can be prevented and existing pain can be positively influenced.",
     "option.1": "<strong>Custom made</strong> - to the profile of you feet.",
     "option.2": "<strong>Durable</strong> - Strong and made to last",
     "option.3": "<strong>Good value</strong> - Exercise with peace of mind."
