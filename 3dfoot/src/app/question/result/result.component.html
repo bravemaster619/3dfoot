@@ -6,46 +6,87 @@
         <h2 class="title">{{'RESULT.head' | translate}}</h2>
     </div>
 </div>
-<div class="row animated fadeIn delay-1s">
-    <div class="col">
-        <p>{{'RESULT1.result' | translate}}</p>
-    </div>
-</div>
-<div class="row d-flex justify-content-center animated fadeIn delay-1s result-options">
-    <div class="col">
-        <div class="card d-flex flex-nowrap flex-row justify-content-center align-items-start">
 
-            <div class="col-txt-l">
-                <p [innerHTML]="'RESULT1.option.1' | translate"></p>
-            </div>
-            <div class="col-img-r pl-1">
-                <img src="assets/images/r-1.png">
-            </div>
+<!-- BEGIN -->
+    <!-- Client does not suffer from pain or physical discomfort -->
+<div *ngIf="(ans['ans1'] == 1 || ans['ans1'] == 2) && ans['ans2'] == 2">
+    <div class="row animated fadeIn delay-1s">
+        <div class="col-12">
+            <p class="font-weight-bold">{{'RESULT.description1' | translate}}</p>
         </div>
     </div>
-    <div class="col pt-2">
-        <div class="card d-flex flex-nowrap flex-row justify-content-center align-items-start">
-            <div class="col-txt-l">
-                <p [innerHTML]="'RESULT1.option.2' | translate"></p>
-            </div>
-            <div class="col-img-r pl-1">
-                <img src="assets/images/r-2.png">
-            </div>
-        </div>
-    </div>
-    <div class="col pt-2">
-        <div class="card d-flex flex-nowrap flex-row justify-content-center align-items-start">
-            <div class="col-txt-l">
-                <p [innerHTML]="'RESULT1.option.3' | translate"></p>
-            </div>
-            <div class="col-img-r pl-1">
-                <img src="assets/images/r-3.png">
-            </div>
+    <div class="row animated fadeIn delay-1s mb-1">
+        <div class="col">
+            <img class="img-responsive w-100" src="assets/images/section-one-1.png">
         </div>
     </div>
 </div>
+<!-- END -->
 
-<div class="row animated fadeIn delay-1s">
+<!-- BEGIN -->
+    <!-- Client does suffer from pain -->
+<div *ngIf="(ans['ans1'] == 3 || ans['ans2'] == 1)">
+    <!-- In case we have a solution for client's problem -->
+    <div *ngIf="ans['ans3_1'].length else noSolution">
+        <!-- Example solution for sole pain -->
+        <div *ngIf="('' + ans['ans3_1']).split(',').includes('3') else defaultSolution">
+            <div class="row animated fadeIn delay-1s mb-1">
+                <div class="col-12">
+                    <h4>{{'RESULT.title3' | translate}}</h4>
+                </div>
+            </div>
+            <div class="row animated fadeIn delay-1s mb-1">
+                <div class="col">
+                    <img class="img-responsive w-100" src="assets/images/section-one-1.png">
+                </div>
+            </div>
+            <div class="row animated fadeIn delay-1s" >
+                <div class="col-12">
+                    <p class="font-weight-bold">{{'RESULT.description3' | translate}}</p>
+                </div>
+            </div>
+        </div>
+        <ng-template #defaultSolution>
+            <div class="row animated fadeIn delay-1s mb-1">
+                <div class="col-12">
+                    <h4>{{'RESULT.title1' | translate}}</h4>
+                </div>
+            </div>
+            <div class="row animated fadeIn delay-1s mb-1">
+                <div class="col">
+                    <img class="img-responsive w-100" src="assets/images/section-one-1.png">
+                </div>
+            </div>
+            <div class="row animated fadeIn delay-1s" >
+                <div class="col-12">
+                    <p class="font-weight-bold">{{'RESULT.description1' | translate}}</p>
+                </div>
+            </div>
+        </ng-template>
+    </div>
+
+    <!-- In case we don't have a solution for client's problem -->
+    <ng-template #noSolution>
+        <div class="row animated fadeIn delay-1s mb-1">
+            <div class="col-12">
+                <h4>{{'RESULT.title2' | translate}}</h4>
+            </div>
+        </div>
+        <div class="row animated fadeIn delay-1s mb-1">
+            <div class="col">
+                <img class="img-responsive w-100" src="assets/images/section-one-1.png">
+            </div>
+        </div>
+        <div class="row animated fadeIn delay-1s mb-1">
+            <div class="col-12">
+                <p class="font-weight-bold">{{'RESULT.description2' | translate}}</p>
+            </div>
+        </div>
+    </ng-template>
+</div>
+<!-- END -->
+
+<div class="row animated fadeIn delay-1s mt-1">
     <div class="col d-flex justify-content-center">
         <button class="btn btn-default" [routerLink]="['/register']">{{'button-shop' | translate}}</button>
     </div>

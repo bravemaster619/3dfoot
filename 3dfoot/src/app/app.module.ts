@@ -9,7 +9,7 @@ import {HttpClient, HttpClientModule, HTTP_INTERCEPTORS} from "@angular/common/h
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 
 import { QuestionComponent } from './question/question/question.component';
-import { QuestionTwoComponent } from './question/question-two/question-two.component';
+import { QuestionOneComponent } from './question/question-one/question-one.component';
 import { ResultComponent } from './question/result/result.component';
 import { ResultTwoComponent } from './question/result-two/result-two.component';
 import { ResultThreeComponent } from './question/result-three/result-three.component';
@@ -26,6 +26,8 @@ import {JwtInterceptor} from "./_helpers/jwt.interceptor";
 import {ErrorInterceptor} from "./_helpers/error.interceptor";
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import {BsModalRef, ModalModule} from "ngx-bootstrap";
+import {QuestionTwoComponent} from "./question/question-two/question-two.component";
+import {QuestionThreeComponent} from "./question/question-three/question-three.component";
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -34,7 +36,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   declarations: [
     AppComponent,
     QuestionComponent,
+    QuestionOneComponent,
     QuestionTwoComponent,
+    QuestionThreeComponent,
     ResultComponent,
     ResultTwoComponent,
     ResultThreeComponent,

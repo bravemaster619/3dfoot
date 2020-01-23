@@ -89,7 +89,13 @@
     "btn-export": "Get Subscribe Users"
   },
   "RESULT": {
-    "head": "Result"
+    "head": "Result",
+    "title1": "Bähler custom insoles can help with your pain and discomfort!",
+    "title2": "We are sorry but Bähler custom insoles are not likely to help your condition, however, you can still wear them for additional comfort.",
+    "title3": "Bähler custom insoles can help with your pain and discomfort! Solution for sole pain",
+    "description1": "With our insoles, you take an important step towards more joie de vivre. They ensure that you can stand and walk without discomfort and more comfort in everyday life, at work, during sports and hiking. With our orthopaedic mass insoles, you are well on your way. Thanks to competent advice, perfect fit and first-class Swiss quality",
+    "description2": "With our insoles, you take an important step towards more joie de vivre. They ensure that you can stand and walk without discomfort and more comfort in everyday life, at work, during sports and hiking. With our orthopaedic mass insoles, you are well on your way. Thanks to competent advice, perfect fit and first-class Swiss quality",
+    "description3": "Solution for sole pain description. How can Bähler custom can help with your sole pain"
   },
   "FAQS": {
     "head": "FAQs",
@@ -120,19 +126,37 @@
     "head": "Customer Support",
     "description": "Description"
   },
-  "QUESTION1": {
+  "QUESTION": {
     "ques": "What do you need?",
     "option.1": "More support",
     "option.2": "Pain relief"
   },
-  "QUESTION2": {
+  "QUESTION1": {
     "ques": "What of the following best describes you?",
     "option.1": "Sporty",
     "option.2": "Stand for long periods",
     "option.3": "Physical problem"
   },
+  "QUESTION2":  {
+    "ques1": "Do you suffer from pain or discomfort caused by physical activity?",
+    "ques2": "Do you suffer from pain and discomfort when standing for prelonged periods of time?",
+    "option.1": "Yes",
+    "option.2": "No"
+  },
+  "QUESTION3": {
+    "ques1": "Select where you experience pain or discomfort",
+    "ques2": "What does your leg axis look like?",
+    "button.other": "None of the above",
+    "button.next" : "Next",
+    "button.show_result" : "Show result",
+    "option.1": "Straight legs",
+    "option.2": "Bow legs",
+    "option.3": "Knock-knees",
+    "question_first": "Question 1 of 2",
+    "question_second": "Question 2 of 2"
+  },
   "RESULT1": {
-    "result": "Physical problems text goes here.",
+    "description": "With our insoles, you take an important step towards more joie de vivre. They ensure that you can stand and walk without discomfort and more comfort in everyday life, at work, during sports and hiking. With our orthopaedic mass insoles, you are well on your way. Thanks to competent advice, perfect fit and first-class Swiss quality",
     "option.1": "<strong>Custom made</strong> - to the profile of you feet.",
     "option.2": "<strong>Durable</strong> - Strong and made to last",
     "option.3": "<strong>Good value</strong> - Exercise with peace of mind."

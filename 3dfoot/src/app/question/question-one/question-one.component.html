@@ -1,16 +1,16 @@
 <div class="customNav">
     <app-top-nav [custom]="true" [showLang]="false"></app-top-nav>
 </div>
-<div class="row">
+<div class="row animated bounceInDown delay-.5s">
     <div class="col">
-        <h3 class="title animated bounceInDown delay-.5s">{{'QUESTION1.ques' | translate}}</h3>
+        <h3 class="title">{{'QUESTION1.ques' | translate}}</h3>
     </div>
 </div>
 <div class="row d-flex justify-content-center animated fadeIn delay-1s">
     <div class="col">
         <div class="card d-flex flex-nowrap flex-row justify-content-center align-items-center" (click)="result(1)">
             <div class="col-img">
-                <img src="assets/images/q-1.png">
+                <img src="assets/images/q-2-1.png">
             </div>
             <div class="col-txt">
                 <h1>{{'QUESTION1.option.1' | translate}}</h1>
@@ -20,10 +20,20 @@
     <div class="col pt-4">
         <div class="card d-flex flex-nowrap flex-row justify-content-center align-items-center" (click)="result(2)">
             <div class="col-img">
-                <img src="assets/images/q-2.png">
+                <img src="assets/images/q-2-2.png">
             </div>
             <div class="col-txt">
                 <h1>{{'QUESTION1.option.2' | translate}}</h1>
+            </div>
+        </div>
+    </div>
+    <div class="col pt-4">
+        <div class="card d-flex flex-nowrap flex-row justify-content-center align-items-center" (click)="result(3)">
+            <div class="col-img">
+                <img src="assets/images/q-2-3.png">
+            </div>
+            <div class="col-txt">
+                <h1>{{'QUESTION1.option.3' | translate}}</h1>
             </div>
         </div>
     </div>

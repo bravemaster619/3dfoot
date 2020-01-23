@@ -131,6 +131,11 @@
     "option.2": "长期站立",
     "option.3": "有身体疼痛症状"
   },
+  "QUESTION3":  {
+    "ques": "Do you suffer from pain or discomfort caused by physical activity?",
+    "option.1": "Yes",
+    "option.2": "No"
+  },
   "RESULT1": {
     "result": "有身体疼痛感状况的相关文字描述",
     "option.1": "<strong>定制</strong>—根据您的脚部模型进行定制",
