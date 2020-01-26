@@ -31,7 +31,7 @@ export class TopNavComponent implements OnInit {
     this.lang = event;
   }
 
-  @HostListener('window:scroll', ['$event'])
+  @HostListener('window:scroll', [])
   checkScroll() {
 
     return this.onScroll = window.pageYOffset > 70;
