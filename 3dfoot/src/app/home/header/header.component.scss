@@ -137,10 +137,11 @@
       position: relative;
 
       h1 {
+        max-width: 300px;
+        margin: auto;
         top: 15px;
         left: 0;
         right: 0;
-        margin: 0;
         text-align: center;
         color: $base-blue-dark;
         font-size: 29px;
