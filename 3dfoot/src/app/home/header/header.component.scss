@@ -161,10 +161,17 @@
         }
       }
     }
+    .foot-section {
+      img {
+        height: 160px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
     .custom-made {
       color: $base-blue-dark;
       top: -35px;
-      span {
+      strong {
         color: $base-blue-light;
         text-transform: lowercase;
       }

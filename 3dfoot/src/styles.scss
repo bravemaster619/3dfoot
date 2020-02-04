@@ -291,6 +291,17 @@ app-top-nav {
   min-height: 35px;
 }
 
+.header-section {
+  strong {
+    color: $base-blue-light;
+    font-weight: 800;
+  }
+  span {
+    margin-left: -50px;
+    display: block;
+  }
+}
+
 @media (max-width: 340px) {
   html {
     .general-content, .base-content {
