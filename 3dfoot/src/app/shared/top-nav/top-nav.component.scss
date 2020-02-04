@@ -1,38 +1,44 @@
 @import '~src/assets/scss/_vars';
+
 :host {
-    & .topNav {
-      margin-left: 0;
-      margin-right: 0;
-      height: auto;
-      padding: 35px 9px 10px 9px;
-      background: transparent;
-      &.fixed {
-        background: $base-blue-light;
-        position: fixed;
-        width: inherit;
-        transition: all 300ms ease-in;
-        margin-top: 0;
-        padding-top: 35px;
-        z-index: 999;
-        padding-bottom: 10px;
-        max-width: 414px;
-      }
-      &:not(.fixed) {
-        transition: all 300ms ease-out;
-      }
-    
-}
-& .topNav.back{
-  background: $base-blue-light;
-}
-& .logo {
+  & .topNav {
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+    padding: 35px 9px 10px 9px;
+    background: transparent;
+
+    &.fixed {
+      background: $base-blue-light;
+      position: fixed;
+      width: inherit;
+      transition: all 300ms ease-in;
+      margin-top: 0;
+      padding-top: 35px;
+      z-index: 999;
+      padding-bottom: 10px;
+      max-width: 414px;
+    }
+
+    &:not(.fixed) {
+      transition: all 300ms ease-out;
+    }
+  }
+
+  & .topNav.back {
+    background: $base-blue-light;
+  }
+
+  & .logo {
     cursor: pointer;
     width: 165px;
-}
-& .langContent{
-  margin-top: 10px;
-}
-& span {
+  }
+
+  & .langContent {
+    margin-top: 10px;
+  }
+
+  & span {
     width: 67px;
     height: 27px;
     color: $base-blue-dark;
@@ -41,34 +47,57 @@
     font-weight: 800;
     text-transform: uppercase;
     cursor: pointer;
-    &.active{
+
+    &.active {
       color: $base-white;
     }
   }
+
   & span:first-child {
     margin-right: 6px;
   }
+
   & span:nth-last-child(1) {
     margin-left: 6px;
   }
-  .cus{
-    span{
-        color: $base-blue-dark;
-        &.active{
-            color: white;
-        }
+
+  .cus {
+    span {
+      color: $base-blue-dark;
+
+      &.active {
+        color: white;
+      }
     }
   }
-  .swizContent{
-    margin-top: 5px;
-    img{
+
+  .swizContent {
+    position: relative;
+    top: 6px;
+    img {
       width: 30px;
       height: 25px;
       margin-right: 10px;
     }
-    p{
+
+    p {
       color: $base-blue-dark;
+      font-size: 15px;
+      padding-top: 2px;
     }
   }
+}
 
+@media(max-width: 360px) {
+  :host {
+    .swizContent {
+      p {
+        font-size: 13px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        padding-top: 4px;
+      }
+    }
+  }
 }

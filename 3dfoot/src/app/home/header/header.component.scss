@@ -1,4 +1,5 @@
 @import '~src/assets/scss/_vars';
+
 :host {
   background-color: $base-white;
 
@@ -118,18 +119,73 @@
     & .footer-text {
       height: 23px;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-      color: #fff;
+      color: $base-white;
       font-size: 17px;
       font-weight: 800;
       word-break: break-word;
     }
   }
 
-  & img {
-    top: 37px;
-    width: 129px;
-    height: 56px;
+  .header-section {
+    background-image: url("~/assets/images/bg-header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    .hero {
+      position: relative;
+
+      h1 {
+        top: 15px;
+        left: 0;
+        right: 0;
+        margin: 0;
+        text-align: center;
+        color: $base-blue-dark;
+        font-size: 29px;
+        font-weight: 800;
+        letter-spacing: -1.41px;
+      }
+
+      .shopButton {
+        bottom: 18%;
+        left: 0;
+        right: 0;
+        margin: 0;
+
+        button {
+          width: 203px;
+          padding: 5px;
+          max-width: 100%;
+        }
+      }
+    }
+    .custom-made {
+      color: $base-blue-dark;
+      top: -35px;
+      span {
+        color: $base-blue-light;
+        text-transform: lowercase;
+      }
+    }
+    .hero-list {
+      color: $base-blue-dark;
+      h5 {
+        font-size: 21px;
+      }
+
+      ul {
+        font-size: 21px;
+        font-family: $font-family-medium;
+
+        li {
+          padding-left: 5px;
+        }
+      }
+    }
   }
+
 
   & .headerBack {
     background-image: url("~/assets/images/header-back.png");
@@ -153,6 +209,7 @@
     ul {
       font-size: 21px;
       font-family: $font-family-medium;
+
       li {
         padding-left: 5px;
       }
@@ -165,6 +222,7 @@
       font-family: $font-family-base;
       width: 80%;
       margin: auto;
+      font-size: 21px;
     }
   }
 
@@ -200,7 +258,7 @@
   & app-top-nav {
     min-height: 130px;
     height: 130px;
-    float: left;
+    //float: left;
     width: 100%;
   }
 }
@@ -213,5 +271,24 @@
         font-size: 26px;
       }
     }
+  }
+}
+
+@media(max-width: 360px) {
+  :host {
+    .header-section {
+      .hero-list {
+        h5 {
+          font-size: 16px;
+        }
+        ul {
+          font-size: 16px;
+          li {
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+
   }
 }

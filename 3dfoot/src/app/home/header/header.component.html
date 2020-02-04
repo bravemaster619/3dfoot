@@ -1,4 +1,33 @@
 <app-top-nav [background]="true"></app-top-nav>
+<div class="header-section">
+    <div class="hero">
+        <img src="assets/images/hero.png" class="img-fluid" alt="Comfort">
+        <h1 class="position-absolute">Get the same comfort as the Swiss</h1>
+        <div class="row d-flex animated fadeIn shopButton pb-5 position-absolute">
+            <div class="col d-flex justify-content-center">
+                <button class="btn btn-default" [routerLink]="['/register']">{{'HEADER.shop-now' | translate}}</button>
+            </div>
+        </div>
+    </div>
+    <div class="row custom-made mt-0 position-relative">
+        <h5 class="col-9">Our Swiss <span>custom-made</span> orthopaedic insoles</h5>
+    </div>
+    <div class="row pb-4 py-0 m-0">
+        <div class="col-5 col-sm-6 p-0">
+            <img src="assets/images/foots_header.png" class="img-fluid" alt="Can make">
+        </div>
+        <div class="col-7 col-sm-6 hero-list pt-0 mt-0">
+            <h5 class="mb-0 pb-0">Can make:</h5>
+            <ul>
+                <li>{{'HEADER.li-1' | translate}}</li>
+                <li>{{'HEADER.li-2' | translate}}</li>
+                <li>{{'HEADER.li-4' | translate}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<app-benefit [number]="1"></app-benefit>
 <div class="headerBack">
     <div class="row">
         <div class="col-sm-12 animated fadeIn">
@@ -24,15 +53,9 @@
             <p class="subtitle" [innerHTML]="'HEADER.description3' | translate"></p>
         </div>
     </div>
-    <div class="row d-flex animated fadeIn shopButton">
+    <div class="row d-flex animated fadeIn shopButton pb-5">
         <div class="col d-flex justify-content-center">
             <button class="btn btn-default" [routerLink]="['/register']">{{'HEADER.shop-now' | translate}}</button>
-        </div>
-    </div>
-    <div class="row header-footer">
-        <div class="col-sm-12 animated fadeIn learnMore">
-            <p class="subtitle">{{'HEADER.learn' | translate}} </p>
-            <img src="assets/images/header-footer-icon.png" class="footerTri img-fluid">
         </div>
     </div>
 </div>
