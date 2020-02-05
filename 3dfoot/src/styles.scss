@@ -292,13 +292,12 @@ app-top-nav {
 }
 
 .header-section {
-  strong {
+  span {
     color: $base-blue-light;
     font-weight: 800;
   }
-  span {
-    margin-left: -50px;
-    display: block;
+  strong {
+    font-weight: 800;
   }
 }
 

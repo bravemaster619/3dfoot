@@ -164,14 +164,15 @@
     }
     .foot-section {
       img {
-        height: 160px;
+        height: 100%;
         width: 100%;
         object-fit: cover;
       }
     }
     .custom-made {
       color: $base-blue-dark;
-      top: -35px;
+      margin-top: -50px;
+      padding-bottom: 12px;
       strong {
         color: $base-blue-light;
         text-transform: lowercase;
@@ -188,7 +189,7 @@
         font-family: $font-family-medium;
 
         li {
-          padding-left: 5px;
+          padding-left: 0;
         }
       }
     }
