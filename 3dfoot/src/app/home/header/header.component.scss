@@ -150,7 +150,7 @@
       }
 
       .shopButton {
-        bottom: 18%;
+        bottom: 25%;
         left: 0;
         right: 0;
         margin: 0;
@@ -171,8 +171,14 @@
     }
     .custom-made {
       color: $base-blue-dark;
-      margin-top: -50px;
+      margin-top: -23%;
       padding-bottom: 12px;
+      h5 {
+        font-size: 21px;
+        font-family: $font-family-base;
+        font-weight: 600;
+        letter-spacing: -1.6px;
+      }
       strong {
         color: $base-blue-light;
         text-transform: lowercase;
@@ -182,13 +188,18 @@
       color: $base-blue-dark;
       h5 {
         font-size: 21px;
+        letter-spacing: -1.41px;
+        font-family: $font-family-base;
       }
 
       ul {
         font-size: 21px;
-        font-family: $font-family-medium;
-
+        font-family: $font-family-base;
+        margin: 0;
+        padding-left: 3px;
+        letter-spacing: -1.41px;
         li {
+          text-indent: 1em;
           padding-left: 0;
         }
       }
@@ -283,21 +294,21 @@
   }
 }
 
-@media(max-width: 360px) {
-  :host {
-    .header-section {
-      .hero-list {
-        h5 {
-          font-size: 16px;
-        }
-        ul {
-          font-size: 16px;
-          li {
-            padding-left: 5px;
-          }
-        }
-      }
-    }
-
-  }
-}
+//@media(max-width: 360px) {
+//  :host {
+//    .header-section {
+//      .hero-list {
+//        h5 {
+//          font-size: 16px;
+//        }
+//        ul {
+//          font-size: 16px;
+//          li {
+//            padding-left: 5px;
+//          }
+//        }
+//      }
+//    }
+//
+//  }
+//}
