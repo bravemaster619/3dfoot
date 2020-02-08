@@ -311,3 +311,12 @@
 //
 //  }
 //}
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+{ @media {
+  .hero-list ul {
+    li {
+      text-indent: 0;
+      margin-left: 1em;
+    }
+  }
+}}
