@@ -186,6 +186,7 @@
     .hero-list {
       color: $base-blue-dark;
       h5 {
+        text-transform: lowercase;
         font-size: 21px;
         letter-spacing: -1.41px;
         font-family: $font-family-base;
@@ -201,6 +202,7 @@
           text-indent: 0;
           list-style-position: inside;
           padding-left: 0;
+          text-transform: lowercase;
         }
       }
     }
