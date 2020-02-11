@@ -11,26 +11,26 @@
     "li-2": "静脉曲张",
     "li-3": "膝关节疼痛",
     "li-4": "肌肉疼痛",
-    "li-5": "颈部疼痛",
-    "description1": "<strong>无论是运动人群、糖尿病人，或是日常穿着使用</strong>，特殊且科学的设计都能让您的双脚时刻保持健康舒适。",
+    "li-5": "背部疼痛",
+    "description1": "<strong>无论是用于运动或是有足部困扰的人群，还是日常穿着</strong>，科学和定制化的设计能够让我们的足部获得良好的贴合感和理想的舒适度。",
     "description2": "瑞士苏黎世制造，<strong>1000元起包邮</strong>",
     "description3": "<strong>源自欧洲的先进护足理念和设计首次进入中国</strong>",
     "footer": "瑞士骨科专家设计",
     "shop-now": "马上抢购",
     "learn": "了解详情",
     "sign-up": "注册",
-    "hero-title": "Get the same comfort as the Swiss",
-    "hero-our-swiss": "Our Swiss <strong>custom-made</strong> orthopaedic insoles",
-    "hero-make": "Can make:",
-    "hero-li-1": "Walking",
-    "hero-li-2": "Running",
-    "hero-li-3": "And even standing a <strong>pure joy</strong> again"
+    "hero-title": "享受与瑞士用户得到的相同舒适感",
+    "hero-our-swiss": "来自瑞士的骨科定制鞋垫",
+    "hero-make": "能够让",
+    "hero-li-1": "行走",
+    "hero-li-2": "奔跑",
+    "hero-li-3": "甚至是站立都再次成为一种愉悦的感受"
   },
   "SECTION-ONE": {
     "header-title": "有效舒缓脚部疼痛，减轻足底压力",
     "description-1": "持久耐用的欧洲科技鞋垫直邮到家",
     "description-2": "手机即可测量脚型",
-    "quality": "没理解是什么意思",
+    "quality": "值得信赖的瑞士品质，基于60多年经验和精湛工艺设计制造，苏黎世用户百里挑一的选择，在中国也能轻松获得。",
     "delivery": "<strong>1000元起包邮</strong>"
   },
   "BENEFIT": {
@@ -39,17 +39,17 @@
   },
   "SECTION-TWO": {
     "section-title": "放松始于舒适，贝乐鞋垫让您更有活力",
-    "li-1": "背部疼痛",
-    "li-2": "静脉曲张",
-    "li-3": "膝盖和关节疼痛",
-    "li-4": "颈椎痛"
+    "li-1": "足部疼痛",
+    "li-2": "膝盖疼痛",
+    "li-3": "双腿沉重",
+    "li-4": "背部疼痛"
   },
   "SECTION-THREE": {
     "section-title": "有效缓解长时间站立导致的各种疼痛",
-    "li-1": "背部疼痛",
-    "li-2": "不舒适的鞋类穿着",
-    "li-3": "脚痛",
-    "li-4": "静脉曲张"
+    "li-1": "足部疼痛",
+    "li-2": "膝盖疼痛",
+    "li-3": "双腿沉重",
+    "li-4": "背部疼痛"
   },
   "SECTION-FOUR": {
     "section-title": "如何获得您的定制贝乐鞋垫？",
@@ -60,8 +60,8 @@
   },
   "SECTION-FIVE": {
     "section-title": "舒缓因运动引起的各种疼痛和不适",
-    "li-1": "小腿肌肉疼痛",
-    "li-2": "八字腿矫正",
+    "li-1": "缓解足部和膝盖疼痛",
+    "li-2": "舒缓跟腱疲劳",
     "li-3": "膝盖和关节保护",
     "li-4": "预防运动伤害"
   },
@@ -126,24 +126,37 @@
     "head": "客户支持",
     "description": "描述"
   },
-  "QUESTION1": {
+  "QUESTION": {
     "ques": "您需要？",
     "option.1": "更多的足部支撑",
     "option.2": "舒缓疼痛"
   },
-  "QUESTION2": {
+  "QUESTION1": {
     "ques": "您属于哪类状况？",
     "option.1": "经常运动",
     "option.2": "长期站立",
     "option.3": "有身体疼痛症状"
   },
-  "QUESTION3":  {
-    "ques": "Do you suffer from pain or discomfort caused by physical activity?",
+  "QUESTION2": {
+    "ques1": "Do you suffer from pain or discomfort caused by physical activity?",
+    "ques2": "Do you suffer from pain and discomfort when standing for prelonged periods of time?",
     "option.1": "Yes",
     "option.2": "No"
   },
+  "QUESTION3":  {
+    "ques1": "Select where you experience pain or discomfort",
+    "ques2": "What does your leg axis look like?",
+    "button.other": "None of the above",
+    "button.next" : "Next",
+    "button.show_result" : "Show result",
+    "option.1": "Straight legs",
+    "option.2": "Bow legs",
+    "option.3": "Knock-knees",
+    "question_first": "Question 1 of 2",
+    "question_second": "Question 2 of 2"
+  },
   "RESULT1": {
-    "result": "有身体疼痛感状况的相关文字描述",
+    "result": "高质量的鞋垫可以对足部和腿部姿态进行矫正，从而减轻甚至消除疼痛。同时，穿着鞋垫还可以防止当前腿部错误姿态的进一步恶化，减轻身体负担。赶快穿着鞋垫并从中获益吧！",
     "option.1": "<strong>定制</strong>—根据您的脚部模型进行定制",
     "option.2": "<strong>耐用</strong>—瑞士制造，经久耐用",
     "option.3": "<strong>物有所值</strong>—让您能够放心锻炼"
@@ -155,7 +168,7 @@
     "option.3": "<strong>物有所值</strong>—让您能够放心锻炼"
   },
   "RESULT3": {
-    "result": "长期站立状况的相关文字描述",
+    "result": "长时间站立和行走会在肌肉骨骼系统上造成单向拉力，从而可能导致身体疼痛，进一步影响工作和生活的质量。 通过穿着鞋垫，可以有效预防或改善相关问题，缓解疼痛。",
     "option.1": "<strong>定制</strong>—根据您的脚部模型进行定制",
     "option.2": "<strong>耐用</strong>—瑞士制造，经久耐用",
     "option.3": "<strong>物有所值</strong>—让您能够放心锻炼"
