@@ -1,14 +1,14 @@
 <div #section6>
     <div *ngIf="shouldDisplay">
-        <div class="row pb-4 animated flipInX slow">
+        <div class="row pb-4">
             <div class="col"><img class="img-fluid" src="assets/images/accreds.svg"></div>
         </div>
-        <div class="row animated flipInX slow">
+        <div class="row animated">
             <div class="col-12 pb-4">
                 <h2>{{'SECTION-SIX.newsletter' | translate}}</h2>
             </div>
         </div>
-        <div class="newsletter animated flipInX slow">
+        <div class="newsletter">
             <div>
                 <form [formGroup]="form">
                     <div class="input-group mb-3">
@@ -28,7 +28,7 @@
                 </div>
             </ng-template>
         </div>
-        <div class="row animated flipInX slow">
+        <div class="row">
             <ul class="linkpoint">
                 <li [routerLink]="['/about']">{{'SECTION-SIX.about' | translate}}</li>
                 <li [routerLink]="['/faqs']">{{'SECTION-SIX.faq' | translate}}</li>
