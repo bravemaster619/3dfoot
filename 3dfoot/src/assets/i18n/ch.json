@@ -96,12 +96,12 @@
   },
   "RESULT": {
     "head": "结果",
-    "title1": "Bähler custom insoles can help with your pain and discomfort!",
-    "title2": "We are sorry but Bähler custom insoles are not likely to help your condition, however, you can still wear them for additional comfort.",
-    "title3": "Bähler custom insoles can help with your pain and discomfort! Solution for sole pain",
-    "description1": "With our insoles, you take an important step towards more joie de vivre. They ensure that you can stand and walk without discomfort and more comfort in everyday life, at work, during sports and hiking. With our orthopedic mass insoles, you are well on your way. Thanks to competent advice, perfect fit and first-class Swiss quality",
-    "description2": "With our insoles, you take an important step towards more joie de vivre. They ensure that you can stand and walk without discomfort and more comfort in everyday life, at work, during sports and hiking. With our orthopedic mass insoles, you are well on your way. Thanks to competent advice, perfect fit and first-class Swiss quality",
-    "description3": "Solution for sole pain description. How can Bähler custom can help with your sole pain"
+    "title1": "贝乐定制鞋垫可缓解您的疼痛与不适",
+    "title2": "抱歉，贝乐定制鞋垫无法改善您的状况，但持续的穿着依然能够为您带来更好的舒适感。",
+    "title3": "贝乐定制鞋垫可缓解您的疼痛与不适，是解决您痛苦的好方法！",
+    "description1": "穿着贝乐定制鞋垫，帮助您向着更美好的生活迈向重要一步。贝乐定制鞋垫可以确保您在日常生活、工作、运动以及远足等各种场景下都能够更加舒适的站立和行走。得益于我们合理的穿戴方式和一流的瑞士品质，拥有贝乐定制鞋垫，让您一路舒适到底。",
+    "description2": "穿着贝乐定制鞋垫，帮助您向着更美好的生活迈向重要一步。贝乐定制鞋垫可以确保您在日常生活、工作、运动以及远足等各种场景下都能够更加舒适的站立和行走。得益于我们合理的穿戴方式和一流的瑞士品质，拥有贝乐定制鞋垫，让您一路舒适到底。",
+    "description3": "主要疼痛的解决方法。穿着贝乐鞋垫将如何祝您缓解痛苦。"
   },
   "FAQS": {
     "head": "常见问题",
@@ -145,7 +145,7 @@
   },
   "QUESTION2": {
     "ques1": "您是否因体育锻炼而导致疼痛或不适？",
-    "ques2": "長時間站立是否會感到疼痛和不適？",
+    "ques2": "当您长时间站立时，是否会感到疼痛或不适？",
     "option.1": "是",
     "option.2": "否"
   },
