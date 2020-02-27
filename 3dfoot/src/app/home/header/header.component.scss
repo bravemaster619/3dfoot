@@ -127,12 +127,14 @@
   }
 
   .header-section {
-    background-image: url("~/assets/images/bg-header.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    width: 100%;
+    .custom-made-bg {
+      background-image: url("~/assets/images/bg-header.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 423px;
+      width: 100%;
+    }
     .hero {
       position: relative;
       .swizContent {
@@ -188,8 +190,10 @@
     }
     .custom-made {
       color: $base-black-light;
-      padding-bottom: 12px;
+      padding-bottom: 30px;
+      padding-top: 65px;
       h5 {
+        max-width: 213px;
         font-size: 24px;
         font-family: $font-family-medium;
         letter-spacing: -1px;
@@ -202,11 +206,13 @@
       }
     }
     .hero-list {
-      color: $base-blue-dark;
+      color: $base-black-light;
       h5 {
         text-transform: lowercase;
-        font-size: 21px;
-        letter-spacing: -1.41px;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 30px;
+        letter-spacing: -1px;
         font-family: $font-family-medium;
       }
 
@@ -216,11 +222,24 @@
         padding-left: 0;
         margin-left: 5px;
         letter-spacing: -1.41px;
+        list-style: none;
         li {
           text-indent: 0;
           list-style-position: inside;
           padding-left: 0;
-          text-transform: lowercase;
+          &:before {
+            font-size: 11px;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            padding-right: 15px;
+            color: $base-green-light;
+            font-family: $font-awesome;
+            font-weight: 900;
+            content: "\f00c";
+          }
         }
       }
     }
