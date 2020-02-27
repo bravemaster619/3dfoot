@@ -28,8 +28,10 @@ export class SectionSixComponent implements OnInit {
 
     ngOnInit() {
         this.apiService.windowScroll.subscribe(event => {
-            if (event + 150 >= this.section6.nativeElement.offsetTop) {
-                this.shouldDisplay = true;
+            if(this.section6 && this.section6.nativeElement) {
+                if (event + 150 >= this.section6.nativeElement.offsetTop) {
+                    this.shouldDisplay = true;
+                }
             }
         });
     }
