@@ -206,6 +206,7 @@
       }
     }
     .hero-list {
+      margin-left: 10px;
       color: $base-black-light;
       h5 {
         text-transform: lowercase;
@@ -220,8 +221,7 @@
         font-size: 21px;
         font-family: $font-family-medium;
         padding-left: 0;
-        margin-left: 5px;
-        letter-spacing: -1.41px;
+        letter-spacing: -1px;
         list-style: none;
         li {
           text-indent: 0;
