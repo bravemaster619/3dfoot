@@ -2,16 +2,18 @@
     <div class="djg">
         <!-- <div class="col-5"></div> -->
         <div *ngIf="shouldDisplay" class="contentRight">
-            <h1 class="section-title animated fadeIn">{{'SECTION-TWO.section-title' | translate}}</h1>
-            <ul class="animated fadeIn">
-                <li>- {{'SECTION-TWO.li-1' | translate}} </li>
-                <li>- {{'SECTION-TWO.li-2' | translate}} </li>
-                <li>- {{'SECTION-TWO.li-3' | translate}} </li>
-                <li>- {{'SECTION-TWO.li-4' | translate}}</li>
-            </ul>
-            <button class="btn btn-default animated fadeIn"
-                    (click)="takeQuizz(1)">{{'button-shop' | translate}}</button>
-            <!-- <div class="d-flex shadow"></div> -->
+            <div class="content-inside">
+                <h1 class="section-title animated fadeIn">{{'SECTION-TWO.section-title' | translate}}</h1>
+                <ul class="animated fadeIn">
+                    <li> {{'SECTION-TWO.li-1' | translate}} </li>
+                    <li> {{'SECTION-TWO.li-2' | translate}} </li>
+                    <li> {{'SECTION-TWO.li-3' | translate}} </li>
+                    <li> {{'SECTION-TWO.li-4' | translate}}</li>
+                </ul>
+                <button class="btn btn-default animated fadeIn"
+                        (click)="takeQuizz(1)">{{'button-shop' | translate}}</button>
+                <!-- <div class="d-flex shadow"></div> -->
+            </div>
         </div>
     </div>
     <app-benefit [number]="1"></app-benefit>
