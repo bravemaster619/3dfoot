@@ -1,15 +1,17 @@
 <div #sectionThree>
     <div class="djg">
         <div *ngIf="shouldDisplay" class="contentLeft">
-            <h1 class="section-title animated fadeIn">{{'SECTION-THREE.section-title' | translate}}</h1>
-            <ul class="animated fadeIn">
-                <li>- {{'SECTION-THREE.li-1' | translate}} </li>
-                <li>- {{'SECTION-THREE.li-2' | translate}} </li>
-                <li>- {{'SECTION-THREE.li-3' | translate}} </li>
-                <li>- {{'SECTION-THREE.li-4' | translate}}</li>
-            </ul>
-            <button class="btn btn-default animated fadeIn"
-                    (click)="takeQuizz(1)">{{'button-buy' | translate}}</button>
+            <div class="content-inside">
+                <h1 class="section-title animated fadeIn">{{'SECTION-THREE.section-title' | translate}}</h1>
+                <ul class="animated fadeIn">
+                    <li> {{'SECTION-THREE.li-1' | translate}} </li>
+                    <li> {{'SECTION-THREE.li-2' | translate}} </li>
+                    <li> {{'SECTION-THREE.li-3' | translate}} </li>
+                    <li> {{'SECTION-THREE.li-4' | translate}}</li>
+                </ul>
+                <button class="btn btn-default animated fadeIn"
+                        (click)="takeQuizz(1)">{{'button-buy' | translate}}</button>
+            </div>
         </div>
     </div>
 </div>

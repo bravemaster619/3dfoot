@@ -1,6 +1,6 @@
 @import '~src/assets/scss/_vars';
 :host {
-  background-image: url("~/assets/images/section-5-bg.png");
+  background-image: url("~/assets/images/section-5-bg.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -25,12 +25,13 @@
   }
   & .section-title{
     color: $base-white;
-    font-size: 26px;
-    font-weight: 800;
-    letter-spacing: -1.3px;
+    font-size: 24px;
+    font-family: $font-family-medium;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -1px;
     z-index: 99;
     margin-top: 15px;
-    line-height: 1.4;
   }
   & ul {
     z-index: 99;
@@ -40,26 +41,40 @@
     margin-top: 30px;
   }
   & ul > li {
-    font-family: $font-family-medium;
+    font-family: $font-family-light;
+    font-weight: 300;
     color: $base-white;
-    font-size: 1.125rem;
-    letter-spacing: -0.054rem;
-    line-height: 20px;
-    margin-bottom: 25px;
+    font-size: 18px;
+    letter-spacing: -1px;
+    line-height: 1;
     list-style-position: inside;
-    text-indent: -0.65em;
-    padding-left: 1em;
+    text-indent: -1em;
+    padding-left: 2em;
+    margin-bottom: 15px;
+    &:before {
+      font-size: 11px;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      padding-right: 15px;
+      color: $base-green-light;
+      font-family: $font-awesome;
+      font-weight: 900;
+      content: "\f00c";
+    }
   }
   & button {
-    width: 173px;
-    background-color: $base-green-light;
-    color: $base-blue-dark;
+    width: 188px;
+    background-color: $base-red;
+    color: $base-white;
     font-size: 21px;
     font-weight: 800;
-    letter-spacing: -1.024px;
+    letter-spacing: -1px;
     z-index: 99;
-    margin-top: 40px;
-    border-radius: 2px;
+    margin-top: 20px;
+    border-radius: 100px;
   }
   ::ng-deep app-benefit .benefit {
     padding-left:  23px;
@@ -67,11 +82,13 @@
 
   }
   & .contentLeft{
-    float: left;
-    width: 60%;
     min-height: 521px;
-    background: rgba(0, 91, 121, .74);
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 4.56%, rgba(0, 0, 0, 0.6) 50%), rgba(0, 0, 0, 0.0001);
     padding: 25px;
+    .content-inside {
+      float: left;
+      width: 61%;
+    }
   }
 }
 
