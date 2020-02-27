@@ -10,11 +10,23 @@
     gtag('config', 'UA-158841538-1');
   </script>
   <meta charset="utf-8">
-  <title> 🇨🇭 {{'TITLE' | translate}}</title>
+  <title>Swiss custom made insoles</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+  <script>
+    window.changeTitle = function() {
+      let lang = localStorage.getItem("lang");
+      if(!lang) lang = "en";
+      if(lang === "en") {
+        document.title = "Swiss custom made insoles";
+      } else if(lang === "ch") {
+        document.title  = "瑞士定制鞋垫";
+      }
+    }
+    changeTitle();
+  </script>
 </head>
 <body>
   <app-root></app-root>

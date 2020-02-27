@@ -29,6 +29,7 @@ export class TopNavComponent implements OnInit {
     this.translateService.setDefaultLang(event);
     localStorage.setItem('lang', event);
     this.lang = event;
+    window['changeTitle']();
   }
 
   @HostListener('window:scroll', [])
