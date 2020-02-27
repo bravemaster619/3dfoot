@@ -1,7 +1,11 @@
 <app-top-nav [background]="true"></app-top-nav>
 <div class="header-section">
     <div class="hero">
-        <img src="assets/images/hero.png" class="img-fluid" alt="Comfort">
+        <img src="assets/images/hero.jpg" class="img-fluid w-100" alt="Comfort">
+        <div class="col-12 d-flex justify-content-center swizContent position-absolute mx-100">
+            <img class="flag img-fluid" src="assets/images/swissflag.svg">
+            <p class="footer-text">{{'HEADER.footer' | translate}}</p>
+        </div>
         <h1 class="position-absolute">{{'HEADER.hero-title' | translate}}</h1>
         <div class="row d-flex animated fadeIn shopButton pb-5 position-absolute">
             <div class="col d-flex justify-content-center">

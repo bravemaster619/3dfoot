@@ -2,16 +2,29 @@
 $font-family-base: 'Avenir Heavy', Arial, sans-serif;
 $font-family-medium: 'Avenir-Medium', Arial, sans-serif;
 $font-family-light: 'Avenir-Light', Arial, sans-serif;
+$font-awesome : "Font Awesome 5 Free";
+
 $font-base-colour: #888888;
 $base-white: #ffffff;
+
 $base-black: #000000;
 $base-black-light: #333;
+$base-black-opacity: rgba(0, 0, 0, 0.4);
+
 $base-gray: #b7b7b7;
+$base-gray-opacity: rgba(151, 151, 151, 0.35);
+$base-gray-light: #f2f2f2;
+
+$base-red: #DC3B38;
+
+$base-green-light: #97B539;
+$base-green-light-2: #E4FF8E;
+$base-green-light-opacity: linear-gradient(225deg, #C2E787 25.15%, #97B539 58.01%), #97B539;
+
 $base-blue-dark: #005b79;
-$base-blue-light: #2cd6e5;
 $base-blue-light-2: #2bc2d0;
 $base-blue-opacity: rgba(0, 91, 121, 0.74);
-$base-black-opacity: rgba(0, 0, 0, 0.4);
+
 $base-white-opacity: rgba(255, 255, 255, 0.4);
 $base-blue-light-opacity: rgba(255, 255, 255, 0.4);
 

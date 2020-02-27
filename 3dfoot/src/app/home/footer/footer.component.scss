@@ -1,9 +1,9 @@
+@import '~src/assets/scss/_vars';
 :host {
   width: 100%;
-  background-color: #fff;
   max-width: 100%;
   & p {
-    color: #005B74;
+    color: $base-black-light;
     font-size: 21px;
     font-weight: 800;
     letter-spacing: -1.02px;

@@ -51,20 +51,26 @@ html {
       &:focus {
         color: $base-gray;
       }
-
       &::placeholder {
-        color: $base-gray;
-        opacity: 0.6;
+        color: $base-black;
+        opacity: 0.25;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: -1px;
       }
-
       &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-        color: $base-gray;
-        opacity: 0.6;
+        color: $base-black;
+        opacity: 0.25;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: -1px;
       }
-
       &::-ms-input-placeholder { /* Microsoft Edge */
-        color: $base-gray;
-        opacity: 0.6;
+        color: $base-black;
+        opacity: 0.25;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: -1px;
       }
     }
   }
@@ -73,6 +79,10 @@ html {
     font-family: $font-family-light!important;
   }
 
+  .m-25 {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
   .general-content {
     width: 100%;
     height: 100%;
@@ -151,7 +161,7 @@ html {
       width: 194px;
       height: 50px;
       margin: 0 auto;
-      background-color: $base-blue-light;
+      background-color: $base-green-light;
       color: $base-blue-dark;
       font-size: 24px;
       font-weight: 800;
@@ -293,7 +303,7 @@ app-top-nav {
 
 .header-section {
   span {
-    color: $base-blue-light;
+    color: $base-green-light;
     font-weight: 800;
   }
   strong {

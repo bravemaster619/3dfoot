@@ -1,5 +1,6 @@
+@import '~src/assets/scss/_vars';
 :host{
-  background-color: darkgray;
+  background-color: $base-white;
   margin: 0 auto;
   display: flex;
   flex-direction: column;

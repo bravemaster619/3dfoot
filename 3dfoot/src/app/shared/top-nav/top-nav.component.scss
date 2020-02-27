@@ -9,7 +9,7 @@
     background: transparent;
 
     &.fixed {
-      background: $base-blue-light;
+      background: $base-green-light;
       position: fixed;
       width: inherit;
       transition: all 300ms ease-in;
@@ -26,7 +26,8 @@
   }
 
   & .topNav.back {
-    background: $base-blue-light;
+    background: $base-green-light;
+    border-bottom: 2px solid $base-green-light-2;
   }
 
   & .logo {
@@ -41,7 +42,7 @@
   & span {
     width: 67px;
     height: 27px;
-    color: $base-blue-dark;
+    color: $base-green-light-2;
     text-align: right;
     font-size: 20px;
     font-weight: 800;
@@ -68,23 +69,6 @@
       &.active {
         color: white;
       }
-    }
-  }
-
-  .swizContent {
-    position: relative;
-    top: 6px;
-    img {
-      width: 30px;
-      height: 25px;
-      margin-right: 10px;
-    }
-
-    p {
-      color: $base-blue-dark;
-      font-size: 15px;
-      padding-top: 2px;
-      font-family: $font-family-medium;
     }
   }
 }

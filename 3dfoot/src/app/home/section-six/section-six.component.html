@@ -3,36 +3,36 @@
         <div class="row pb-4">
             <div class="col"><img class="img-fluid" src="assets/images/accreds.svg"></div>
         </div>
-        <div class="row">
-            <div class="col-12 pb-4">
-                <h2>{{'SECTION-SIX.newsletter' | translate}}</h2>
+        <div class="row newsletter-bg">
+            <div class="col-12">
+                <h2 class="envelope-icon">{{'SECTION-SIX.newsletter' | translate}}</h2>
             </div>
-        </div>
-        <div class="newsletter">
-            <div>
-                <form [formGroup]="form">
-                    <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="{{'REGISTER.email' | translate}}"
-                               formControlName="email">
-                    </div>
-                </form>
-            </div>
-            <div *ngIf="show; else default">
-                <button class="btn btn-default" [disabled]="!form.valid"
-                        (click)="registerNewsletter(template)">{{'SECTION-SIX.submit' | translate}}</button>
-            </div>
-            <ng-template #default>
-                <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
+            <div class="col-12 newsletter">
+                <div>
+                    <form [formGroup]="form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="{{'REGISTER.email' | translate}}"
+                                   formControlName="email">
+                        </div>
+                    </form>
                 </div>
-            </ng-template>
+                <div *ngIf="show; else default">
+                    <button class="btn btn-default" [disabled]="!form.valid"
+                            (click)="registerNewsletter(template)">{{'SECTION-SIX.submit' | translate}}</button>
+                </div>
+                <ng-template #default>
+                    <div class="spinner">
+                        <div class="double-bounce1"></div>
+                        <div class="double-bounce2"></div>
+                    </div>
+                </ng-template>
+            </div>
         </div>
-        <div class="row">
+        <div class="row m-25">
             <ul class="linkpoint">
-                <li [routerLink]="['/about']">{{'SECTION-SIX.about' | translate}}</li>
-                <li [routerLink]="['/faqs']">{{'SECTION-SIX.faq' | translate}}</li>
-                <li [routerLink]="['/contacts']">{{'SECTION-SIX.contacts' | translate}}</li>
+                <li [routerLink]="['/about']">{{'SECTION-SIX.about' | translate}} <i class="fas fa-chevron-right float-right"></i></li>
+                <li [routerLink]="['/faqs']">{{'SECTION-SIX.faq' | translate}} <i class="fas fa-chevron-right float-right"></i></li>
+                <li [routerLink]="['/contacts']">{{'SECTION-SIX.contacts' | translate}} <i class="fas fa-chevron-right float-right"></i></li>
             </ul>
         </div>
     </div>
