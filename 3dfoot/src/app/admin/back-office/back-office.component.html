@@ -1,14 +1,19 @@
 <div class="customNav">
     <app-top-nav [custom]="true" [showLang]="false"></app-top-nav>
 </div>
-<app-back></app-back>
 
-<div class="backOfficeContent">
-    <div class="row pt-46 text-center animated bounceInDown delay-.5s head">
-        <div class="col-12">
-            <h1>{{'ADMIN.backOffice' | translate}}</h1>
+<div class="header-hero position-relative without-slide">
+    <app-back></app-back>
+    <div class="hero-section">
+        <div class="row text-center animated bounceInDown delay-.5s pt-title">
+            <div class="col-12">
+                <h1>{{'ADMIN.backOffice' | translate}}</h1>
+            </div>
         </div>
     </div>
+</div>
+
+<div class="backOfficeContent">
     <div class="row fetchUsers">
         <div class="col-12">
             <button class="btn btn-default" (click)="getUsers()">{{'ADMIN.btn-export' | translate}}</button>

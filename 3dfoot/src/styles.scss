@@ -107,6 +107,14 @@ html {
           color: $base-white;
           font-weight: 800;
           letter-spacing: -1px;
+          &:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            bottom: -15px;
+            background: $base-green-light;
+          }
         }
       }
     }

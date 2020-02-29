@@ -2,13 +2,14 @@
 :host {
   & .pt-46{
     padding-top: 46px;
-
     & p {
-      color: $base-white;
-      font-family: $font-family-light;
-      font-size: 20px;
-      letter-spacing: -1.17px;
+      color: $base-black-light;
+      font-family: $font-family-medium;
       text-align: left;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: -1px;
     }
   }
 }

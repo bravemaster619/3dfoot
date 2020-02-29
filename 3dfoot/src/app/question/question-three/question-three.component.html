@@ -7,9 +7,9 @@
         <h3 class="title animated bounceInDown delay-.5s" *ngIf="questionNumber===2">{{'QUESTION3.ques2' | translate}}</h3>
     </div>
 </div>
-<div *ngIf="questionNumber===1">
+<div *ngIf="questionNumber===1" class="question-content">
     <div class="row d-flex justify-content-center animated fadeIn delay-1s mt-4 m-0 p-0 bg-white first-question pb-3">
-        <p class="pt-2 question-title" style="color: #005b79">{{'QUESTION3.question_first'|translate}}</p>
+        <p class="pt-2 question-title">{{'QUESTION3.question_first'|translate}}</p>
         <div class="col-10 m-0 p-0">
             <div class="row m-0 p-0">
                 <div class="col-6 m-0 p-0">
@@ -44,9 +44,9 @@
         </div>
     </div>
 </div>
-<div *ngIf="questionNumber===2">
+<div *ngIf="questionNumber===2" class="position-relative">
     <div class="row d-flex justify-content-center animated fadeIn delay-1s mt-4 m-0 p-0 bg-white second-question pb-3">
-        <p class="pt-2 question-title" style="color: #005b79">{{'QUESTION3.question_second'|translate}}</p>
+        <p class="pt-2 question-title">{{'QUESTION3.question_second'|translate}}</p>
         <div class="col-12">
             <div class="row">
                 <div class="col-6 m-0 p-0 d-flex justify-content-center align-items-center">

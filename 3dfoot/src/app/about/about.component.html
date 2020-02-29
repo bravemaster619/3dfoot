@@ -1,12 +1,15 @@
 <div class="customNav">
     <app-top-nav [newLogo]="false" [footer]="false" [showLang]="false"></app-top-nav>
 </div>
-<app-back></app-back>
-<div class="row pt-46 text-center animated bounceInDown delay-.5s">
-    <div class="col-12">
-        <h1>{{'ABOUT.head' | translate}}</h1>
+
+<div class="header-hero position-relative with-slide">
+    <app-back></app-back>
+    <div class="hero-section">
+        <img src="assets/images/hero-about.png" class="img-fluid w-100" alt="About">
+        <h1 class="position-absolute d-flex justify-content-center align-items-center">{{'ABOUT.head' | translate}}</h1>
     </div>
 </div>
+
 <div class="row pt-46 text-center animated fadeIn delay-1s">
     <div class="col-12">
         <p [innerHTML]="'ABOUT.description' | translate"></p>
