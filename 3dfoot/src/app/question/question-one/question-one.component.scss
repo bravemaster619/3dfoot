@@ -1,5 +1,8 @@
 @import '~src/assets/scss/_vars';
 :host {
+  .question-content {
+
+  }
   & .col-7 {
     display: flex;
     align-items: center;
@@ -15,8 +18,7 @@
     margin-left: 6px;
   }
   & .row {
-    margin-top: 5px;
-    margin-bottom: 35px;
+    margin: 0 -40px 35px -40px;
     & .title {
       font-family: $font-family-medium;
       margin-top: 0;
@@ -31,24 +33,37 @@
     & .subtitle {
       margin-top: 6px;
       text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.62);
-      color: #fff;
+      color: $base-white;
       font-size: 25px;
       font-weight: 800;
       letter-spacing: -1px;
       text-align: center;
     }
     & .card{
-      padding: 6px 10px 6px 6px;
-      background-color: $base-black-light;
+      background-color: transparent;
+      border: none;
     }
   }
   & h1 {
-    font-family: $font-family-light;
+    max-width: 354px;
+    font-family: $font-family-medium;
     color: $base-white;
-    font-size: 26px;
-    font-weight: 300;
-    letter-spacing: -1.3px;
     margin-bottom: 0;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 4px;
+      bottom: -15px;
+      background: $base-green-light;
+      margin: auto;
+      left: 0;
+      right: 0;
+    }
   }
 }
 
