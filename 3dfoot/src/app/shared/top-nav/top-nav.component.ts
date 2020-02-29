@@ -25,11 +25,33 @@ export class TopNavComponent implements OnInit {
     this.onScroll = false;
   }
 
-  switchLanguage(event){
+  switchLanguage(event = ''){
+    if(!event) {
+      let currentLang = this.getLanguage();
+      if(currentLang == 'en') {
+        event = 'ch';
+      } else {
+        event = 'en';
+      }
+    } else {
+      event = event === 'ch' ? 'ch' : 'en';
+    }
     this.translateService.setDefaultLang(event);
     localStorage.setItem('lang', event);
     this.lang = event;
     window['changeTitle']();
+  }
+
+  getLanguage() {
+    return localStorage.getItem('lang') == 'ch' ? 'ch' : 'en';
+  }
+
+  getLanguageButtonTitle() {
+    if(this.getLanguage() == 'ch') {
+      return 'EN';
+    } else {
+      return '中文';
+    }
   }
 
   @HostListener('window:scroll', [])
