@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  siteurl: 'http://3dfootapi.omnicode.dev'
+  siteurl: 'http://3dfoot.tk'
 };
