@@ -137,24 +137,6 @@
     }
     .hero {
       position: relative;
-      .swizContent {
-        margin: auto;
-        top: 25px;
-        left: 0;
-        right: 0;
-        img {
-          width: 30px;
-          height: 25px;
-          margin-right: 10px;
-        }
-
-        p {
-          color: $base-white;
-          font-size: 15px;
-          padding-top: 2px;
-          font-family: $font-family-light;
-        }
-      }
       h1 {
         max-width: 300px;
         margin: auto;

@@ -2,10 +2,13 @@
 
 :host {
   & h1 {
-    color: $base-blue-dark;
-    font-size: 36px;
+    color: $base-black-light;
     font-weight: 800;
-    letter-spacing: -1.75px;
+    width: 332px;
+    max-width: 100%;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -2px;
   }
 
   & .head {
@@ -18,17 +21,36 @@
   & form {
     padding: 20px;
     margin-top: 15px;
-    color: $base-blue-dark;
+    color: $base-black-light;
     width: 100%;
   }
-
+  & input {
+    width: 354px;
+    max-width: 100%;
+    height: 42px;
+    background-color: $base-gray-light-2;
+    border: 1px solid $base-gray-opacity;
+    border-radius: 21px;
+  }
+  label {
+    font-family: $font-family-medium;
+    font-size: 14px;
+    padding-left: 20px;
+    line-height: 19px;
+    letter-spacing: -1px;
+    color: $base-black-light;
+  }
   & .loginBtn {
-    margin-top: 20px;
-    width: 150px;
-    overflow: hidden;
-    padding: 10px;
-    border-radius: 1px;
+    width: 354px;
+    max-width: 100%;
+    height: 42px;
+    border-radius: 104px;
+    margin: 0 auto;
     background-color: $base-green-light;
-    color: $base-blue-dark;
+    color: $base-white;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -1px;
   }
 }

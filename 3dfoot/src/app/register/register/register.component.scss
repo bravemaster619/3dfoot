@@ -2,27 +2,36 @@
 :host {
   & .pt-46 {
     padding-top: 25px;
-
     & p {
-      color: $base-white;
-      font-size: 24px;
-      letter-spacing: -1.17px;
-      font-family: $font-family-light;
+      color: $base-black-light;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: -1px;
+      font-family: $font-family-medium;
     }
   }
 
+  .pt-title {
+    padding-top: 44px;
+    max-width: 350px;
+    margin: auto;
+  }
+
   & form {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 5px;
     display: flex;
     flex-wrap: wrap;
   }
 
   & input {
-    width: 305px;
-    height: 41px;
-    background-color: $base-white;
-    border-radius: 0;
+    width: 354px;
+    max-width: 100%;
+    height: 42px;
+    background-color: $base-gray-light-2;
+    border: 1px solid $base-gray-opacity;
+    border-radius: 21px;
   }
 }
 

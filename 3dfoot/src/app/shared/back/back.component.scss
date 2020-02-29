@@ -1,6 +1,21 @@
-.back {
-    color: #2cd6e5;
-    font-size: 36px;
+@import '~src/assets/scss/_vars';
+
+.back-content {
+  width: 40px;
+  height: 40px * 2;
+  left: -10px;
+  z-index: 10;
+  background: $base-green-light;
+  border-bottom-right-radius: 40px * 2;
+  border-top-right-radius: 40px * 2;
+  cursor: pointer;
+  top:0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  .back {
+    color: $base-white;
+    font-size: 14px;
     font-weight: 300;
-    cursor: pointer;
   }
+}

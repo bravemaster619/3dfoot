@@ -1,18 +1,24 @@
-<div class="row topNav" [class.fixed]="checkScroll()" [class.cus]="custom" [class.back]="background">
-    <div class="col" *ngIf="newLogo">
-        <img class="logo img-fluid" [routerLink]="['']" src="assets/images/bahler_new_dark.svg">
-    </div>
-    <div class="col" *ngIf="!newLogo">
-        <img class="logo img-fluid" [routerLink]="['']" src="assets/images/bahler_white.svg">
-    </div>
-    <div class="col d-flex justify-content-end langContent" *ngIf="showLang">
-        <div *ngIf="!onScroll">
-            <span (click)="switchLanguage('ch')" [ngClass]="{'active': lang == 'ch'}">CN</span>
-            <span>|</span>
-            <span (click)="switchLanguage('en')" [ngClass]="{'active': lang == 'en'}">EN</span>
+<div class="header-menu position-relative w-100" [class.back]="background">
+    <div class="row topNav" [class.fixed]="checkScroll()" [class.cus]="custom" [class.back]="background">
+        <div class="col" *ngIf="newLogo">
+            <img class="logo img-fluid" [routerLink]="['']" src="assets/images/bahler_new_dark.svg">
         </div>
-        <div *ngIf="onScroll">
-            <span [routerLink]="['/register']">{{'HEADER.sign-up' | translate}}</span>
+        <div class="col" *ngIf="!newLogo">
+            <img class="logo img-fluid" [routerLink]="['']" src="assets/images/bahler_new_dark.svg">
         </div>
+        <div class="col d-flex justify-content-end langContent" *ngIf="showLang">
+            <div *ngIf="!onScroll">
+                <span (click)="switchLanguage('ch')" [ngClass]="{'active': lang == 'ch'}">CN</span>
+                <span>|</span>
+                <span (click)="switchLanguage('en')" [ngClass]="{'active': lang == 'en'}">EN</span>
+            </div>
+            <div *ngIf="onScroll">
+                <span [routerLink]="['/register']">{{'HEADER.sign-up' | translate}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 d-flex justify-content-center swizContent position-absolute mx-100" [class.back]="background">
+        <img class="flag img-fluid" src="assets/images/swissflag.svg">
+        <p class="footer-text">{{'HEADER.footer' | translate}}</p>
     </div>
 </div>

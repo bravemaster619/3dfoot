@@ -1,38 +1,49 @@
 @import '~src/assets/scss/_vars';
 :host {
   & .p-subtitle{
-    margin-top: 15px;
+    margin-top: 30px;
     & p {
-      color: $base-white;
-      font-family: $font-family-light;
-      font-size: 20px;
-      letter-spacing: -1.17px;
+      color: $base-black-light;
+      font-family: $font-family-medium;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 30px;
+      letter-spacing: -1px;
       text-align: center;
     }
   }
-
   form {
-    padding: 20px;
+    padding: 10px 20px 20px 20px;
     color: $base-blue-dark;
     width: 100%;
     textarea {
       width: 100%;
       max-width: 100%;
-      border-radius: 0;
+      height: 196px;
+      background: $base-gray-light-2;
+      border: 1px solid $base-gray-opacity;
+      border-radius: 21px;
     }
     input {
-      border-radius: 0;
+      width: 100%;
+      max-width: 100%;
+      height: 42px;
+      background: $base-gray-light-2;
+      border: 1px solid $base-gray-opacity;
+      border-radius: 21px;
     }
   }
   & .loginBtn {
-    width: 194px;
-    height: 50px;
+    width: 354px;
+    max-width: 100%;
+    height: 42px;
+    border-radius: 104px;
+    line-height: 25px;
     margin: 0 auto;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 800;
-    letter-spacing: -1.17px;
-    border-radius: 0;
+    letter-spacing: -1px;
     background-color: $base-green-light;
-    color: $base-blue-dark;
+    color: $base-white;
   }
 }

@@ -47,27 +47,34 @@ html {
     position: relative;
     max-width: 412px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     .form-control {
       &:focus {
         color: $base-gray;
       }
+
       &::placeholder {
-        color: $base-black;
-        opacity: 0.25;
+        color: $base-gray-medium;
+        font-family: $font-family-medium;
+        opacity: 1;
         font-size: 14px;
         line-height: 19px;
         letter-spacing: -1px;
       }
+
       &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-        color: $base-black;
-        opacity: 0.25;
+        color: $base-gray-medium;
+        font-family: $font-family-medium;
+        opacity: 1;
         font-size: 14px;
         line-height: 19px;
         letter-spacing: -1px;
       }
+
       &::-ms-input-placeholder { /* Microsoft Edge */
-        color: $base-black;
-        opacity: 0.25;
+        color: $base-gray-medium;
+        font-family: $font-family-medium;
+        opacity: 1;
         font-size: 14px;
         line-height: 19px;
         letter-spacing: -1px;
@@ -76,13 +83,58 @@ html {
   }
 
   .font-light {
-    font-family: $font-family-light!important;
+    font-family: $font-family-light !important;
+  }
+
+  .header-hero {
+    &.with-slide {
+      .hero-section {
+        position: relative;
+        margin-left: -25px;
+        margin-right: -25px;
+
+        h1 {
+          max-width: 300px;
+          margin: auto;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 36px;
+          line-height: 36px;
+          text-align: center;
+          color: $base-white;
+          font-weight: 800;
+          letter-spacing: -1px;
+        }
+      }
+    }
+
+    //&.without-slidea {
+    //  .hero-section {
+    //    position: relative;
+    //    margin-left: -25px;
+    //    margin-right: -25px;
+    //
+    //    h1 {
+
+    //    }
+    //  }
+    //}
+  }
+
+  .without-slide {
+    .back-content {
+      top: 35px;
+    }
   }
 
   .m-25 {
     margin-left: -25px;
     margin-right: -25px;
   }
+
   .general-content {
     width: 100%;
     height: 100%;
@@ -111,9 +163,11 @@ html {
       width: 122px;
       float: left;
     }
+
     & .col-img-r {
       float: left;
     }
+
     & .col-txt {
       width: 100%;
       float: left;
@@ -121,12 +175,14 @@ html {
       padding-left: 20px;
       padding-right: 10px;
     }
+
     & .col-txt-l {
       width: 100%;
       float: left;
       text-align: left;
       padding-right: 10px;
     }
+
     & .results {
 
     }
@@ -141,7 +197,10 @@ html {
     position: relative;
     padding: 28px 25px;
     min-height: 100vh;
-    background-color: $base-blue-dark;
+    background-image: url("~/assets/images/bg-pages.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
     .customNav {
       margin-left: -25px;
@@ -151,22 +210,25 @@ html {
     }
 
     & h1 {
-      color: $base-white;
-      font-size: 36px;
+      color: $base-black-light;
+      letter-spacing: -2px;
       font-weight: 800;
-      letter-spacing: -1.75px;
+      font-size: 30px;
+      line-height: 38px;
     }
 
     & button {
-      width: 194px;
-      height: 50px;
+      width: 354px;
+      max-width: 100%;
+      height: 42px;
+      border-radius: 104px;
       margin: 0 auto;
       background-color: $base-green-light;
-      color: $base-blue-dark;
-      font-size: 24px;
+      color: $base-white;
       font-weight: 800;
-      letter-spacing: -1.17px;
-      border-radius: 0;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: -1px;
     }
   }
 
@@ -183,7 +245,7 @@ html {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: $base-blue-dark;
+    background-color: $base-black-light;
     opacity: 0.6;
     position: absolute;
     top: 0;
@@ -306,6 +368,7 @@ app-top-nav {
     color: $base-green-light;
     font-weight: 800;
   }
+
   strong {
     font-weight: 800;
   }
@@ -315,12 +378,14 @@ app-top-nav {
   html {
     .general-content, .base-content {
       padding: 28px 15px;
+
       .card {
         padding-top: 5px;
       }
     }
   }
 }
+
 @media (max-width: 359px) {
   ::ng-deep {
     & h1 {

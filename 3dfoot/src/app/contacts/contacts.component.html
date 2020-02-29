@@ -1,12 +1,15 @@
 <div class="customNav">
     <app-top-nav [newLogo]="false" [footer]="false" [showLang]="false"></app-top-nav>
 </div>
-<app-back></app-back>
-<div class="row pt-46 text-center animated bounceInDown delay-.5s">
-    <div class="col-12">
-        <h1>{{'CONTACTS.head' | translate}}</h1>
+
+<div class="header-hero position-relative with-slide">
+    <app-back></app-back>
+    <div class="hero-section">
+        <img src="assets/images/hero-contacts.png" class="img-fluid w-100" alt="Contacts">
+        <h1 class="position-absolute d-flex justify-content-center align-items-center">{{'CONTACTS.head' | translate}}</h1>
     </div>
 </div>
+
 <div class="row p-subtitle text-center animated fadeIn delay-1s">
     <div class="col-12">
         <p [innerHTML]="'CONTACTS.description' | translate"></p>
@@ -15,18 +18,20 @@
 <div class="row loginFormHere">
     <form [formGroup]="form" accept-charset="UTF-8">
         <div class="form-group">
-            <input type="email" formControlName="email" class="form-control" placeholder="{{'CONTACTS.email' | translate}}"/>
+            <input type="email" formControlName="email" class="form-control"
+                   placeholder="{{'CONTACTS.email' | translate}}"/>
         </div>
         <div class="form-group">
-            <textarea formControlName="content" rows="9" class="form-control" placeholder="{{'CONTACTS.message' | translate}}"></textarea>
+            <textarea formControlName="content" rows="9" class="form-control"
+                      placeholder="{{'CONTACTS.message' | translate}}"></textarea>
         </div>
-        <div class="text-center pt-3">
+        <div class="text-center pt-2">
             <button class="btn btn-default loginBtn" *ngIf="show; else default" [disabled]="!form.valid"
-                (click)="contact(template)">
+                    (click)="contact(template)">
                 {{'CONTACTS.btn-submit' | translate}}
             </button>
             <ng-template #default>
-                <div class="spinner mx-auto" >
+                <div class="spinner mx-auto">
                     <div class="double-bounce1 bg-white"></div>
                     <div class="double-bounce2 bg-white"></div>
                 </div>
