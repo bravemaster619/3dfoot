@@ -28,6 +28,8 @@ import { AccordionModule } from 'ngx-bootstrap/accordion';
 import {BsModalRef, ModalModule} from "ngx-bootstrap";
 import {QuestionTwoComponent} from "./question/question-two/question-two.component";
 import {QuestionThreeComponent} from "./question/question-three/question-three.component";
+import {HomeModule} from "./home/home.module";
+
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -46,9 +48,10 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AboutComponent,
     ContactsComponent,
     CustomerComponent,
-    FaqsComponent
+    FaqsComponent,
   ],
   imports: [
+    HomeModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

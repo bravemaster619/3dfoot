@@ -27,17 +27,20 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 
 @NgModule({
   declarations: [HeaderComponent, HomeComponent, SectionOneComponent, BenefitComponent, SectionTwoComponent, SectionThreeComponent, SectionFourComponent, SectionFiveComponent, SectionSixComponent, FooterComponent],
-    imports: [
+  imports: [
         CommonModule,
         HomeRoutingModule,
         HttpClientModule,
         TranslateModule,
         SharedModule,
         ReactiveFormsModule,
-        ModalModule.forRoot()
-    ],
+  ],
   providers: [
 
-  ]
+  ],
+    exports: [
+        SectionSixComponent,
+        FooterComponent
+    ]
 })
 export class HomeModule { }
