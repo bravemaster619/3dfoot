@@ -110,18 +110,6 @@ html {
         }
       }
     }
-
-    //&.without-slidea {
-    //  .hero-section {
-    //    position: relative;
-    //    margin-left: -25px;
-    //    margin-right: -25px;
-    //
-    //    h1 {
-
-    //    }
-    //  }
-    //}
   }
 
   .without-slide {
@@ -338,19 +326,23 @@ html {
 
   .singleFaq {
     .card {
-      background-color: transparent;
-      color: $base-white;
+      background-color: $base-white;
+      color: $base-black-light;
       border: none;
     }
 
     .card-body {
-      border-bottom: 1px solid $base-white-opacity;
-      background-color: rgba(44, 214, 229, 0.2);
+      border-bottom: 2px solid $base-gray-light;
+      background-color:$base-gray-light-2;
     }
 
     .card-header {
+      padding: 1.7rem 1.25rem;
       //background-color: rgba(0, 91, 116, 0);
-      border-bottom: 1px solid $base-white-opacity;
+      border-bottom: 2px solid $base-gray-light;
+      &:first-child {
+        border-radius: 0;
+      }
     }
   }
 

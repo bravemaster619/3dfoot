@@ -1,21 +1,24 @@
 <div class="customNav">
     <app-top-nav [newLogo]="false" [footer]="false" [showLang]="false"></app-top-nav>
 </div>
-<app-back></app-back>
-<div class="row pt-46 text-center animated bounceInDown delay-.5s">
-    <div class="col-12">
-        <h1>{{'FAQS.head' | translate}}</h1>
+
+<div class="header-hero position-relative with-slide">
+    <app-back></app-back>
+    <div class="hero-section">
+        <img src="assets/images/hero-faqs.png" class="img-fluid w-100" alt="Contacts">
+        <h1 class="position-absolute d-flex justify-content-center align-items-center">{{'FAQS.head' | translate}}</h1>
     </div>
 </div>
+
 <div class="row pt-46 text-center animated fadeIn delay-1s">
     <div class="col-12">
         <div class="singleFaq" *ngFor="let faq of faqs; let i = index;">
             <accordion [isAnimated]="true">
                 <accordion-group (isOpenChange)="statChange($event, i)">
                     <div class="clearfix" accordion-heading>
-                        <div class="pull-left float-left ques"><h4>{{faq.question | translate}}</h4></div>
-                        <div class="pull-right float-right" *ngIf="!faq.expand"><i class="fas fa-angle-down"></i></div>
-                        <div class="pull-right float-right" *ngIf="faq.expand"><i class="fas fa-angle-up"></i></div>
+                        <div class="pull-left float-left ques"><h4 class="m-0">{{faq.question | translate}}</h4></div>
+                        <div class="pull-right float-right" *ngIf="!faq.expand"><i class="fas fa-chevron-down"></i></div>
+                        <div class="pull-right float-right" *ngIf="faq.expand"><i class="fas fa-chevron-up"></i></div>
                     </div>
                     <p>{{faq.answer | translate}}</p>
                 </accordion-group>

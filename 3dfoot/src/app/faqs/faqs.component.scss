@@ -1,25 +1,29 @@
 @import '~src/assets/scss/_vars';
+
 :host {
-  & .pt-46{
+  & .pt-46 {
     align-content: center;
     display: flex;
     justify-content: center;
-    padding-top: 25px;
+    margin: 7px -40px 0 -40px;
 
     & p {
-      font-family: $font-family-light;
-      font-weight: normal;
-      font-style: normal;
-      color: $base-white;
+      font-family: $font-family-medium;
+      color: $base-black-light;
       font-size: 18px;
       text-align: left;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: -1px;
     }
   }
+
   & form {
     padding-top: 43px;
     display: flex;
     flex-wrap: wrap;
   }
+
   & input {
 
     width: 304px;
@@ -27,18 +31,23 @@
     background-color: $base-white;
     border-radius: 0;
   }
-  & .singleFaq{
-    margin-bottom: 10px;
+
+  & .singleFaq {
     &:first-child {
-      border-top: 1px solid $base-white-opacity;
-      padding-top: 8px;
+      //border-top: 1px solid $base-white-opacity;
     }
-    h4{
+
+    h4 {
       text-align: left;
       font-size: 1.2rem;
     }
-    .ques{
+
+    .ques {
       max-width: 90%;
+    }
+    i {
+      font-size: 14px;
+      color: $base-green-light;
     }
   }
 }
