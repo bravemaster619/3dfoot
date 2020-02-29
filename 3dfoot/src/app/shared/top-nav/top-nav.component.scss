@@ -81,7 +81,7 @@
     left: 0;
     right: 0;
     z-index: 10;
-    padding: 20px 0 10px 0;
+    padding: 25px 0 10px 0;
     background:transparent;
     &.back {
       background: transparent;
@@ -95,8 +95,10 @@
     p {
       color: $base-black-light;
       font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.5px;
       padding-top: 2px;
-      font-family: $font-family-light;
+      font-family: $font-family-medium;
     }
     &.back {
       p {
